@@ -32,12 +32,15 @@ const PATHS = 'PATH="$HOME/.local/bin:$HOME/go/bin:/opt/homebrew/bin:/usr/local/
 // ---- Running skillshare on the space's machine ----
 
 const localWindows = (on) => !on && window().platform === "windows";
+// Prefer the user's current npm CLI over an older executable bundled with an app.
+// Keep an explicit machine-local override when one is already configured.
+const WINDOWS_CODEX = 'if [ -z "$SKILLSHARE_CODEX_CLI" ] && [ -n "$APPDATA" ]; then c="$APPDATA/npm/node_modules/@openai/codex/node_modules/@openai/codex-win32-x64/vendor/x86_64-pc-windows-msvc/bin/codex.exe"; if [ -f "$c" ]; then SKILLSHARE_CODEX_CLI="$c"; export SKILLSHARE_CODEX_CLI; fi; fi';
 
 // The core refreshes Windows' PATH even when the window was opened before Git
 // was added. Its exec also gives long local commands up to ten minutes.
 const runner = createRunner({
   exec: (script, args, on) => {
-    const argv = ["-c", `${PATHS}\n${script}`, "skillshare-panel", ...args];
+    const argv = ["-c", `${PATHS}\n${localWindows(on) ? WINDOWS_CODEX + "\n" : ""}${script}`, "skillshare-panel", ...args];
     return (localWindows(on) ? hc(["exec", "--timeout", "600", "--", "sh", ...argv]) : exec("sh", argv, { on }))
       .catch((e) => ({ code: 127, stdout: "", stderr: String(e.message ?? e) }));
   },

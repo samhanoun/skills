@@ -1,0 +1,82 @@
+{
+  "hooks": {
+    "entries": {
+      "claude-notification": {
+        "bindings": {
+          "claude": {
+            "events": {
+              "Notification": [
+                {
+                  "hooks": [
+                    {
+                      "command": "powershell.exe -NoProfile -Command \"New-BurntToastNotification -Text 'Claude Code', 'Needs your attention'\"",
+                      "type": "command"
+                    }
+                  ],
+                  "matcher": ""
+                }
+              ]
+            }
+          }
+        }
+      },
+      "claude-pretooluse": {
+        "bindings": {
+          "claude": {
+            "events": {
+              "PreToolUse": [
+                {
+                  "hooks": [
+                    {
+                      "command": "node \"C:/Users/harry/.claude/hooks/no-claude-attribution.js\"",
+                      "timeout": 10,
+                      "type": "command"
+                    }
+                  ],
+                  "matcher": "Bash|PowerShell"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "claude-stop": {
+        "bindings": {
+          "claude": {
+            "events": {
+              "Stop": [
+                {
+                  "hooks": [
+                    {
+                      "command": "powershell.exe -NoProfile -Command \"New-BurntToastNotification -Text 'Claude Code', 'Reply finished'\"",
+                      "type": "command"
+                    }
+                  ],
+                  "matcher": ""
+                }
+              ]
+            }
+          }
+        }
+      },
+      "codex-stop": {
+        "bindings": {
+          "codex": {
+            "events": {
+              "Stop": [
+                {
+                  "hooks": [
+                    {
+                      "command": "powershell.exe -NoProfile -Command \"New-BurntToastNotification -Text 'Codex', 'Reply finished'\"",
+                      "type": "command"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

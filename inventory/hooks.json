@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-14",
+  "total": 4,
+  "hooks": [
+    {
+      "name": "claude-notification",
+      "target": "claude",
+      "events": [
+        "Notification"
+      ]
+    },
+    {
+      "name": "claude-pretooluse",
+      "target": "claude",
+      "events": [
+        "PreToolUse"
+      ]
+    },
+    {
+      "name": "claude-stop",
+      "target": "claude",
+      "events": [
+        "Stop"
+      ]
+    },
+    {
+      "name": "codex-stop",
+      "target": "codex",
+      "events": [
+        "Stop"
+      ]
+    }
+  ],
+  "native_files_unchanged": true,
+  "native_files_verified": [
+    {
+      "path": ".claude/hooks/no-claude-attribution.js",
+      "sha256": "7e4dde85a23298530883fc258e5240c4e665ca1885cc429f4703229cc4697d14",
+      "bytes": 2255
+    },
+    {
+      "path": ".claude/plugins/installed_plugins.json",
+      "sha256": "d915e8088bdbde29d0550382a987e80aa6fe088c8cbef4dbbd08282075f3d235",
+      "bytes": 8989
+    },
+    {
+      "path": ".claude/plugins/known_marketplaces.json",
+      "sha256": "1d8218924c3b075bb8a62742e23cf279b8a49c21f1f77dbeb57bbfaf7c11320f",
+      "bytes": 284
+    },
+    {
+      "path": ".claude/settings.json",
+      "sha256": "ba8d45b9873037c620f1ea78f249694823182abaeb2c7adb89bd15dbcb15c911",
+      "bytes": 14417
+    },
+    {
+      "path": ".codex/config.toml",
+      "sha256": "202cc5db34113e2cfef1127978c19be992d9b6088bc510179c1f29ad246a72a2",
+      "bytes": 14173
+    },
+    {
+      "path": ".codex/hooks.json",
+      "sha256": "973887121058070207770d5b25f83e5ca224005979991c66b317472d256dbb6d",
+      "bytes": 277
+    },
+    {
+      "path": ".pi/agent/settings.json",
+      "sha256": "c59a6b509cc980d4ce315e6b48654401e14a59db5db00570165e418e136343f5",
+      "bytes": 1288
+    }
+  ],
+  "execution_tested": false
+}
