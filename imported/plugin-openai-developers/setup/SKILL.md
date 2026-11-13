@@ -1,5 +1,5 @@
 ---
-name: setup
+name: openai-developers-setup
 description: Use during OpenAI Developers post-install onboarding to set up API access, check for optional API credits, and verify a first Responses API request.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: faceless-explainer
+name: heygen-faceless-explainer
 description: Create narrated faceless explainers with HeyGen speech, Python motion graphics, style-matched illustrations, captions, and a reusable editing project. Use to explain one focused question through a developed example and visual demonstrations of how it works.
 ---
 

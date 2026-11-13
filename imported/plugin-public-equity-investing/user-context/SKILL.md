@@ -1,5 +1,5 @@
 ---
-name: user-context
+name: public-equity-investing-user-context
 description: Initialize, inspect, save, update, forget, export, or explicitly reset the Public Equity Investing plugin's local user context, source setup, or optional automation setup. Use only when the user explicitly asks to manage Public Equity Investing saved preferences, source pointers, context storage, or recurring automation.
 ---
 

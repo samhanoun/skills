@@ -3,10 +3,10 @@ import path from 'node:path';
 import { createDecipheriv, createHash } from 'node:crypto';
 
 // Decrypts into a new staging ZIP. It never overwrites live configuration files.
-const [keyFile, output] = process.argv.slice(2);
-if (!keyFile || !output) throw new Error('Usage: node scripts/decrypt-backup.mjs <recovery.key> <new-output.zip>');
+const [keyFile, output, backupFolder] = process.argv.slice(2);
+if (!keyFile || !output) throw new Error('Usage: node scripts/decrypt-backup.mjs <recovery.key> <new-output.zip> [backup-directory]');
 if (fs.existsSync(output)) throw new Error('Output already exists');
-const root = path.resolve(import.meta.dirname, '..', 'backup');
+const root = backupFolder ? path.resolve(backupFolder) : path.resolve(import.meta.dirname, '..', 'backup');
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8'));
 const key = Buffer.from(fs.readFileSync(keyFile, 'utf8').trim(), 'hex');
 if (key.length !== 32) throw new Error('Recovery key must be 32 bytes encoded as hex');

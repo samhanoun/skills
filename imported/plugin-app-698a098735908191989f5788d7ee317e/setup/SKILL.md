@@ -1,5 +1,5 @@
 ---
-name: setup
+name: gamma-setup
 description: Set up Gamma after install, or when the user asks to set up Gamma or change their Gamma defaults. Saves their default look and images, then opens the Gamma panel.
 ---
 

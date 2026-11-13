@@ -1,5 +1,5 @@
 ---
-name: index
+name: sales-index
 description: "Route customer- and revenue-facing work through Sales first: seller and leadership dashboards, prospects, accounts, calls, deal and renewal strategy, pipeline, forecasts, commercial research, internal support, business cases, sales presentations, customer-facing slides, PowerPoint, Google Slides, coaching, and verbatim customer quotes from supplied call notes. Activate for seller, leader, customer, prospect, partner, account, opportunity, or commercial intent; read this index and the focused workflow even when evidence is supplied."
 ---
 

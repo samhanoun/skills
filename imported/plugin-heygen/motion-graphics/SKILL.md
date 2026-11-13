@@ -1,5 +1,5 @@
 ---
-name: motion-graphics
+name: heygen-motion-graphics
 description: Design and render focused video motion graphics in Python, including full-screen explainers, charts, diagrams, icon systems, and overlays on presenter footage. Use for coded editorial graphics; use the captions skill for subtitles and expressive text treatments.
 ---
 

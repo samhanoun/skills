@@ -1,5 +1,5 @@
 ---
-name: user-context
+name: investment-banking-user-context
 description: Initialize, inspect, save, update, forget, export, or explicitly reset the Investment Banking plugin's local user context, source setup, or optional automation setup. Use only when the user explicitly asks to manage Investment Banking saved preferences, source pointers, context storage, or recurring automation.
 ---
 

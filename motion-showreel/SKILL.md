@@ -62,7 +62,7 @@ Run the scripts from the kit root. They need Node 22+ and FFmpeg with ffprobe.
 ### 1. Study the reference (when one is given)
 
 ```sh
-node .claude/skills/motion-showreel/scripts/analyze-reference.mjs path/to/reference.mp4 video-projects/my-reel/qa/reference --fps 6 --bpm 128
+node .agents/skills/motion-showreel/scripts/analyze-reference.mjs path/to/reference.mp4 video-projects/my-reel/qa/reference --fps 6 --bpm 128
 ```
 
 Read every contact sheet, then `report.txt` (cuts, luminance rhythm, RMS, onsets,
@@ -94,8 +94,8 @@ Read `docs/TOOLS-AND-API-KEYS.md` first. Music can be the user's own licensed tr
 or generated. Generation is a paid call, so confirm before running it:
 
 ```sh
-node .claude/skills/motion-showreel/scripts/kie.mjs music --title "Reel" --style "punchy electronic showreel, instrumental, 128 bpm, starts instantly, riser into a big drop" --out video-projects/my-reel/assets/audio
-node .claude/skills/motion-showreel/scripts/music-grid.mjs video-projects/my-reel/assets/audio/take-0.mp3 --bpm 128 --beats
+node .agents/skills/motion-showreel/scripts/kie.mjs music --title "Reel" --style "punchy electronic showreel, instrumental, 128 bpm, starts instantly, riser into a big drop" --out video-projects/my-reel/assets/audio
+node .agents/skills/motion-showreel/scripts/music-grid.mjs video-projects/my-reel/assets/audio/take-0.mp3 --bpm 128 --beats
 ```
 
 `music-grid` prints the period, the **kick-band phase** (use it), and per-bar and
@@ -106,9 +106,9 @@ return. Then splice 32 beats: intro and build (16, ending on the drop's downbeat
 drop (8), break (4, under the flurry), and the return hit plus a tail:
 
 ```sh
-node .claude/skills/motion-showreel/scripts/splice-music.mjs take-0.mp3 --period 0.4644 --phase 0.085 --segments "4-28,48-56.7" --length 15 --gap 16 --out music-bed.wav
-node .claude/skills/motion-showreel/scripts/music-grid.mjs music-bed.wav --bpm 129
-node .claude/skills/motion-showreel/scripts/beatgrid.mjs --period 0.4644 --length 15 --chapters "01 Physics:4, 02 Type:8, 03 Grid:4, 04 Drop:4, 05 Lookdev:4, Flurry:4, 07 End:rest"
+node .agents/skills/motion-showreel/scripts/splice-music.mjs take-0.mp3 --period 0.4644 --phase 0.085 --segments "4-28,48-56.7" --length 15 --gap 16 --out music-bed.wav
+node .agents/skills/motion-showreel/scripts/music-grid.mjs music-bed.wav --bpm 129
+node .agents/skills/motion-showreel/scripts/beatgrid.mjs --period 0.4644 --length 15 --chapters "01 Physics:4, 02 Type:8, 03 Grid:4, 04 Drop:4, 05 Lookdev:4, Flurry:4, 07 End:rest"
 ```
 
 The re-measured bed's kick phase should be within about 25 ms of 0. Put the
@@ -123,7 +123,7 @@ use the user's own library. Place cues on the beat sheet in an `events.json` and
 premix:
 
 ```sh
-node .claude/skills/motion-showreel/scripts/mix.mjs --bed music-bed.wav --events events.json --out master.wav
+node .agents/skills/motion-showreel/scripts/mix.mjs --bed music-bed.wav --events events.json --out master.wav
 ```
 
 Use `master.wav` as the composition's single `<audio>` track. It targets -14 LUFS

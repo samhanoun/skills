@@ -28,16 +28,16 @@ node scripts/transcribe-elevenlabs.mjs path/to/raw.mp4    # -> path/to/raw.json
 
 ```bash
 # 1) Plan only — compute the cut, write EDL + re-timed transcript (no video touched)
-node .claude/skills/cut-silences/scripts/cut-silences.mjs <transcript.json> \
+node .agents/skills/cut-silences/scripts/cut-silences.mjs <transcript.json> \
   --out-dir video-projects/<slug>/assets
 
 # 2) With a video — also write the ffmpeg command (still does not render yet)
-node .claude/skills/cut-silences/scripts/cut-silences.mjs <transcript.json> \
+node .agents/skills/cut-silences/scripts/cut-silences.mjs <transcript.json> \
   --video video-projects/<slug>/assets/raw.mp4 --out-dir video-projects/<slug>/assets
 
 # 3) Render the cut video (local ffmpeg, re-encode, A/V kept in sync)
 #    add --apply to actually run ffmpeg
-node .claude/skills/cut-silences/scripts/cut-silences.mjs <transcript.json> \
+node .agents/skills/cut-silences/scripts/cut-silences.mjs <transcript.json> \
   --video video-projects/<slug>/assets/raw.mp4 --apply \
   --output video-projects/<slug>/assets/edited-silenced.mp4
 ```

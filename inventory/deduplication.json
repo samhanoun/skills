@@ -1,0 +1,4794 @@
+{
+  "before": 906,
+  "after": 764,
+  "source_entries_before_cleanup": 914,
+  "archived_variants": 150,
+  "archive": "backup/before-dedup-2026-11-13",
+  "selection": "one active version per skill; distinct providers and domains retain separate explicit names; local edited versions take precedence",
+  "removed": [
+    {
+      "path": "imported/claude/trash/1794307750196-32500-ImVaEz/docx",
+      "name": "docx",
+      "reason": "inactive trash copy",
+      "canonical": null
+    },
+    {
+      "path": "imported/claude/trash/1794307749965-32500-fHikhZ/pptx",
+      "name": "pptx",
+      "reason": "inactive trash copy",
+      "canonical": null
+    },
+    {
+      "path": "imported/claude/trash/1794307749954-32500-Npkz8f/xlsx",
+      "name": "xlsx",
+      "reason": "inactive trash copy",
+      "canonical": null
+    },
+    {
+      "path": "imported/claude/trash/1794307747995-32500-aFWMMv/artifact-emulator",
+      "name": "artifact-emulator",
+      "reason": "inactive trash copy",
+      "canonical": null
+    },
+    {
+      "path": "imported/claude/trash/1794307747964-32500-IEKEcG/google-workspace",
+      "name": "google-workspace",
+      "reason": "inactive trash copy",
+      "canonical": null
+    },
+    {
+      "path": "imported/claude/ckm-banner-design",
+      "name": "ckm:banner-design",
+      "reason": "identical instructions",
+      "canonical": "ckm-banner-design"
+    },
+    {
+      "path": "imported/claude/ckm-brand",
+      "name": "ckm:brand",
+      "reason": "identical instructions",
+      "canonical": "ckm-brand"
+    },
+    {
+      "path": "imported/claude/ckm-design",
+      "name": "ckm:design",
+      "reason": "identical instructions",
+      "canonical": "ckm-design"
+    },
+    {
+      "path": "imported/claude/ckm-design-system",
+      "name": "ckm:design-system",
+      "reason": "identical instructions",
+      "canonical": "ckm-design-system"
+    },
+    {
+      "path": "imported/claude/ckm-slides",
+      "name": "ckm:slides",
+      "reason": "identical instructions",
+      "canonical": "ckm-slides"
+    },
+    {
+      "path": "imported/claude/ckm-ui-styling",
+      "name": "ckm:ui-styling",
+      "reason": "identical instructions",
+      "canonical": "ckm-ui-styling"
+    },
+    {
+      "path": "imported/codex/cut-mistakes",
+      "name": "cut-mistakes",
+      "reason": "identical instructions",
+      "canonical": "cut-mistakes"
+    },
+    {
+      "path": "imported/codex/cut-silences",
+      "name": "cut-silences",
+      "reason": "identical instructions",
+      "canonical": "cut-silences"
+    },
+    {
+      "path": "imported/aiderdesk/find-skills",
+      "name": "find-skills",
+      "reason": "identical instructions",
+      "canonical": "find-skills"
+    },
+    {
+      "path": "imported/claude/hyperframes",
+      "name": "hyperframes",
+      "reason": "identical instructions",
+      "canonical": "hyperframes"
+    },
+    {
+      "path": "imported/claude/hyperframes-cli",
+      "name": "hyperframes-cli",
+      "reason": "identical instructions",
+      "canonical": "hyperframes-cli"
+    },
+    {
+      "path": "imported/claude/hyperframes-registry",
+      "name": "hyperframes-registry",
+      "reason": "identical instructions",
+      "canonical": "hyperframes-registry"
+    },
+    {
+      "path": "imported/codex/motion-showreel",
+      "name": "motion-showreel",
+      "reason": "identical instructions",
+      "canonical": "motion-showreel"
+    },
+    {
+      "path": "react-doctor",
+      "name": "react-doctor",
+      "reason": "identical instructions",
+      "canonical": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/react-doctor"
+    },
+    {
+      "path": "imported/codex/short-form-edit",
+      "name": "short-form-edit",
+      "reason": "identical instructions",
+      "canonical": "short-form-edit"
+    },
+    {
+      "path": "imported/claude/ui-ux-pro-max",
+      "name": "ui-ux-pro-max",
+      "reason": "identical instructions",
+      "canonical": "ui-ux-pro-max"
+    },
+    {
+      "path": "imported/claude/synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/artifact-emulator",
+      "name": "artifact-emulator",
+      "reason": "identical instructions",
+      "canonical": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/artifact-emulator"
+    },
+    {
+      "path": "productivity/google-workspace",
+      "name": "google-workspace",
+      "reason": "alternate version of the same skill",
+      "canonical": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/google-workspace"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/pdf",
+      "name": "pdf",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-pdf/pdf"
+    },
+    {
+      "path": "imported/codex/pdf",
+      "name": "pdf",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-pdf/pdf"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/skill-creator",
+      "name": "skill-creator",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/codex/system/skill-creator"
+    },
+    {
+      "path": "productivity/linear",
+      "name": "linear",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-linear/linear"
+    },
+    {
+      "path": "imported/codex/linear",
+      "name": "linear",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-linear/linear"
+    },
+    {
+      "path": "imported/plugin-visualize/visualize-5dbf7691",
+      "name": "visualize",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-visualize/visualize"
+    },
+    {
+      "path": "imported/plugin-vercel/ai-gateway-1ea74d11",
+      "name": "ai-gateway",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/ai-gateway"
+    },
+    {
+      "path": "imported/plugin-vercel/ai-sdk-b0a1800c",
+      "name": "ai-sdk",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/ai-sdk"
+    },
+    {
+      "path": "imported/plugin-vercel/auth-156ff2a4",
+      "name": "auth",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/auth"
+    },
+    {
+      "path": "imported/plugin-vercel/bootstrap-fedd09c1",
+      "name": "bootstrap",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/bootstrap"
+    },
+    {
+      "path": "imported/plugin-vercel/chat-sdk-9badbb5f",
+      "name": "chat-sdk",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/chat-sdk"
+    },
+    {
+      "path": "imported/plugin-vercel/deployments-cicd-b58b4eb8",
+      "name": "deployments-cicd",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/deployments-cicd"
+    },
+    {
+      "path": "imported/plugin-vercel/env-vars-75f734b6",
+      "name": "env-vars",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/env-vars"
+    },
+    {
+      "path": "imported/plugin-vercel/marketplace-0a5767a4",
+      "name": "marketplace",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/marketplace"
+    },
+    {
+      "path": "imported/plugin-vercel/react-best-practices-a384358f",
+      "name": "react-best-practices",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/react-best-practices"
+    },
+    {
+      "path": "imported/plugin-build-web-apps/react-best-practices",
+      "name": "react-best-practices",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/react-best-practices"
+    },
+    {
+      "path": "imported/plugin-build-web-apps/react-best-practices-6e004730",
+      "name": "react-best-practices",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/react-best-practices"
+    },
+    {
+      "path": "imported/plugin-vercel/routing-middleware-709d5d52",
+      "name": "routing-middleware",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/routing-middleware"
+    },
+    {
+      "path": "imported/plugin-vercel/runtime-cache-9a33739c",
+      "name": "runtime-cache",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/runtime-cache"
+    },
+    {
+      "path": "imported/plugin-vercel/shadcn",
+      "name": "shadcn",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-build-web-apps/shadcn-best-practices"
+    },
+    {
+      "path": "imported/plugin-build-web-apps/shadcn-best-practices-712a6c6b",
+      "name": "shadcn",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-build-web-apps/shadcn-best-practices"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-agent-c64b0a09",
+      "name": "vercel-agent",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/vercel-agent"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-cli-aa90bf55",
+      "name": "vercel-cli",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/vercel-cli"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-firewall-61ef3cd4",
+      "name": "vercel-firewall",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/vercel-firewall"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-functions-bd837f7d",
+      "name": "vercel-functions",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/vercel-functions"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-sandbox-057e1bcd",
+      "name": "vercel-sandbox",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/vercel-sandbox"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-services-132c6548",
+      "name": "vercel-services",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/vercel-services"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-storage-5e669eea",
+      "name": "vercel-storage",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/vercel-storage"
+    },
+    {
+      "path": "imported/plugin-vercel/verification-df87d21e",
+      "name": "verification",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/verification"
+    },
+    {
+      "path": "imported/plugin-vercel/workflow-86184e8b",
+      "name": "workflow",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-vercel/workflow"
+    },
+    {
+      "path": "imported/plugin-test-android-apps/android-emulator-qa-e866ef7c",
+      "name": "android-emulator-qa",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-test-android-apps/android-emulator-qa"
+    },
+    {
+      "path": "imported/plugin-test-android-apps/android-performance-562b262e",
+      "name": "android-performance",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-test-android-apps/android-performance"
+    },
+    {
+      "path": "imported/plugin-supabase/supabase-8e92c919",
+      "name": "supabase",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-supabase/supabase"
+    },
+    {
+      "path": "imported/plugin-supabase/supabase-postgres-best-practices-e62b6cba",
+      "name": "supabase-postgres-best-practices",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-supabase/supabase-postgres-best-practices"
+    },
+    {
+      "path": "imported/plugin-build-web-apps/supabase-best-practices",
+      "name": "supabase-postgres-best-practices",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-supabase/supabase-postgres-best-practices"
+    },
+    {
+      "path": "imported/plugin-build-web-apps/supabase-best-practices-e25c407c",
+      "name": "supabase-postgres-best-practices",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-supabase/supabase-postgres-best-practices"
+    },
+    {
+      "path": "imported/plugin-investment-banking/company-tearsheet",
+      "name": "company-tearsheet",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-public-equity-investing/company-tearsheet"
+    },
+    {
+      "path": "imported/plugin-investment-banking/comps-valuation",
+      "name": "comps-valuation",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-public-equity-investing/comps-valuation"
+    },
+    {
+      "path": "imported/plugin-investment-banking/dcf-model-builder",
+      "name": "dcf-model-builder",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-public-equity-investing/dcf-model-builder"
+    },
+    {
+      "path": "imported/plugin-investment-banking/financials-normalizer",
+      "name": "financials-normalizer",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-public-equity-investing/financials-normalizer"
+    },
+    {
+      "path": "imported/plugin-investment-banking/meeting-prep",
+      "name": "meeting-prep",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-public-equity-investing/meeting-prep"
+    },
+    {
+      "path": "imported/plugin-investment-banking/memo-builder",
+      "name": "memo-builder",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-public-equity-investing/memo-builder"
+    },
+    {
+      "path": "imported/plugin-investment-banking/model-audit-tieout",
+      "name": "model-audit-tieout",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-public-equity-investing/model-audit-tieout"
+    },
+    {
+      "path": "imported/plugin-investment-banking/scenario-sensitivity-generator",
+      "name": "scenario-sensitivity-generator",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-public-equity-investing/scenario-sensitivity-generator"
+    },
+    {
+      "path": "imported/plugin-investment-banking/three-statement-model-builder",
+      "name": "three-statement-model-builder",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-public-equity-investing/three-statement-model-builder"
+    },
+    {
+      "path": "imported/plugin-notion/notion-knowledge-capture-19af8495",
+      "name": "notion-knowledge-capture",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-notion/notion-knowledge-capture"
+    },
+    {
+      "path": "imported/codex/notion-knowledge-capture",
+      "name": "notion-knowledge-capture",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-notion/notion-knowledge-capture"
+    },
+    {
+      "path": "imported/codex/notion-meeting-intelligence",
+      "name": "notion-meeting-intelligence",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-notion/notion-meeting-intelligence"
+    },
+    {
+      "path": "imported/plugin-notion/notion-research-documentation-d03bcdf3",
+      "name": "notion-research-documentation",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-notion/notion-research-documentation"
+    },
+    {
+      "path": "imported/codex/notion-research-documentation",
+      "name": "notion-research-documentation",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-notion/notion-research-documentation"
+    },
+    {
+      "path": "imported/plugin-notion/notion-spec-to-implementation-703aac94",
+      "name": "notion-spec-to-implementation",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-notion/notion-spec-to-implementation"
+    },
+    {
+      "path": "imported/codex/notion-spec-to-implementation",
+      "name": "notion-spec-to-implementation",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-notion/notion-spec-to-implementation"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-ai-gateway-25b2d835",
+      "name": "netlify-ai-gateway",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-netlify/netlify-ai-gateway"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-blobs-e06d40cf",
+      "name": "netlify-blobs",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-netlify/netlify-blobs"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-caching-904a2a1a",
+      "name": "netlify-caching",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-netlify/netlify-caching"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-config-98f9fa72",
+      "name": "netlify-config",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-netlify/netlify-config"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-deploy-77b6208a",
+      "name": "netlify-deploy",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-netlify/netlify-deploy"
+    },
+    {
+      "path": "imported/codex/netlify-deploy",
+      "name": "netlify-deploy",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-netlify/netlify-deploy"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-edge-functions-ab14b028",
+      "name": "netlify-edge-functions",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-netlify/netlify-edge-functions"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-forms-df53375e",
+      "name": "netlify-forms",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-netlify/netlify-forms"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-frameworks-731ddd71",
+      "name": "netlify-frameworks",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-netlify/netlify-frameworks"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-functions-b9d0595d",
+      "name": "netlify-functions",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-netlify/netlify-functions"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-identity-126de07a",
+      "name": "netlify-identity",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-netlify/netlify-identity"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-image-cdn-902b6b3b",
+      "name": "netlify-image-cdn",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-netlify/netlify-image-cdn"
+    },
+    {
+      "path": "imported/plugin-google-drive/google-docs-dc2777dc",
+      "name": "google-docs",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-google-drive/google-docs"
+    },
+    {
+      "path": "imported/plugin-google-drive/google-drive-471e3292",
+      "name": "google-drive",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-google-drive/google-drive"
+    },
+    {
+      "path": "imported/plugin-google-drive/google-drive-comments-f5de6519",
+      "name": "google-drive-comments",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-google-drive/google-drive-comments"
+    },
+    {
+      "path": "imported/plugin-google-drive/google-sheets-04c53965",
+      "name": "google-sheets",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-google-drive/google-sheets"
+    },
+    {
+      "path": "imported/plugin-google-drive/google-slides-0ae6b9ef",
+      "name": "google-slides",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-google-drive/google-slides"
+    },
+    {
+      "path": "imported/codex/gh-address-comments",
+      "name": "gh-address-comments",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-github/gh-address-comments"
+    },
+    {
+      "path": "imported/codex/gh-fix-ci",
+      "name": "gh-fix-ci",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-github/gh-fix-ci"
+    },
+    {
+      "path": "imported/codex/yeet",
+      "name": "yeet",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-github/yeet"
+    },
+    {
+      "path": "imported/plugin-figma/figma-code-connect-6e934526",
+      "name": "figma-code-connect",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-figma/figma-code-connect"
+    },
+    {
+      "path": "imported/plugin-figma/figma-create-new-file-a5c1f78d",
+      "name": "figma-create-new-file",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-figma/figma-create-new-file"
+    },
+    {
+      "path": "imported/codex/figma-create-new-file",
+      "name": "figma-create-new-file",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-figma/figma-create-new-file"
+    },
+    {
+      "path": "imported/plugin-figma/figma-generate-design-f0ffcc4c",
+      "name": "figma-generate-design",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-figma/figma-generate-design"
+    },
+    {
+      "path": "imported/codex/figma-generate-design",
+      "name": "figma-generate-design",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-figma/figma-generate-design"
+    },
+    {
+      "path": "imported/plugin-figma/figma-generate-diagram-6f7cde36",
+      "name": "figma-generate-diagram",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-figma/figma-generate-diagram"
+    },
+    {
+      "path": "imported/plugin-figma/figma-generate-library-f6ce11bc",
+      "name": "figma-generate-library",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-figma/figma-generate-library"
+    },
+    {
+      "path": "imported/codex/figma-generate-library",
+      "name": "figma-generate-library",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-figma/figma-generate-library"
+    },
+    {
+      "path": "imported/plugin-figma/figma-use-348e10cf",
+      "name": "figma-use",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-figma/figma-use"
+    },
+    {
+      "path": "imported/codex/figma-use",
+      "name": "figma-use",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-figma/figma-use"
+    },
+    {
+      "path": "imported/plugin-figma/figma-use-figjam-a9699cbe",
+      "name": "figma-use-figjam",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-figma/figma-use-figjam"
+    },
+    {
+      "path": "imported/plugin-figma/figma-use-slides-892347af",
+      "name": "figma-use-slides",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-figma/figma-use-slides"
+    },
+    {
+      "path": "imported/plugin-codex-security/attack-path-analysis-2e63bf0d",
+      "name": "attack-path-analysis",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-codex-security/attack-path-analysis"
+    },
+    {
+      "path": "imported/plugin-codex-security/deep-security-scan-24a2be93",
+      "name": "deep-security-scan",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-codex-security/deep-security-scan"
+    },
+    {
+      "path": "imported/plugin-codex-security/finding-discovery-fb7f6b49",
+      "name": "finding-discovery",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-codex-security/finding-discovery"
+    },
+    {
+      "path": "imported/plugin-codex-security/fix-finding-d15d25e1",
+      "name": "fix-finding",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-codex-security/fix-finding"
+    },
+    {
+      "path": "imported/plugin-codex-security/propose-security-hardening-0922cd7c",
+      "name": "propose-security-hardening",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-codex-security/propose-security-hardening"
+    },
+    {
+      "path": "imported/plugin-codex-security/security-diff-scan-5c1f8dae",
+      "name": "security-diff-scan",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-codex-security/security-diff-scan"
+    },
+    {
+      "path": "imported/plugin-codex-security/security-scan-0e290b8a",
+      "name": "security-scan",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-codex-security/security-scan"
+    },
+    {
+      "path": "imported/plugin-codex-security/threat-model-c0cfcd56",
+      "name": "threat-model",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-codex-security/threat-model"
+    },
+    {
+      "path": "imported/plugin-codex-security/track-findings-f0527f5c",
+      "name": "track-findings",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-codex-security/track-findings"
+    },
+    {
+      "path": "imported/plugin-codex-security/triage-finding-201d540a",
+      "name": "triage-finding",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-codex-security/triage-finding"
+    },
+    {
+      "path": "imported/plugin-codex-security/validation-399a19b3",
+      "name": "validation",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-codex-security/validation"
+    },
+    {
+      "path": "imported/plugin-codex-security/vulnerability-writeup-66025951",
+      "name": "vulnerability-writeup",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-codex-security/vulnerability-writeup"
+    },
+    {
+      "path": "imported/plugin-coderabbit/coderabbit-review-9112c359",
+      "name": "code-review",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-coderabbit/coderabbit-review"
+    },
+    {
+      "path": "imported/codex/agents-sdk",
+      "name": "agents-sdk",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-cloudflare/agents-sdk"
+    },
+    {
+      "path": "imported/codex/building-ai-agent-on-cloudflare",
+      "name": "building-ai-agent-on-cloudflare",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-cloudflare/building-ai-agent-on-cloudflare"
+    },
+    {
+      "path": "imported/codex/building-mcp-server-on-cloudflare",
+      "name": "building-mcp-server-on-cloudflare",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-cloudflare/building-mcp-server-on-cloudflare"
+    },
+    {
+      "path": "imported/codex/cloudflare",
+      "name": "cloudflare",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-cloudflare/cloudflare"
+    },
+    {
+      "path": "imported/codex/cloudflare-community",
+      "name": "cloudflare",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-cloudflare/cloudflare"
+    },
+    {
+      "path": "imported/codex/durable-objects",
+      "name": "durable-objects",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-cloudflare/durable-objects"
+    },
+    {
+      "path": "imported/codex/web-perf",
+      "name": "web-perf",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-cloudflare/web-perf"
+    },
+    {
+      "path": "imported/codex/wrangler",
+      "name": "wrangler",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/plugin-cloudflare/wrangler"
+    },
+    {
+      "path": "imported/plugin-build-web-apps/frontend-app-builder-6c9fe5b4",
+      "name": "frontend-app-builder",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-build-web-apps/frontend-app-builder"
+    },
+    {
+      "path": "imported/plugin-build-web-apps/frontend-testing-debugging-46f519c7",
+      "name": "frontend-testing-debugging",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-build-web-apps/frontend-testing-debugging"
+    },
+    {
+      "path": "imported/plugin-build-web-apps/stripe-best-practices-b6b91f6a",
+      "name": "stripe-best-practices",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-build-web-apps/stripe-best-practices"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/ios-app-intents-17d6eb88",
+      "name": "ios-app-intents",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-build-ios-apps/ios-app-intents"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/ios-debugger-agent-a32bbc71",
+      "name": "ios-debugger-agent",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-build-ios-apps/ios-debugger-agent"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/ios-ettrace-performance-8dd41a89",
+      "name": "ios-ettrace-performance",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-build-ios-apps/ios-ettrace-performance"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/ios-memgraph-leaks-041c4e3a",
+      "name": "ios-memgraph-leaks",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-build-ios-apps/ios-memgraph-leaks"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/ios-simulator-browser-89111bc6",
+      "name": "ios-simulator-browser",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-build-ios-apps/ios-simulator-browser"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/swiftui-liquid-glass-ceda1600",
+      "name": "swiftui-liquid-glass",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-build-ios-apps/swiftui-liquid-glass"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/swiftui-performance-audit-1b25a3ef",
+      "name": "swiftui-performance-audit",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-build-ios-apps/swiftui-performance-audit"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/swiftui-ui-patterns-51930a91",
+      "name": "swiftui-ui-patterns",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-build-ios-apps/swiftui-ui-patterns"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/swiftui-view-refactor-cbceed5d",
+      "name": "swiftui-view-refactor",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-build-ios-apps/swiftui-view-refactor"
+    },
+    {
+      "path": "imported/plugin-atlassian-rovo/capture-tasks-from-meeting-notes",
+      "name": "capture-tasks-from-meeting-notes",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-app-6a83901dde988191b3f3cefdcc19acfa/capture-tasks-from-meeting-notes"
+    },
+    {
+      "path": "imported/plugin-atlassian-rovo/generate-status-report",
+      "name": "generate-status-report",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-app-6a83901dde988191b3f3cefdcc19acfa/generate-status-report"
+    },
+    {
+      "path": "imported/plugin-atlassian-rovo/search-company-knowledge",
+      "name": "search-company-knowledge",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-app-6a83901dde988191b3f3cefdcc19acfa/search-company-knowledge"
+    },
+    {
+      "path": "imported/plugin-atlassian-rovo/spec-to-backlog",
+      "name": "spec-to-backlog",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-app-6a83901dde988191b3f3cefdcc19acfa/spec-to-backlog"
+    },
+    {
+      "path": "imported/plugin-atlassian-rovo/triage-issue",
+      "name": "triage-issue",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-app-6a83901dde988191b3f3cefdcc19acfa/triage-issue"
+    },
+    {
+      "path": "imported/plugin-airtable/airtable-cli-1d55bdca",
+      "name": "airtable-cli",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-airtable/airtable-cli"
+    },
+    {
+      "path": "imported/plugin-airtable/airtable-filters-7adee483",
+      "name": "airtable-filters",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-airtable/airtable-filters"
+    },
+    {
+      "path": "imported/plugin-airtable/airtable-overview-5894c528",
+      "name": "airtable-overview",
+      "reason": "identical instructions",
+      "canonical": "imported/plugin-airtable/airtable-overview"
+    },
+    {
+      "path": "imported/codex/imagegen",
+      "name": "imagegen",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/codex/system/imagegen"
+    },
+    {
+      "path": "imported/codex/openai-docs",
+      "name": "openai-docs",
+      "reason": "alternate version of the same skill",
+      "canonical": "imported/codex/system/openai-docs"
+    }
+  ],
+  "clarified_names": [
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/computer-use",
+      "old": "computer-use",
+      "new": "unified-computer-use"
+    },
+    {
+      "path": "imported/plugin-sales/index",
+      "old": "index",
+      "new": "sales-index"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/user-context",
+      "old": "user-context",
+      "new": "public-equity-investing-user-context"
+    },
+    {
+      "path": "imported/plugin-product-design/index",
+      "old": "index",
+      "new": "product-design-index"
+    },
+    {
+      "path": "imported/plugin-product-design/user-context",
+      "old": "user-context",
+      "new": "product-design-user-context"
+    },
+    {
+      "path": "imported/plugin-openai-developers/setup",
+      "old": "setup",
+      "new": "openai-developers-setup"
+    },
+    {
+      "path": "imported/plugin-investment-banking/user-context",
+      "old": "user-context",
+      "new": "investment-banking-user-context"
+    },
+    {
+      "path": "imported/plugin-heygen/faceless-explainer",
+      "old": "faceless-explainer",
+      "new": "heygen-faceless-explainer"
+    },
+    {
+      "path": "imported/plugin-heygen/general-video",
+      "old": "general-video",
+      "new": "heygen-general-video"
+    },
+    {
+      "path": "imported/plugin-heygen/motion-graphics",
+      "old": "motion-graphics",
+      "new": "heygen-motion-graphics"
+    },
+    {
+      "path": "imported/plugin-data-analytics/index",
+      "old": "index",
+      "new": "data-analytics-index"
+    },
+    {
+      "path": "imported/plugin-app-698a098735908191989f5788d7ee317e/setup",
+      "old": "setup",
+      "new": "gamma-setup"
+    }
+  ],
+  "active": [
+    {
+      "path": "accidental-data-loss-prevention",
+      "name": "accidental-data-loss-prevention",
+      "sha256": "82769e3c99fbbae081420ea62d6e3318eaf80b9c97da12a62c1cf97049826878"
+    },
+    {
+      "path": "alloydb-omni-access-control",
+      "name": "alloydb-omni-access-control",
+      "sha256": "bef0e4b0b4739f98478443d39199a2773552177e9a3c8b1496c13bee6d091f84"
+    },
+    {
+      "path": "alloydb-omni-container",
+      "name": "alloydb-omni-container",
+      "sha256": "65220d7e85345b4bf9ca66f55c827f304f5cb220a35d7d9a1e6326c9da10fb82"
+    },
+    {
+      "path": "alloydb-omni-data",
+      "name": "alloydb-omni-data",
+      "sha256": "f5afe793f5e0341b00813cfe8001e565b6e4a0d3e25baf03db7df347d8abcf7e"
+    },
+    {
+      "path": "alloydb-omni-health",
+      "name": "alloydb-omni-health",
+      "sha256": "c81c80f8bea217afe111e6128fac27ce485d42266f93c51a4babfae4273af39b"
+    },
+    {
+      "path": "alloydb-omni-kubernetes",
+      "name": "alloydb-omni-kubernetes",
+      "sha256": "c6e90cbd6e8b8446ced91ef4e046a8590c1a05f5dad9f0ca46e0c1eb989db1f0"
+    },
+    {
+      "path": "alloydb-omni-monitor",
+      "name": "alloydb-omni-monitor",
+      "sha256": "261086585eecd1e6274d2ec2efb7f5aa8fdbe444db078655a27a4c05c18ea7eb"
+    },
+    {
+      "path": "alloydb-omni-optimize",
+      "name": "alloydb-omni-optimize",
+      "sha256": "6995f7d3fa46291ab62f51c1e64a879ce14540ad9e86e69e2252d57571475b13"
+    },
+    {
+      "path": "alloydb-omni-performance",
+      "name": "alloydb-omni-performance",
+      "sha256": "5528911b64d7d343127f61b177a8bf4ec0e6dfea33a266c80ed652c7fa24ada2"
+    },
+    {
+      "path": "alloydb-omni-replication",
+      "name": "alloydb-omni-replication",
+      "sha256": "f085740285a495f32b99c6556b297c3e6069d66bf2fe410ba06008cfe1f97af3"
+    },
+    {
+      "path": "alloydb-postgres-access-management",
+      "name": "alloydb-postgres-access-management",
+      "sha256": "45de297fb7fae0eff3fba2d5d4200183371358e4e52a66580cc0217c3f80b83c"
+    },
+    {
+      "path": "alloydb-postgres-admin",
+      "name": "alloydb-postgres-admin",
+      "sha256": "77eb785c5a2df993b38903baba3a0ca2a97a635a95054f62f970ac0da4dd405a"
+    },
+    {
+      "path": "alloydb-postgres-data",
+      "name": "alloydb-postgres-data",
+      "sha256": "9e1f924b18c73847e3ffbdfcc97638b8d62449ab562cbf4ed9ed6ab93ec2e18a"
+    },
+    {
+      "path": "alloydb-postgres-health",
+      "name": "alloydb-postgres-health",
+      "sha256": "5cd3830ba4697d27847382b29330f888eee68dfcbdd7462bf44b4cb314506d50"
+    },
+    {
+      "path": "alloydb-postgres-monitor",
+      "name": "alloydb-postgres-monitor",
+      "sha256": "3e4a7181eec46d14bed97c4a57c2218495db4723082ca4389b11d4792e9b37f7"
+    },
+    {
+      "path": "alloydb-postgres-optimize",
+      "name": "alloydb-postgres-optimize",
+      "sha256": "2a650cab9af181d117bf1f13f3d4b116e7e66711067553e2e53db02b7dd07915"
+    },
+    {
+      "path": "alloydb-postgres-replication",
+      "name": "alloydb-postgres-replication",
+      "sha256": "2f266a3a5300cddfa6932860d6ebf9269501ac1ccf934eed27b6c992df40bb7c"
+    },
+    {
+      "path": "bigquery",
+      "name": "bigquery",
+      "sha256": "d2ad795a25ac88b0fde926bbc785e7a3e8e3a8615e8610a8e6d11956ebb76d79"
+    },
+    {
+      "path": "bigquery-data-transfer-service",
+      "name": "bigquery-data-transfer-service",
+      "sha256": "8b34bf814948ecbc1bc4fa4cd3aa1da829339efbf95347cbe75985665e78bb27"
+    },
+    {
+      "path": "building-data-apps",
+      "name": "building-data-apps",
+      "sha256": "a9153d270f9d50b3d265be48b778255f9b955fa0f1609c269220038d5880732f"
+    },
+    {
+      "path": "ckm-banner-design",
+      "name": "ckm:banner-design",
+      "sha256": "95a80f5bf09776fd030cb221d40b9f274a770164c3056f5b733e65260faed12d"
+    },
+    {
+      "path": "ckm-brand",
+      "name": "ckm:brand",
+      "sha256": "85ec99bb0a0deebee707d09fc30c9adacf481ed20281d49f3fd637d94bc57eab"
+    },
+    {
+      "path": "ckm-design",
+      "name": "ckm:design",
+      "sha256": "4dec242763e2d6b6778e5b1cac0e76ae503016f772fb9d5c51774d452fc53340"
+    },
+    {
+      "path": "ckm-design-system",
+      "name": "ckm:design-system",
+      "sha256": "300540239cd1310a8e639967c199eb8858d54d570ab98bd137273bc7db82e4ec"
+    },
+    {
+      "path": "ckm-slides",
+      "name": "ckm:slides",
+      "sha256": "3d320f8120d70ae6c207c8e4a0ff7d8f2835ea60cfbbe6096778cdb1652b9153"
+    },
+    {
+      "path": "ckm-ui-styling",
+      "name": "ckm:ui-styling",
+      "sha256": "751a35628d614a65ae33e37f153dbf4f6561a9698145b9cf47912e183d6245c9"
+    },
+    {
+      "path": "cloud-sql-mysql-admin",
+      "name": "cloud-sql-mysql-admin",
+      "sha256": "091fbfa7088f3ade68a2458821dc7bdc51376bfe34f62b1b69ad9d0bddac0b46"
+    },
+    {
+      "path": "cloud-sql-mysql-data",
+      "name": "cloud-sql-mysql-data",
+      "sha256": "b866a1679c2431c4f57cb3f2dcc00ec6894f86e1bf81d81d4f410e45cf9d3bf5"
+    },
+    {
+      "path": "cloud-sql-mysql-lifecycle",
+      "name": "cloud-sql-mysql-lifecycle",
+      "sha256": "b7708e3db9107db39cfbb95c8a5842438173306dfa9a7964f9a865441139d2f8"
+    },
+    {
+      "path": "cloud-sql-mysql-monitor",
+      "name": "cloud-sql-mysql-monitor",
+      "sha256": "65ad7fa5a8f21ae4698cd583275661f2d76811cf18cd72075ad852140dd7b4ad"
+    },
+    {
+      "path": "cloud-sql-postgres-admin",
+      "name": "cloud-sql-postgres-admin",
+      "sha256": "473a4828e412eec7a93e3b6b240f8cf84a143f7c32eaea903c62e4a222bca267"
+    },
+    {
+      "path": "cloud-sql-postgres-data",
+      "name": "cloud-sql-postgres-data",
+      "sha256": "6d14fdec1c2ea0763a6ec2d404877e8648a59d873d0b84e9bafa2a59aedcbb3c"
+    },
+    {
+      "path": "cloud-sql-postgres-health",
+      "name": "cloud-sql-postgres-health",
+      "sha256": "fae447b0057ee6bb5debbebbda5c54de1322ebf0db3df65cd3ac021b4fafa20c"
+    },
+    {
+      "path": "cloud-sql-postgres-lifecycle",
+      "name": "cloud-sql-postgres-lifecycle",
+      "sha256": "db5c516e6a0f5feda9683e72ca7aebde56237927e4fe980a4442b5e17a94a2d4"
+    },
+    {
+      "path": "cloud-sql-postgres-monitor",
+      "name": "cloud-sql-postgres-monitor",
+      "sha256": "3488186173cd966a329d75048b6107ba6400a6a4d1afaf41053ab330b90cc5e0"
+    },
+    {
+      "path": "cloud-sql-postgres-replication",
+      "name": "cloud-sql-postgres-replication",
+      "sha256": "9e0b9779ae4cb82581a22d4ae275e924af4b3cc3443635e22e29196d5298332d"
+    },
+    {
+      "path": "cloud-sql-postgres-vectorassist",
+      "name": "cloud-sql-postgres-vectorassist",
+      "sha256": "fa0d7e8ea1b9eee58cb982e609b46a0aed282ee1d1dd8125ebf6421be29d5372"
+    },
+    {
+      "path": "cloud-sql-postgres-view-config",
+      "name": "cloud-sql-postgres-view-config",
+      "sha256": "1f7b59f766ba7b64cf33af24bbdc5f67831aac151c10b1615dc2a265bf47f96a"
+    },
+    {
+      "path": "cloud-sql-sqlserver-admin",
+      "name": "cloud-sql-sqlserver-admin",
+      "sha256": "5d5a9ade2840e8fac41b341e4b74b8953ee04c7e3422af64b8b2f82bc5bee556"
+    },
+    {
+      "path": "cloud-sql-sqlserver-data",
+      "name": "cloud-sql-sqlserver-data",
+      "sha256": "d2914ef7a7f0b4f752613a0500da3e1aa0018ebc42371dfe829f7f322ca90297"
+    },
+    {
+      "path": "cloud-sql-sqlserver-lifecycle",
+      "name": "cloud-sql-sqlserver-lifecycle",
+      "sha256": "ac64205dc8f28a3151ba7126254fe6c71f5de345b333fd1e6fdb285fe3a55ce4"
+    },
+    {
+      "path": "cloud-sql-sqlserver-monitor",
+      "name": "cloud-sql-sqlserver-monitor",
+      "sha256": "34e24553f60f28a24f1314177caef28e16dc6a43b27f66d85a6f45c8737cb251"
+    },
+    {
+      "path": "cut-mistakes",
+      "name": "cut-mistakes",
+      "sha256": "cde5f91dc605c82228b75896a08bd30736af1f0db9bbbe00da130d47ae67d4a3"
+    },
+    {
+      "path": "cut-silences",
+      "name": "cut-silences",
+      "sha256": "5479b51e8aee974d6b0e191c2c067167ec119a15090d32ad577fccb1a8303ee5"
+    },
+    {
+      "path": "data-autocleaning",
+      "name": "data-autocleaning",
+      "sha256": "2d4339a699687f70e8ee87420fcb8a892b510aef1f5def97fa3f75dc8a33219e"
+    },
+    {
+      "path": "dataform-bigquery",
+      "name": "dataform-bigquery",
+      "sha256": "2e3cc4fc22a803cdd61cd80654bc0f96e7707d6425c7b390b33c740bef3c6e87"
+    },
+    {
+      "path": "dbt-bigquery",
+      "name": "dbt-bigquery",
+      "sha256": "f43daa682f33d60f9d10459da27ba3c33127ce74f1b70578bc8aa63edba77328"
+    },
+    {
+      "path": "discovering-gcp-data-assets",
+      "name": "discovering-gcp-data-assets",
+      "sha256": "558a0e0738a9d9448463193371400a3a82c6e17d24b6915cd35477f5329d3bd4"
+    },
+    {
+      "path": "dogfood",
+      "name": "dogfood",
+      "sha256": "c4a2f82eb857096657f5bb8cde32f41edaa958105ab59e75e14c23cfa550b4b4"
+    },
+    {
+      "path": "edit-video",
+      "name": "edit-video",
+      "sha256": "ec14d6c9dafc58a965ec12754f8f6c9f59cc8504afe64fbbcdb2a01a031bf897"
+    },
+    {
+      "path": "embedded-captions",
+      "name": "embedded-captions",
+      "sha256": "e4c58462cfd2405782d04f56923ac1313ead0ea9bea812689c100be59c88be9b"
+    },
+    {
+      "path": "faceless-explainer",
+      "name": "faceless-explainer",
+      "sha256": "57898c9f83626a4cf3948dd70355a1720a98013cc05d7b3afb2500ea796a7090"
+    },
+    {
+      "path": "federate-lakehouse-catalog",
+      "name": "federate-lakehouse-catalog",
+      "sha256": "5b3e2480a91c8fe92c92b26c14447d1415cc31794272160e4bcf90882baf58cf"
+    },
+    {
+      "path": "figma",
+      "name": "figma",
+      "sha256": "43d1d2fb2bc4141598802170504766036a27af05e6b22d5b761a486ae324678d"
+    },
+    {
+      "path": "find-skills",
+      "name": "find-skills",
+      "sha256": "7aa4d679e744b97ab12ad10798202c7f9d7fc3808998dcade494e50c6f9bb1b7"
+    },
+    {
+      "path": "firestore-data",
+      "name": "firestore-data",
+      "sha256": "16841ed9ef081e63bb81ca10038beba6665021fc45ce2b31991439eebb73736d"
+    },
+    {
+      "path": "gcloud-auth-verification",
+      "name": "gcloud-auth-verification",
+      "sha256": "fcdd8ae4407ebc1cea71d06853decc9cebc356d4498b8b17347ecb6e9cce78b3"
+    },
+    {
+      "path": "gcp-composer-troubleshooting",
+      "name": "gcp-composer-troubleshooting",
+      "sha256": "5d9490d56980b30f29451a0e342b4a52420532c145e67dd1fa5488adf0e7e822"
+    },
+    {
+      "path": "gcp-data-pipelines",
+      "name": "gcp-data-pipelines",
+      "sha256": "9320eb3940628c68265fce533c8cc57a62626595cebf894e5c0855de5248fa9b"
+    },
+    {
+      "path": "gcp-dataflow",
+      "name": "gcp-dataflow",
+      "sha256": "9abf6cb8d9aaec574b8576bd41efe27a3c8d3b5079ff3a3328cd65298a1998ff"
+    },
+    {
+      "path": "gcp-managed-airflow-migrations",
+      "name": "gcp-managed-airflow-migrations",
+      "sha256": "f092d155b4de596bd64ab560f97a182476f4f4251f7a7aefd329e7cdff3a691f"
+    },
+    {
+      "path": "gcp-pipeline-orchestration",
+      "name": "gcp-pipeline-orchestration",
+      "sha256": "197afdeb6d5a0767c44aac04eba6e3eeae15ec3b0b80c42eb9197509a1e87498"
+    },
+    {
+      "path": "gcp-pipeline-resource-provisioning",
+      "name": "gcp-pipeline-resource-provisioning",
+      "sha256": "375d3a13d9fa91ee42b55ea5af7e57569c9ea702d46158573eec8f0055955ac9"
+    },
+    {
+      "path": "gcp-spark",
+      "name": "gcp-spark",
+      "sha256": "fd9cc357a764832ca64570201ee45941e6a2b6be32073db66089ca02b6f6604e"
+    },
+    {
+      "path": "gcs-security-assessment",
+      "name": "gcs-security-assessment",
+      "sha256": "43ac89783dd532b20485a53339c829f1db974609c5b6b2e057c6bbfab53ed8c0"
+    },
+    {
+      "path": "general-video",
+      "name": "general-video",
+      "sha256": "907b02eb2b32a071a9c954eca2d161e85f661bd32eee5c66ef65454ba5343ca5"
+    },
+    {
+      "path": "gsap",
+      "name": "gsap",
+      "sha256": "730476ba02cc56c8a59b3e4a897801923f463289cd386bccb56d01833be4441f"
+    },
+    {
+      "path": "hyperframes",
+      "name": "hyperframes",
+      "sha256": "c6331e984e08b31269bd7725fdc86f1c267409391c1270ac32ee76c6986f10b1"
+    },
+    {
+      "path": "hyperframes-animation",
+      "name": "hyperframes-animation",
+      "sha256": "a703e597d9270888245a5b496ddf34a05541a768a1c32d685e115bd7bf4f1f61"
+    },
+    {
+      "path": "hyperframes-cli",
+      "name": "hyperframes-cli",
+      "sha256": "e4c9c24005ed5da37d0a58dad313c95ef07a0547c7c664825a4c7ea0f7416fab"
+    },
+    {
+      "path": "hyperframes-core",
+      "name": "hyperframes-core",
+      "sha256": "4b6a2815041fd3fd9c6c1f31195bf2e065273cbeae45abab67ffa87c6d959591"
+    },
+    {
+      "path": "hyperframes-creative",
+      "name": "hyperframes-creative",
+      "sha256": "c33245179cdfda2260f8f28cdb13bcee3d5c955c58b8bd9fc19d8a42ece437d2"
+    },
+    {
+      "path": "hyperframes-keyframes",
+      "name": "hyperframes-keyframes",
+      "sha256": "b0850e0e538e5b94ed03471f4e98620fe4d2863ed7b115164dda0292e83838f7"
+    },
+    {
+      "path": "hyperframes-registry",
+      "name": "hyperframes-registry",
+      "sha256": "0248bfb9968d53ea8f9e4b5f7f5a8eb9e72f21108022580f7eba2fba7e26b234"
+    },
+    {
+      "path": "hyperframes-video-beats",
+      "name": "hyperframes-video-beats",
+      "sha256": "c0f13d7b38581cdacf27a453f8f2b9e9021b9fa069931b57c1055ba5ba8ac2c3"
+    },
+    {
+      "path": "make-a-video",
+      "name": "make-a-video",
+      "sha256": "ea1cf3faabea38f11b122324fe13f53b73ec8b3c06a793d084c5294e17fcf9c1"
+    },
+    {
+      "path": "managing-python-dependencies",
+      "name": "managing-python-dependencies",
+      "sha256": "7ad459a5a8188fa0f2b8cf3e5e479825e7d7e93e1724750cd1707d896cbd7a05"
+    },
+    {
+      "path": "media-use",
+      "name": "media-use",
+      "sha256": "ff87bce91280af8b1872a368f098b59506621d28e70e39af177cf703e502952c"
+    },
+    {
+      "path": "ml-best-practices",
+      "name": "ml-best-practices",
+      "sha256": "ae010fd52e6b29f9c18302c4bdb36ce444bfc5581a52a0e036ae1f0b6ab44473"
+    },
+    {
+      "path": "motion-graphics",
+      "name": "motion-graphics",
+      "sha256": "7d9a751a5ce3704b5287add2a799438f89f4a640b040e661e187f4913671643c"
+    },
+    {
+      "path": "motion-showreel",
+      "name": "motion-showreel",
+      "sha256": "fc1dcd162dedfe637f1b0727e555d92dc5ff14a27701107940035e828c64fba7"
+    },
+    {
+      "path": "music-to-video",
+      "name": "music-to-video",
+      "sha256": "d2a711b71750196af3949d82efcdd2bb493c11b8d10157cbaf52246d31fabfc4"
+    },
+    {
+      "path": "notebook-guidance",
+      "name": "notebook-guidance",
+      "sha256": "bddf53b2c3ab71eee53e83ef5c357adbe2f216ff324585f719da04e315a9862e"
+    },
+    {
+      "path": "pr-to-video",
+      "name": "pr-to-video",
+      "sha256": "8ee31418f38bca300072fdb1f6fe38b027e488a9a6ed990211ef0157ee27e72c"
+    },
+    {
+      "path": "product-launch-video",
+      "name": "product-launch-video",
+      "sha256": "7b6edfa7bd9c604af9620e2be39d7a809f2b359222c3e861f08083d3a803c878"
+    },
+    {
+      "path": "remotion-to-hyperframes",
+      "name": "remotion-to-hyperframes",
+      "sha256": "d57e2f399415daf64312b2a52a19a5bfd4987febaa888b23074cceff4eca149c"
+    },
+    {
+      "path": "reverse-engineer-anything",
+      "name": "reverse-engineer-anything",
+      "sha256": "fbcd39d6abe803cf7aa49c1880815bc8e22ba2af87a23681944f687bb7629eb1"
+    },
+    {
+      "path": "short-form-edit",
+      "name": "short-form-edit",
+      "sha256": "5c043591f5db84b216d9a3236bc258609e47bc1b712665ebba0522cc91d039ea"
+    },
+    {
+      "path": "short-form-video",
+      "name": "short-form-video",
+      "sha256": "426f505398e9e851f5f0c62d9f5fd33d27825a4efa8ba7b4d684cd944cc23725"
+    },
+    {
+      "path": "skill-repair",
+      "name": "skill-repair",
+      "sha256": "7ed4b7eb5d82d14686967967159aa472869313bd9804ced44b16eab4884b7f00"
+    },
+    {
+      "path": "skillshare",
+      "name": "skillshare",
+      "sha256": "5690c831ce7b7ca65bd3d73bc0a7adfc856184fdf7e3254d49efd794930fe5a6"
+    },
+    {
+      "path": "slideshow",
+      "name": "slideshow",
+      "sha256": "ae1c6793f4543334c48c37f9c5200a83f4d63be9933fc233431bcfb7ce10d1c8"
+    },
+    {
+      "path": "spanner-data",
+      "name": "spanner-data",
+      "sha256": "f54a0fa8818fa50f6db1b7fcd33c6cc14a60c78588a128f63b9ebc35b91cab13"
+    },
+    {
+      "path": "style-library",
+      "name": "style-library",
+      "sha256": "329fd9f082203c72adea81a229b242d1a6a264f81c4b38718708e60f4a577729"
+    },
+    {
+      "path": "superdesign",
+      "name": "superdesign",
+      "sha256": "ffc49eeb9a8c5c0dbd0a4f8e0493a8b04ab9cc190b4d71d4ca8aa992413ff0ae"
+    },
+    {
+      "path": "talking-head-recut",
+      "name": "talking-head-recut",
+      "sha256": "ce846002d179a5748b2aac320f1b37a0c47d210ab91cf2cd0858844737cd2220"
+    },
+    {
+      "path": "ui-ux-pro-max",
+      "name": "ui-ux-pro-max",
+      "sha256": "0745d56ffcce89040f60cc8c6de87418d67fe1dbcc5ddaf341d1c39322319c82"
+    },
+    {
+      "path": "unslop",
+      "name": "unslop",
+      "sha256": "9e49b2ff7643fa09729e8665890a18f6bfa58a82e6fcbba330da38136ccdc393"
+    },
+    {
+      "path": "video-storytelling",
+      "name": "video-storytelling",
+      "sha256": "83c3f54825fcad42f946bb8af28d7ea540c065e67e22f2b63962cc8056441129"
+    },
+    {
+      "path": "web-design-guidelines",
+      "name": "web-design-guidelines",
+      "sha256": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f"
+    },
+    {
+      "path": "website-to-hyperframes",
+      "name": "website-to-hyperframes",
+      "sha256": "61ec0a7309f0459d789fb3bc3ec254a52c64e838357d321b594cbde5a8514a12"
+    },
+    {
+      "path": "website-to-video",
+      "name": "website-to-video",
+      "sha256": "c1f95b34a9b842e091236c548d67d64e123d0d68a0c477b53685e0e6c7f7302b"
+    },
+    {
+      "path": "yuanbao",
+      "name": "yuanbao",
+      "sha256": "5096a9fffebde016665dae9620fff25aedc926b569d9fa023454d152c2e60aac"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/algorithmic-art",
+      "name": "algorithmic-art",
+      "sha256": "6688fc81bb2051d3f234385b50ce160834eb0b0510ed8a5816cc412c1d28c352"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/artifact-emulator",
+      "name": "artifact-emulator",
+      "sha256": "cf4934f52400409e9e7fa01a3fd1804b8d6ab8cf221e95df8a9462679ab75044"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/brand-guidelines",
+      "name": "brand-guidelines",
+      "sha256": "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/built-in-browser",
+      "name": "built-in-browser",
+      "sha256": "2b6a33da0ff4e041c1bcced2b5d2bd39efc5bfde8f5269cadcc4416ad7df4626"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/canvas-design",
+      "name": "canvas-design",
+      "sha256": "7bebc4a2cf108c55c1e52bb96b1050dc1ab2f9492e9c2d43f1fe57f826728f4d"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/chrome-browser",
+      "name": "chrome-browser",
+      "sha256": "c8b0afeee246f333529be3c73c49efaf7d9d10a46d8948b4b736cc758cb4e885"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/computer-use",
+      "name": "unified-computer-use",
+      "sha256": "92be277913f4619e6d1a3589fdd93c43e015bccfef4671722639dd08ace3292a"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/deep-research",
+      "name": "deep-research",
+      "sha256": "46ae8d5a0b95efad0329ac287ea5248c19fbbe195d8270231c4a78ba6217c024"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/doc-coauthoring",
+      "name": "doc-coauthoring",
+      "sha256": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/docs",
+      "name": "docs",
+      "sha256": "98e4fb5934042152d57bc9cb8c0736d5d8e31c6c0122b13ff5836f4c2411fa3e"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/docx",
+      "name": "docx",
+      "sha256": "b555a732276bba637440d124c1e1a3f8a322ad0441ae885a611c82083441cab7"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/google-workspace",
+      "name": "google-workspace",
+      "sha256": "51aeca6f46b1b521ca127767c61a0645b443ced8048091480944ef85258a30e5"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/import-memory",
+      "name": "import-memory",
+      "sha256": "5179b0780b7025c93271c181636a23acc8d05cad3b20584639cbaf1cf9c3b07a"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/internal-comms",
+      "name": "internal-comms",
+      "sha256": "067b7587a344a928fc6534ef66b1bcd591fc7c26d207ea7ca3334aeb678d6475"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/learn",
+      "name": "learn",
+      "sha256": "dd79b135afec2994f53065805d6dbca70b5c7175109a656503416c62f2da1201"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/mcp-builder",
+      "name": "mcp-builder",
+      "sha256": "b483b56d6673134497e45489c317f26ae0f1429c194db0297e43073e17e6748c"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/morning",
+      "name": "morning",
+      "sha256": "a7c4dbcb745799736991b027cceae39aae4880cc00ff43871ae5e87b38023bdd"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/pptx",
+      "name": "pptx",
+      "sha256": "3679488c7e497c9b2f14bf026f39624d4c45b9519d845bc08650ce31598b0d6a"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/react-doctor",
+      "name": "react-doctor",
+      "sha256": "8fbc96973418ace9d41b63abddeef2db6e66dcaa495b2f9075fff37d6e3d13c1"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/slack-gif-creator",
+      "name": "slack-gif-creator",
+      "sha256": "2efca615ce55a3edd8fc05c779068a8085816617991987e446606403cd3abb22"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/theme-factory",
+      "name": "theme-factory",
+      "sha256": "c35893e221e28895c52143cc11bf30e41a44817796b39d4b15727dadc9796552"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/vibe-security",
+      "name": "vibe-security",
+      "sha256": "f68c3f16effd69264f9836c511339e31469e89e6bad37f313c30f4626bd05143"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/web-artifacts-builder",
+      "name": "web-artifacts-builder",
+      "sha256": "81c5002c6643b0de7b8710b00e7a9038daa6fb9b68d59870ee6adb12da8d10f8"
+    },
+    {
+      "path": "synced/e213260f-116e-4df0-bf4e-5c1d0927f43d_f9633f34-a999-4b6b-b098-6a0d8bc28553/xlsx",
+      "name": "xlsx",
+      "sha256": "f32b1c2b5d5d31e02964df110d6489613d9345f86830c118cfe24159d8448ce6"
+    },
+    {
+      "path": "software-development/debugging-hermes-tui-commands",
+      "name": "debugging-hermes-tui-commands",
+      "sha256": "c2e3cb5131ecb40bb1ff51613f438aa2bb913b4600dda003025eebb3979df4c5"
+    },
+    {
+      "path": "software-development/hermes-agent-skill-authoring",
+      "name": "hermes-agent-skill-authoring",
+      "sha256": "86a74e8851d572c5a696fcba8d9666b298a53e0d81f2ef6a3aa28470dacc52de"
+    },
+    {
+      "path": "software-development/hermes-s6-container-supervision",
+      "name": "hermes-s6-container-supervision",
+      "sha256": "3d97ccc9468d1cdbf894eca1f6505486cf34bb2c92af89c1d8288205490d2624"
+    },
+    {
+      "path": "software-development/node-inspect-debugger",
+      "name": "node-inspect-debugger",
+      "sha256": "24bcedf106b95d4e425090bb6fcca15cd27783720608e001e671791d0d23d3ed"
+    },
+    {
+      "path": "software-development/plan",
+      "name": "plan",
+      "sha256": "490d206c2b18ac1f312d901ecb3da27000babd646c6accdd0fb378d048f36a16"
+    },
+    {
+      "path": "software-development/python-debugpy",
+      "name": "python-debugpy",
+      "sha256": "6edfa04793d4fef99a0eaa7f1a9c99ac12d6d240d90406b41d4823a60cc4a176"
+    },
+    {
+      "path": "software-development/requesting-code-review",
+      "name": "requesting-code-review",
+      "sha256": "b2ce29721544deb1ea0e28737f2dcf761bc2d4f86636df714e3590c40111c429"
+    },
+    {
+      "path": "software-development/spike",
+      "name": "spike",
+      "sha256": "1fe7d4897839be825d3a8612fc1ca1283e014d7db8a22e15718b4cc22286c6a0"
+    },
+    {
+      "path": "software-development/subagent-driven-development",
+      "name": "subagent-driven-development",
+      "sha256": "d9dac2bd83aa675b9277c5d5c3da68aa30c54c6311d82a0370ff6380cf912dd3"
+    },
+    {
+      "path": "software-development/systematic-debugging",
+      "name": "systematic-debugging",
+      "sha256": "21e0a3a39357340cdb6e2b996866ae4dcb4b464dedc3c9ffe92f1c007e2a827b"
+    },
+    {
+      "path": "software-development/test-driven-development",
+      "name": "test-driven-development",
+      "sha256": "526fe389e8b2e2e2e03ebcdf14f598ed01b6533ef6b7ab4ffea44ba9ba783632"
+    },
+    {
+      "path": "software-development/writing-plans",
+      "name": "writing-plans",
+      "sha256": "972174a7e8e0e1f4b2b8302033439689e4c43135a4867a24c720a23e59759286"
+    },
+    {
+      "path": "social-media/xurl",
+      "name": "xurl",
+      "sha256": "c473e0f03af2a84d47577ba844ce06a5ee63c4be8ddb5cdcc0839d9289998677"
+    },
+    {
+      "path": "smart-home/openhue",
+      "name": "openhue",
+      "sha256": "1bf154e8afd664f492273e88021850d031900402c263e3f91f0b71f0dab70fa2"
+    },
+    {
+      "path": "research/arxiv",
+      "name": "arxiv",
+      "sha256": "f33b79e6d282e774f8f011c3f409d761e37cce27b41a1e85a58f917a96c1d7c1"
+    },
+    {
+      "path": "research/blogwatcher",
+      "name": "blogwatcher",
+      "sha256": "344dd8f0584e07e3511d5bde63679fb4d336e904b74850351f7055ae8628cd60"
+    },
+    {
+      "path": "research/llm-wiki",
+      "name": "llm-wiki",
+      "sha256": "5c9e0975777322dbcb6c6e55538896506fdcfd5878ba28defce8341d3a38276c"
+    },
+    {
+      "path": "research/polymarket",
+      "name": "polymarket",
+      "sha256": "2e627882bb7edca82837eac46baeb38064c0438e2fde9abd407c57380973bb5e"
+    },
+    {
+      "path": "research/research-paper-writing",
+      "name": "research-paper-writing",
+      "sha256": "77925bfdfc6382644a0d4a8d6a3169814467c12a16ad2558994860d040602aa7"
+    },
+    {
+      "path": "red-teaming/godmode",
+      "name": "godmode",
+      "sha256": "08ace2bc87c709f7a1f44a5ad2ecfc0a3adaf977835b805fba0c835515664e62"
+    },
+    {
+      "path": "productivity/airtable",
+      "name": "airtable",
+      "sha256": "6f03fc14db96d5816bff0d4b354cb32aa05a5aa7337f33866def7371706563d9"
+    },
+    {
+      "path": "productivity/maps",
+      "name": "maps",
+      "sha256": "effbd8f7f2609fd5c288c3c576eed24508de208fbc832ad60373614850bb8264"
+    },
+    {
+      "path": "productivity/nano-pdf",
+      "name": "nano-pdf",
+      "sha256": "78f3bc74954db5e143253fa4b6c8265fc50cd1cc55b8dc540681c082eafcd3a4"
+    },
+    {
+      "path": "productivity/notion",
+      "name": "notion",
+      "sha256": "15da99368e2abb6d971dbb5250872015778c9ceb652d5761caa07adf43353f72"
+    },
+    {
+      "path": "productivity/ocr-and-documents",
+      "name": "ocr-and-documents",
+      "sha256": "249b1033cea02c40f52308f43c740d12790d1ef0674663b18f4ca75238776e36"
+    },
+    {
+      "path": "productivity/powerpoint",
+      "name": "powerpoint",
+      "sha256": "45a7803b050e025a1728af5e26c0b6436654f78857294b329d17703d24859377"
+    },
+    {
+      "path": "productivity/teams-meeting-pipeline",
+      "name": "teams-meeting-pipeline",
+      "sha256": "e94e13c174c3894faa07e19d7cc58be9599983473acd1c33593bea63f4ad67ba"
+    },
+    {
+      "path": "note-taking/obsidian",
+      "name": "obsidian",
+      "sha256": "d752e1d42da36294fbb6869b90ae39d97b429d9a0eb8664b0a8f452140f63a1f"
+    },
+    {
+      "path": "mlops/huggingface-hub",
+      "name": "huggingface-hub",
+      "sha256": "1c0564744b42e2e398294bb415e0f12ccc9bf102d75c7463217769e372c71d90"
+    },
+    {
+      "path": "mlops/research/dspy",
+      "name": "dspy",
+      "sha256": "a1633efa5bc86290bdee59e6536bc1bcde1a6a0606d375defa0010243d5446ee"
+    },
+    {
+      "path": "mlops/models/audiocraft",
+      "name": "audiocraft-audio-generation",
+      "sha256": "63f07d9ee2ad2e83fff561f472af1fab15773166fb8c636bef0083352af01d67"
+    },
+    {
+      "path": "mlops/models/segment-anything",
+      "name": "segment-anything-model",
+      "sha256": "198715c51b662f92e21fcdd4f8762427e9277827a0dad0fcfe3314264a3f845d"
+    },
+    {
+      "path": "mlops/inference/llama-cpp",
+      "name": "llama-cpp",
+      "sha256": "8c2c162b7d9545622b7c0467fa9d778899f7dceecb96a4f9a2ff917888230b59"
+    },
+    {
+      "path": "mlops/inference/obliteratus",
+      "name": "obliteratus",
+      "sha256": "7c137c9ceaaffe62446e0df2edf2dcb003d632405492407265df1ab510d541e7"
+    },
+    {
+      "path": "mlops/inference/vllm",
+      "name": "serving-llms-vllm",
+      "sha256": "c181ae2abff477b5754336cd8171dcac6902fe8961de0cb953ee2905d75c6bdc"
+    },
+    {
+      "path": "mlops/evaluation/lm-evaluation-harness",
+      "name": "evaluating-llms-harness",
+      "sha256": "ffcecb9f2b7af7b70a6815eff30f7f573895cbbcd71032a8f19ce205b134961c"
+    },
+    {
+      "path": "mlops/evaluation/weights-and-biases",
+      "name": "weights-and-biases",
+      "sha256": "87bc56a8a27df7186d33f1dbabed83dd20b0875e1313bd492d81736060c953f4"
+    },
+    {
+      "path": "media/gif-search",
+      "name": "gif-search",
+      "sha256": "b2bca8494b644e57f7ba2c04c4f0e386ad76414048b4b6f1d4920c977ee67c78"
+    },
+    {
+      "path": "media/heartmula",
+      "name": "heartmula",
+      "sha256": "088d91a19bbb8b50a8e558e655da88acf6e15be5211f7dfb9d9d4dc0605ecfae"
+    },
+    {
+      "path": "media/songsee",
+      "name": "songsee",
+      "sha256": "d399b3f6a85ba7f14bf59e7954013142c3f3737119e5e4a5c3470d1a13db36b1"
+    },
+    {
+      "path": "media/spotify",
+      "name": "spotify",
+      "sha256": "52178ff7594b41f52d112036343bbce791066d2946491a074e2be53c2d8b835f"
+    },
+    {
+      "path": "media/youtube-content",
+      "name": "youtube-content",
+      "sha256": "8203bc02b641c7ac58669b461ec62317fc40a8469d2b7a7b20e6e1bac9f730d4"
+    },
+    {
+      "path": "mcp/native-mcp",
+      "name": "native-mcp",
+      "sha256": "a8872ad978ac558548cf88528b0ebb936890303e58371fde486fd5f4ba21aaec"
+    },
+    {
+      "path": "imported/plugin-work-pets/create-pet",
+      "name": "create-pet",
+      "sha256": "841354fb8116f8fdfd3b643b30828f5180196c594d3fed9b669b948b88892af1"
+    },
+    {
+      "path": "imported/plugin-work-pets/pets",
+      "name": "pets",
+      "sha256": "1bf5d45fd6a6390aab777229293fb05cef7cf898aac882f8955e40c378e52fcd"
+    },
+    {
+      "path": "imported/plugin-work-pets/update-pet",
+      "name": "update-pet",
+      "sha256": "c63c98d67b6ad781a72a8f9837ba1fb5e2d2a8054a2562e4025890a97d8a0e67"
+    },
+    {
+      "path": "imported/plugin-visualize/visualize",
+      "name": "visualize",
+      "sha256": "05af0c7753ee8bf5074905570d9cda9f51e1550b90c3ba816228c587c579ca56"
+    },
+    {
+      "path": "imported/plugin-vercel/access-protected-vercel-deployment",
+      "name": "access-protected-vercel-deployment",
+      "sha256": "24d295fa893a22b318f19d87fc52865fc0e26fe43abea62ce787769d00a79fc6"
+    },
+    {
+      "path": "imported/plugin-vercel/agent-browser",
+      "name": "agent-browser",
+      "sha256": "fb2f5649ea808479a50f3f25de36de1ed55cdfae3971a45c79c29ada042d8a4c"
+    },
+    {
+      "path": "imported/plugin-vercel/agent-browser-verify",
+      "name": "agent-browser-verify",
+      "sha256": "51e0c58eb6fded833faccc44ce1f5161db78dbaefaa8af16187f3dfbc6aec26b"
+    },
+    {
+      "path": "imported/plugin-vercel/ai-elements",
+      "name": "ai-elements",
+      "sha256": "f31a5ceb606fbdf1ca0e81527cb55978dd957981f7e70db3ca678aaa4862e564"
+    },
+    {
+      "path": "imported/plugin-vercel/ai-gateway",
+      "name": "ai-gateway",
+      "sha256": "f3e5ad702d8eaafb07fb02db81b24d75added47dad1321c90b0f4996cccb41b6"
+    },
+    {
+      "path": "imported/plugin-vercel/ai-generation-persistence",
+      "name": "ai-generation-persistence",
+      "sha256": "82fb7247d1357dd0aac0cb4593d06a27dc9eaa8d982ff5557c187d63b4fbd373"
+    },
+    {
+      "path": "imported/plugin-vercel/ai-sdk",
+      "name": "ai-sdk",
+      "sha256": "9d6dd182e5e61afc94f7d3867012cfdc19ebbb634e4370e4ed7782919fc1038a"
+    },
+    {
+      "path": "imported/plugin-vercel/auth",
+      "name": "auth",
+      "sha256": "7a1ccb7beecef0959e224fef7de2bcf460e6f58c6685bd3359ec0e6103e063d4"
+    },
+    {
+      "path": "imported/plugin-vercel/bootstrap",
+      "name": "bootstrap",
+      "sha256": "2306dbb1343c5acfdf7aedcc5f27751bd73570e2a615e71c873f15f339616d6b"
+    },
+    {
+      "path": "imported/plugin-vercel/build-agents",
+      "name": "build-agents",
+      "sha256": "334a5f42b57d7536fae1971191dce34ad47487a17f21cab1cc6709d4119203fb"
+    },
+    {
+      "path": "imported/plugin-vercel/cdn-caching",
+      "name": "cdn-caching",
+      "sha256": "10f91d3abe3378046cffeb214871a9bceab3c3a1128015244f99e76fae283a3e"
+    },
+    {
+      "path": "imported/plugin-vercel/chat-sdk",
+      "name": "chat-sdk",
+      "sha256": "65b932858227ff89784636bbdf42e3573397175405397644c37310700ee169b1"
+    },
+    {
+      "path": "imported/plugin-vercel/cms",
+      "name": "cms",
+      "sha256": "52e4ef01c12b1f142c449218dff8f6bf11d052e83b65e7206906f736d9a78fcf"
+    },
+    {
+      "path": "imported/plugin-vercel/create-a-backend",
+      "name": "create-a-backend",
+      "sha256": "0ac49fd640ce4928588b1f9be65c17540dcec0b51f3a6d5b5fad3e6e1074ba86"
+    },
+    {
+      "path": "imported/plugin-vercel/cron-jobs",
+      "name": "cron-jobs",
+      "sha256": "2a580546feddc73e6658e776aed9053fd6a480574748d6427499679a934a460e"
+    },
+    {
+      "path": "imported/plugin-vercel/custom-metrics",
+      "name": "custom-metrics",
+      "sha256": "dda9871df28f58001367e6ee923912c3b41d3ed77a4ef665ce0552227760d4f1"
+    },
+    {
+      "path": "imported/plugin-vercel/deployments-cicd",
+      "name": "deployments-cicd",
+      "sha256": "61c628114c8703a9dc753ca94ee63f5b3d5cbd70fc5caa2b02d9dfd92ea5fa76"
+    },
+    {
+      "path": "imported/plugin-vercel/domains",
+      "name": "domains",
+      "sha256": "48d2b24366dae02b0e8bfe989b30127263f99105308687ab541518e96b613e49"
+    },
+    {
+      "path": "imported/plugin-vercel/email",
+      "name": "email",
+      "sha256": "481af3949749ec564febd539458bdffb152ac868fbf6d0d0f1c82b6fca63a39e"
+    },
+    {
+      "path": "imported/plugin-vercel/env-vars",
+      "name": "env-vars",
+      "sha256": "081d79b5b046276631c10b3db6ff07dbff4a59c057fc9bbc64aa364f82bb3045"
+    },
+    {
+      "path": "imported/plugin-vercel/eve",
+      "name": "eve",
+      "sha256": "5e8f3f3d79569288918a31381301e55a9a686dc92ec053f10eb5eda93d58d037"
+    },
+    {
+      "path": "imported/plugin-vercel/flags-sdk",
+      "name": "flags-sdk",
+      "sha256": "2149f8b2ff5ac44022103cd3f36895504bfc436698bd90fa7fe1bcd9b4e99cb4"
+    },
+    {
+      "path": "imported/plugin-vercel/geist",
+      "name": "geist",
+      "sha256": "9df187819184e0ce620b78e2a0af97661075b463ca61d0322569378a93eb9d63"
+    },
+    {
+      "path": "imported/plugin-vercel/geistdocs",
+      "name": "geistdocs",
+      "sha256": "92c51f3a579917b238e793c5b677d1aeb71fae4e97b95d10cbd79d2818608bba"
+    },
+    {
+      "path": "imported/plugin-vercel/investigation-mode",
+      "name": "investigation-mode",
+      "sha256": "59d9dd4660fc1c10750ec511decb8564ab0343f9b52faa0948bfb2f522deacfa"
+    },
+    {
+      "path": "imported/plugin-vercel/is-agentic",
+      "name": "is-agentic",
+      "sha256": "de940bb2d220866c0172f133bb58ed1c0687a858a5d024ef219781a6653b4ee4"
+    },
+    {
+      "path": "imported/plugin-vercel/json-render",
+      "name": "json-render",
+      "sha256": "fdcdb49618f5cdf925130d43771a1364060a58b0499b4ed47a27508b4879c007"
+    },
+    {
+      "path": "imported/plugin-vercel/knowledge-update",
+      "name": "knowledge-update",
+      "sha256": "9849b61e6bf847d9dc1f263ea6c7777f4c248ec53c93af43225e15c03f818aad"
+    },
+    {
+      "path": "imported/plugin-vercel/marketplace",
+      "name": "marketplace",
+      "sha256": "580f3cd836488f0c09ff092c498cbdfa04cd15f8404e465ae48845b53294300c"
+    },
+    {
+      "path": "imported/plugin-vercel/micro",
+      "name": "micro",
+      "sha256": "1c7ac4d7544f00222ef3894988f6d4d75fb087b5045941f793fd03fb4e141991"
+    },
+    {
+      "path": "imported/plugin-vercel/microfrontends",
+      "name": "microfrontends",
+      "sha256": "9dbe1a3db8bfa3441b1412b019f518e3b6af341564a3e84a7b1d0073af8eba05"
+    },
+    {
+      "path": "imported/plugin-vercel/ncc",
+      "name": "ncc",
+      "sha256": "8d42fe90c5af043ce384d7f57c1ef68843c3935d4d1603ab557984f8bc849764"
+    },
+    {
+      "path": "imported/plugin-vercel/next-forge",
+      "name": "next-forge",
+      "sha256": "6ce4505a8836187120feaeb06773897d0841229c292cc3b202df19380cd7af3e"
+    },
+    {
+      "path": "imported/plugin-vercel/nextjs",
+      "name": "nextjs",
+      "sha256": "66ac7942b8e320388e1663c2108a18354e8d70d541c67969807b4f634ac604f7"
+    },
+    {
+      "path": "imported/plugin-vercel/observability",
+      "name": "observability",
+      "sha256": "1eef5a68be48543a3527b968e9c9c20458f1951141d23f67c6a84970fb69d5b5"
+    },
+    {
+      "path": "imported/plugin-vercel/payments",
+      "name": "payments",
+      "sha256": "e26a3fab1d430f0fabfb909420cbc07ecc678d10d29952497bbbb5205ec60e93"
+    },
+    {
+      "path": "imported/plugin-vercel/queues",
+      "name": "queues",
+      "sha256": "38ad06c8c9785b944ce887a94bdb60511f4f6e8eda3b2fef01cadd5a1b16342b"
+    },
+    {
+      "path": "imported/plugin-vercel/react-best-practices",
+      "name": "react-best-practices",
+      "sha256": "5c1b1512e76413a9706309569c4c88827ed86b00dff9338849bf64caae7d3921"
+    },
+    {
+      "path": "imported/plugin-vercel/routing-middleware",
+      "name": "routing-middleware",
+      "sha256": "521821d60f7af332239ffcf896151e9eb625334c14202430ff60a91af3248165"
+    },
+    {
+      "path": "imported/plugin-vercel/runtime-cache",
+      "name": "runtime-cache",
+      "sha256": "b05ffa80629040a4a736946346befdc777bc0b67bd65838800f0656aca9fcae7"
+    },
+    {
+      "path": "imported/plugin-vercel/satori",
+      "name": "satori",
+      "sha256": "af0488fb0d5cc63caad0592297adcb703788dad0e9d944b6014a50b8c6337f9d"
+    },
+    {
+      "path": "imported/plugin-vercel/sign-in-with-vercel",
+      "name": "sign-in-with-vercel",
+      "sha256": "70e607a7cdef782d2ad2d2fd747fceedb2f7584da5f25f879421f4cf9592334d"
+    },
+    {
+      "path": "imported/plugin-vercel/swr",
+      "name": "swr",
+      "sha256": "c22a1535fd6950df4f046c43700471f415d60d5fb046cf90b64b9d77d4e4aea4"
+    },
+    {
+      "path": "imported/plugin-vercel/turbopack",
+      "name": "turbopack",
+      "sha256": "3f665cf083c39d5f7d0ddd16c4a2f04c251e488de87c72bd9fadb04b804691f6"
+    },
+    {
+      "path": "imported/plugin-vercel/turborepo",
+      "name": "turborepo",
+      "sha256": "8a2b3ad8e259aa01a484d1d63cf53580fece2a9176119e07725d58a6785e3a04"
+    },
+    {
+      "path": "imported/plugin-vercel/v0-dev",
+      "name": "v0-dev",
+      "sha256": "2b6ac0b65da7fafc3cf4525fe287d58ee9e7c528e0b56715f672e15cda774e4c"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-agent",
+      "name": "vercel-agent",
+      "sha256": "8e21f56eff1dea900988fddbd13971d21fb61dc692b9b76a102f02297a245144"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-api",
+      "name": "vercel-api",
+      "sha256": "21362b293106f9aceec723eba2394047c7756ebefd6ab8d994dcd8cddc3853a1"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-cli",
+      "name": "vercel-cli",
+      "sha256": "6399a7d4f2fc8b7202c46ae4a63380c32ff8a994bd952985ee3f9b0fbf25b756"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-connect",
+      "name": "vercel-connect",
+      "sha256": "07ad7f7cfe4ebd68cebf66c120086de49900381ba0f42a3a822adb13d922c49c"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-firewall",
+      "name": "vercel-firewall",
+      "sha256": "cc490dddcced6d2db0bdaa59aeebd3f38e9108b97ca8e9baae17afee685b3f7d"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-flags",
+      "name": "vercel-flags",
+      "sha256": "d062e65eb879c2fe7b99bbd204b007a55db301878de46e3d34a9deb21b1b1d7e"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-functions",
+      "name": "vercel-functions",
+      "sha256": "ac162ecba80415929a1c40f65beea13cb25f09baf3bfa87ce6d6e404962040c6"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-queues",
+      "name": "vercel-queues",
+      "sha256": "cb2362dbbd83027fb50c5bf148d888f09503ec9345e54e648a7c1014fc958871"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-sandbox",
+      "name": "vercel-sandbox",
+      "sha256": "db68a13177ba78c3eeabbe61256829c9b801d4332a05c8692e0c728124041d20"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-services",
+      "name": "vercel-services",
+      "sha256": "eb82b6a1aef40230c6a24ba58d7a4377e34c274aa83f910ba326992c93b7c384"
+    },
+    {
+      "path": "imported/plugin-vercel/vercel-storage",
+      "name": "vercel-storage",
+      "sha256": "b294915c90706b86edfc4f1dca4c33b519ecf5eee8acdbda2d7466f1b0f35bf4"
+    },
+    {
+      "path": "imported/plugin-vercel/verification",
+      "name": "verification",
+      "sha256": "1dd50aa65a4f8a287f8d8e2fbbaf4e52a3998451a9011659ab0ab38d19539932"
+    },
+    {
+      "path": "imported/plugin-vercel/workflow",
+      "name": "workflow",
+      "sha256": "23c2875814cbe17ea2f16f0f80b082a05943f59bb09bcc3631d392f6cbe33de3"
+    },
+    {
+      "path": "imported/plugin-test-android-apps/android-emulator-qa",
+      "name": "android-emulator-qa",
+      "sha256": "0ce182ad60db73ea663f0eab6793f4fbf63b4b4e2ebba596a61b7b3b8985eeac"
+    },
+    {
+      "path": "imported/plugin-test-android-apps/android-performance",
+      "name": "android-performance",
+      "sha256": "931867cdf98318c0efaad503c87f2e29e4650d97d4f2bc80e58490e0011aa791"
+    },
+    {
+      "path": "imported/plugin-template-creator/template-creator",
+      "name": "template-creator",
+      "sha256": "244bfef01d3e17c6013952ccf34621a90ddfee9c7828058245c3c46f51114944"
+    },
+    {
+      "path": "imported/plugin-supabase/supabase",
+      "name": "supabase",
+      "sha256": "1171386737b231610fa42485707272765c3516a9bbc0bd2c6c161a8cee3d7d33"
+    },
+    {
+      "path": "imported/plugin-supabase/supabase-postgres-best-practices",
+      "name": "supabase-postgres-best-practices",
+      "sha256": "ccd6e4596bd51cf344fe76c464867c541ccc16b6d90ae7a9db449fb17588613b"
+    },
+    {
+      "path": "imported/plugin-spreadsheets/excel-live-control",
+      "name": "excel-live-control",
+      "sha256": "55335802aeb641f8819f0020d4fa172b069376aaa00ab7934f3426d8a121509a"
+    },
+    {
+      "path": "imported/plugin-spreadsheets/spreadsheets",
+      "name": "Spreadsheets",
+      "sha256": "e7da45892e18a1c752714080687f526f63fbedc67636b6cc795c5de53950ffb3"
+    },
+    {
+      "path": "imported/plugin-slack/slack",
+      "name": "slack",
+      "sha256": "ea2ba119d90b56b6c4893616c3fa0fbe5cbeece3de0e3377ee73ad27c0d97197"
+    },
+    {
+      "path": "imported/plugin-slack/slack-channel-summarization",
+      "name": "slack-channel-summarization",
+      "sha256": "22c850678f86fa51c81777e4bb8113837ec6a72850cffee549747df386ddbff2"
+    },
+    {
+      "path": "imported/plugin-slack/slack-daily-digest",
+      "name": "slack-daily-digest",
+      "sha256": "48309fbbb5938296611b85281b43031cdd231325bca805fb715d1950cdbdef16"
+    },
+    {
+      "path": "imported/plugin-slack/slack-notification-triage",
+      "name": "slack-notification-triage",
+      "sha256": "6a4dff3c4c3e743de44edaeae40510d1faf4461651d226e68d16286cb7dbc9b9"
+    },
+    {
+      "path": "imported/plugin-slack/slack-outgoing-message",
+      "name": "slack-outgoing-message",
+      "sha256": "ee4ba4e26bb5ba0db5c868ffef4c0a3e3d8f3033100a8baae2792c1ecbee9ca4"
+    },
+    {
+      "path": "imported/plugin-slack/slack-reply-drafting",
+      "name": "slack-reply-drafting",
+      "sha256": "990f6f118d890521022edef5bcad954cc4b0e983ca14dccdb621e86144b92734"
+    },
+    {
+      "path": "imported/plugin-sites/sites",
+      "name": "sites",
+      "sha256": "e203320d1810d204b82f770288e08f232c3c87de416b234c11ad1694aaedb554"
+    },
+    {
+      "path": "imported/plugin-sites/sites-remix",
+      "name": "sites-remix",
+      "sha256": "34a249750d98e38f676fa391819593ab5c14e5f46f9137832a8c49180d47022d"
+    },
+    {
+      "path": "imported/plugin-sales/analyze-account-signals",
+      "name": "analyze-account-signals",
+      "sha256": "0aedda25d7117cede992c51301c03a8b05d74c313ccce538453149d389dfde65"
+    },
+    {
+      "path": "imported/plugin-sales/build-business-case",
+      "name": "build-business-case",
+      "sha256": "fb801fe8f2784588f21aac0454ebd6bb7df222c1f63364dd71bd11912cd09913"
+    },
+    {
+      "path": "imported/plugin-sales/build-competitive-brief",
+      "name": "build-competitive-brief",
+      "sha256": "acb019f84f5af6c3563db82d823c9e1d5b2dbf381d3c6e3d1f5cf08240e8c8c9"
+    },
+    {
+      "path": "imported/plugin-sales/demo-exec-and-seller-dash",
+      "name": "demo-exec-and-seller-dash",
+      "sha256": "0f0bfa860380c4c4fb19d935813e6c18cc7ac3b08187f769bd14ab93ce602cc5"
+    },
+    {
+      "path": "imported/plugin-sales/enrich-company-and-contact-data",
+      "name": "enrich-company-and-contact-data",
+      "sha256": "bb64962b47c8c9572b8de32350053bac34bd4adcd835d0112da6955ab6b5ff1c"
+    },
+    {
+      "path": "imported/plugin-sales/find-customer-quotes",
+      "name": "find-customer-quotes",
+      "sha256": "a544077cabb28559411e0e1b1aadfa189a8b9c50b62aa9e3ab1049558dac2475"
+    },
+    {
+      "path": "imported/plugin-sales/find-key-internal-sources",
+      "name": "find-key-internal-sources",
+      "sha256": "e0a35568732d31ad8412dc29040eee8cfd2bdd579cee64db95f99f77d15f8f9b"
+    },
+    {
+      "path": "imported/plugin-sales/follow-up-after-call",
+      "name": "follow-up-after-call",
+      "sha256": "a8eb5632ad029c169e446a5c03cbf108f3fe7031cc9c3e067a9a1d6dace63bec"
+    },
+    {
+      "path": "imported/plugin-sales/get-rep-call-feedback",
+      "name": "get-rep-call-feedback",
+      "sha256": "12eba9f71f2bb66ba7bd35fabbe1767150b21ba746a495b0b94d168e9353cd0f"
+    },
+    {
+      "path": "imported/plugin-sales/index",
+      "name": "sales-index",
+      "sha256": "0495df2c6932f65503c356c528eb659cfc7a09a561c7b44a74daa3dd7bda8e2e"
+    },
+    {
+      "path": "imported/plugin-sales/plan-deal-strategy",
+      "name": "plan-deal-strategy",
+      "sha256": "024b225e680d700be68c5a13d38299f8686e79d36c6cce5eb47ca9dc4b78315d"
+    },
+    {
+      "path": "imported/plugin-sales/prepare-for-meeting",
+      "name": "prepare-for-meeting",
+      "sha256": "8e081fb6f92e935adf0f54bd5cde44b03f298f93efb1f9d6a81dce5ccfb1ce77"
+    },
+    {
+      "path": "imported/plugin-sales/review-forecast",
+      "name": "review-forecast",
+      "sha256": "d42de7385c5a8873a7c91532be550bbe6238a2e65085830fa1de4408acb508fd"
+    },
+    {
+      "path": "imported/plugin-sales/review-rep-call-trends",
+      "name": "review-rep-call-trends",
+      "sha256": "5ca6bf7881004a892bd02e1359e31e85f5636f421595a7c901d99f01a0182fe2"
+    },
+    {
+      "path": "imported/plugin-sales/sales-company-research",
+      "name": "sales-company-research",
+      "sha256": "f00a88b8db4a6f08c282b6e3271ba41bd2558b42b4e5c7a8dbea344d1af9ee55"
+    },
+    {
+      "path": "imported/plugin-sales/sales-leadership-dashboard",
+      "name": "sales-leadership-dashboard",
+      "sha256": "00b77e8531197cfc20102fc397f3cba9440d440022adf2c2852327be16ed45b9"
+    },
+    {
+      "path": "imported/plugin-sales/sales-presentations",
+      "name": "sales-presentations",
+      "sha256": "3d371bc6004537329c1c1230af8aa891676d72bbd039989358da75e40cc34539"
+    },
+    {
+      "path": "imported/plugin-sales/seller-account-dashboard",
+      "name": "seller-account-dashboard",
+      "sha256": "6bbdc9e86399f42c918ebc1cf6e467be4fc07e492a656dc2845ecc3cb36a2e5f"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/catalyst-calendar",
+      "name": "catalyst-calendar",
+      "sha256": "bb2eab03fc32c33148dbcebf2278dc6160d7931377457d7424c3985b80d2d578"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/company-tearsheet",
+      "name": "company-tearsheet",
+      "sha256": "f019e98c2930e9ffbd3e9d4c8d9ffe819cdd5e005262ad65fc87d57a7c6d97fa"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/comps-valuation",
+      "name": "comps-valuation",
+      "sha256": "a75cb1105d70ba58778251cc1b22ae832e9072030e3d89382c1edb4f91599ebe"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/dcf-model-builder",
+      "name": "dcf-model-builder",
+      "sha256": "04a4e12498579301d1eb0eeef87413297f15bcbe305acf87100ad5dc1262d3bb"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/deck-report-qc",
+      "name": "deck-report-qc",
+      "sha256": "d016f3511d609e5226c815ccfb9ee7126e2e287d9c1625ca274e826cb2499307"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/earnings-deep-dive",
+      "name": "earnings-deep-dive",
+      "sha256": "ee5ee0f9e59f7790c4d7ed6fc71ac8919a1638e24b2506622a3f2c9bc4260c74"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/earnings-preview",
+      "name": "earnings-preview",
+      "sha256": "f83a7e594b79dd174030a00c940cd4cf28f4eaf6b2636450a8a67e95411d22d5"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/economic-impact-report",
+      "name": "economic-impact-report",
+      "sha256": "af2aefb507ee5af63a5b2ad1699f182e9bb4735e6786f041d20485a052d75508"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/equity-model-update",
+      "name": "equity-model-update",
+      "sha256": "ded00506f532132ce755431f2fb8fb5e1e4df78b869c6216add8d3aebb41d820"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/event-driven-analyzer",
+      "name": "event-driven-analyzer",
+      "sha256": "e96978520dec4573558388b6c73a50fa65d3062acde98a013503c3bcdaae0fd1"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/financials-normalizer",
+      "name": "financials-normalizer",
+      "sha256": "2b6489bf08a0dea7af765577f1479ee55049a7d006ceadcc6ead5bb6d389d9ed"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/idea-generation",
+      "name": "idea-generation",
+      "sha256": "b229510fbe3ec7338103f2db1606e1b3760ab7a7c80bd461e9a368845767757a"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/initiating-coverage",
+      "name": "initiating-coverage",
+      "sha256": "bd2a5a6eef43b7977092bc2fdf4525eae98ad7da081b43d93ba3f15d1fc38e7d"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/long-short-pitch",
+      "name": "long-short-pitch",
+      "sha256": "3b97e127ba9593cd447ace8ea705c8cfb174a70565ea7a7bf103df728e2dceac"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/meeting-prep",
+      "name": "meeting-prep",
+      "sha256": "3b5abfc59b96501ca460bb1626767a893506e1f572c1fb5e3664249e2f1d10f7"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/memo-builder",
+      "name": "memo-builder",
+      "sha256": "8d8964bc7026aa8a99ce9f517285932ee8754840b3796161d498330282468f06"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/model-audit-tieout",
+      "name": "model-audit-tieout",
+      "sha256": "f66665e9ffa2804490a59e1044ac7b4796ecb2b463b208e6a7b50b7b13b54f9c"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/portfolio-risk-management",
+      "name": "portfolio-risk-management",
+      "sha256": "2309006d9a7b618aeb5e74067d17b828aa5cd8e4e61d57142f972d3bbab07e93"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/public-equity-investing",
+      "name": "public-equity-investing",
+      "sha256": "63a63b89e5a65de1f4b5ef23f8a60ad01655dfbbb43c07018f4da29a1d32943d"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/scenario-sensitivity-generator",
+      "name": "scenario-sensitivity-generator",
+      "sha256": "5a554f29d983d5140fbe29fc71e81d3c27391cc28eb109bfc14746ab32cc8eb6"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/thesis-tracker",
+      "name": "thesis-tracker",
+      "sha256": "942b580a3395c6f6f320c5cad29ed57a4350ff16ef1131aca90cc387a77785d3"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/three-statement-model-builder",
+      "name": "three-statement-model-builder",
+      "sha256": "4c16c57378fb6903cb0866f60d0997d8788e886bb94687ae069d3999cb90f833"
+    },
+    {
+      "path": "imported/plugin-public-equity-investing/user-context",
+      "name": "public-equity-investing-user-context",
+      "sha256": "a95320133261709619b5fd0ff39ae6b9dfddf5392e9a3d5e19f41d06a637f63e"
+    },
+    {
+      "path": "imported/plugin-product-design/audit",
+      "name": "audit",
+      "sha256": "087f798c3fe02e91b4cca18cc0f42c358a4dc2c02ccf37a348b476fb19b64aa3"
+    },
+    {
+      "path": "imported/plugin-product-design/design-qa",
+      "name": "design-qa",
+      "sha256": "19303684c7c84e279f3582d784493a6f09d207d92a29e9b15b7056020bcf306e"
+    },
+    {
+      "path": "imported/plugin-product-design/get-context",
+      "name": "get-context",
+      "sha256": "151267c873003b7b03715c0842ef798369420464844218492f732edd2f6f7fd1"
+    },
+    {
+      "path": "imported/plugin-product-design/ideate",
+      "name": "ideate",
+      "sha256": "649e8782ca93d5aece712964fae5be2b111cc3143577e1507b98df7f9d8e6bde"
+    },
+    {
+      "path": "imported/plugin-product-design/image-to-code",
+      "name": "image-to-code",
+      "sha256": "694b4102bc339e3038173f8063d83a19e08d2a2cfab1f2e478d6412870a61ff0"
+    },
+    {
+      "path": "imported/plugin-product-design/index",
+      "name": "product-design-index",
+      "sha256": "03a8f0b78892fc5a005c5703500bac89ea1659e664a1e98e0ad8b27ae1aeb1b3"
+    },
+    {
+      "path": "imported/plugin-product-design/research",
+      "name": "research",
+      "sha256": "bf824e72dd93941c8d591e4af13bb7e3a09380cd6ed7dd8c1f61a295648fa023"
+    },
+    {
+      "path": "imported/plugin-product-design/share",
+      "name": "share",
+      "sha256": "19327c50a52f3b9e2ebfcef47d394d988bd6f4c64524c98f665d43bdf5f02c45"
+    },
+    {
+      "path": "imported/plugin-product-design/url-to-code",
+      "name": "url-to-code",
+      "sha256": "2624d0e2ec5f14ba2a4bf74fe05aaa23520b4fb76ca57973c9dadd54fd4b09d2"
+    },
+    {
+      "path": "imported/plugin-product-design/user-context",
+      "name": "product-design-user-context",
+      "sha256": "f6c28feae12a567f7a66dd440e0a458afad025572a44a055d130e81d383c179e"
+    },
+    {
+      "path": "imported/plugin-presentations/presentations",
+      "name": "Presentations",
+      "sha256": "97fedde4ba6c9b9aa56e12b05b13acf035c29f9cd2f6906b8f27ceab11aea9a8"
+    },
+    {
+      "path": "imported/plugin-plugin-management/plugin-management",
+      "name": "plugin-management",
+      "sha256": "653841cc21205269f08b0ce135891e1518dac616a766bcfb0b57d788d3f68b10"
+    },
+    {
+      "path": "imported/plugin-pdf/pdf",
+      "name": "pdf",
+      "sha256": "5e14b4b8f944dc5e678ee703dfacf583010431d64d5d829902c5b2541f736c89"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-analytics-dashboard",
+      "name": "artifact-template-analytics-dashboard",
+      "sha256": "cf5360fd8b197673bb237c52c603c97fa319c875c3dfa2cd8efff52d4422f513"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-business-review",
+      "name": "artifact-template-business-review",
+      "sha256": "27721fc1d67d1b41949caa75ac8f94f81952ff124406878af6524047929e60d2"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-design-report",
+      "name": "artifact-template-design-report",
+      "sha256": "563722f53854e606f8a9f87e37e72d7ef70a22d46d5836b8e4d6abfb1b79e9e0"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-experiment-analysis",
+      "name": "artifact-template-experiment-analysis",
+      "sha256": "0b05effc47df0a14f8e0c3e3597e6722224747435546385d38a2cae279bd20b9"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-financial-budget",
+      "name": "artifact-template-financial-budget",
+      "sha256": "c0b6b7a62a15597aaf2b1ec679e21da48f533b756127f0aef957cdfe9f3da738"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-investment-committee-memo",
+      "name": "artifact-template-investment-committee-memo",
+      "sha256": "68abd08cfe5e073e3c446a3f675f44c5bf98f57434dba679e8acd8a763379a8b"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-legal-memorandum",
+      "name": "artifact-template-legal-memorandum",
+      "sha256": "51fb9d21baf6119c4ccb1903638a6bac0e859210de63460fffa7025d52e997e0"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-market-trends-report",
+      "name": "artifact-template-market-trends-report",
+      "sha256": "d58d019b89cb6f292ac3ab991d561489eef477ff53ce05fb024a0c936f5af26a"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-minimal-letterhead",
+      "name": "artifact-template-minimal-letterhead",
+      "sha256": "880ef094d4d0c89a7bde5ce9bbe4086625c186651e9e6efc8ba8bdd7cc77f9d5"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-operating-calendar",
+      "name": "artifact-template-operating-calendar",
+      "sha256": "33bb660791a0b9a21628a42c34934932220203b6aabd84e98cb1b45327d0384c"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-operating-review",
+      "name": "artifact-template-operating-review",
+      "sha256": "6d63c5cd025ffe936e7bab5db3023672bbaec26af55c2bb8b057d38c202c9c32"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-project-kickoff",
+      "name": "artifact-template-project-kickoff",
+      "sha256": "aa893ebd89e7c8d1db4261d01cc2b1add35d78d00785871ccaaa5fc8db783ec9"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-project-tracker",
+      "name": "artifact-template-project-tracker",
+      "sha256": "d97d5be20189b7f53dd269b6e1c5f694eaf53e5a72f6559fcb1578911b7cda82"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-sales-pipeline",
+      "name": "artifact-template-sales-pipeline",
+      "sha256": "15cfeeedf440021f16ed3f3ad8c7c1ef6d48898b9447741e223d2fb41cfc9800"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-simple-dark-mode",
+      "name": "artifact-template-simple-dark-mode",
+      "sha256": "b7c8d0c05f75878b9bc21e56a57c41ec1aa29700aca0a24822be0f9f1bd53207"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-simple-light-mode",
+      "name": "artifact-template-simple-light-mode",
+      "sha256": "7c68430c6cf57b55b457d4735dbd1a46b889bef135a32222902dd0848b6e1752"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-strategy-memorandum",
+      "name": "artifact-template-strategy-memorandum",
+      "sha256": "51d7882ac94e8e57b323394825728c33925af878806e37277217c2dc12a912e5"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-system-design",
+      "name": "artifact-template-system-design",
+      "sha256": "87f7b7ed1b0d8410f5e5971cd7f7db9a4165e2f37069e97e52dbfb469b75a57c"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-team-alignment",
+      "name": "artifact-template-team-alignment",
+      "sha256": "26d7cafdcd1899a937b325c5d02ac57c162d45002153be33a934d35f81eb6110"
+    },
+    {
+      "path": "imported/plugin-openai-templates/artifact-template-three-statement-forecast",
+      "name": "artifact-template-three-statement-forecast",
+      "sha256": "74f4a5cccec0107b861548b157e04c51d9b58ec13a990c86394b4c529b8ecf41"
+    },
+    {
+      "path": "imported/plugin-openai-developers/agents",
+      "name": "agents",
+      "sha256": "1918f74c7509ef03916f0a5c6fd85a35c66faba65e26948e41cd2351cf61f334"
+    },
+    {
+      "path": "imported/plugin-openai-developers/devday-guide",
+      "name": "devday-guide",
+      "sha256": "ce990a4ea0a0bdba54c1a361aeedad17809048c862c6ac979333a6fba961d774"
+    },
+    {
+      "path": "imported/plugin-openai-developers/openai-api-migration",
+      "name": "openai-api-migration",
+      "sha256": "164c5bbb64ca525d78a730256cf43d60ed6fcfe9ef1344a1ba72c89b75f3a3f8"
+    },
+    {
+      "path": "imported/plugin-openai-developers/openai-api-troubleshooting",
+      "name": "openai-api-troubleshooting",
+      "sha256": "63d0a10934b6f999aa85fee64ef6086907e2cfeff15e614b5ce5b07d421d6956"
+    },
+    {
+      "path": "imported/plugin-openai-developers/openai-computer-use",
+      "name": "openai-computer-use",
+      "sha256": "632b415596fadfccf4432901614e989837bdf524aedf79cdea0dcd6caecd918f"
+    },
+    {
+      "path": "imported/plugin-openai-developers/openai-platform-api-key",
+      "name": "openai-platform-api-key",
+      "sha256": "8198e7497978ad1581fa8dcc01c2c5a88c3fb0a87dbfb505547dea012c985adc"
+    },
+    {
+      "path": "imported/plugin-openai-developers/setup",
+      "name": "openai-developers-setup",
+      "sha256": "1f4d749045be7c3d6c4badef50a80dbdcd281717b0ad914bbf37e3d1e4f491cd"
+    },
+    {
+      "path": "imported/plugin-notion/notion-build-my-engineering-wiki",
+      "name": "notion-build-my-engineering-wiki",
+      "sha256": "8ad30fbcbaabfd0ad4f9d6abd38911b976dd2b6b793a7684cae71bd24cfc2af9"
+    },
+    {
+      "path": "imported/plugin-notion/notion-create-my-team-handbook",
+      "name": "notion-create-my-team-handbook",
+      "sha256": "22e78b9c7338a98004ce7ffe0d9fc238ed28e08a24e6f83b05de1a370df97179"
+    },
+    {
+      "path": "imported/plugin-notion/notion-database-designer",
+      "name": "notion-database-designer",
+      "sha256": "b2609b495d5d317cc858fd17db6e80c26f195207872ad8e68f886425ad30731a"
+    },
+    {
+      "path": "imported/plugin-notion/notion-knowledge-capture",
+      "name": "notion-knowledge-capture",
+      "sha256": "35cc3475d9cf5c31b9dd2dcc5cce801c58001cf1b6bbaa194256b686b6c80a2a"
+    },
+    {
+      "path": "imported/plugin-notion/notion-meeting-intelligence",
+      "name": "notion-meeting-intelligence",
+      "sha256": "71541caa4fb9bb9674269ab6a7b09b6e85be07104c7c7466c781d7781db0a96d"
+    },
+    {
+      "path": "imported/plugin-notion/notion-meeting-prep",
+      "name": "notion-meeting-prep",
+      "sha256": "186423d8984b257e6f753da01d77b5ba0618bcfe43f749f76a1281ddcdccffa0"
+    },
+    {
+      "path": "imported/plugin-notion/notion-organize-my-semester",
+      "name": "notion-organize-my-semester",
+      "sha256": "c69be154679ed24cb1545a233c3100b4d47ef574843fd37c10eee97ff69c2554"
+    },
+    {
+      "path": "imported/plugin-notion/notion-plan-marketing-campaigns",
+      "name": "notion-plan-marketing-campaigns",
+      "sha256": "c653019c788afd5176dd31e4ed7fcd470947c54dcc66f41cdd1f9b74a9918d38"
+    },
+    {
+      "path": "imported/plugin-notion/notion-research-documentation",
+      "name": "notion-research-documentation",
+      "sha256": "ce8bb8ba0f9f5171630d7543489560f7c987860ddc11e9161f31743041e722f1"
+    },
+    {
+      "path": "imported/plugin-notion/notion-set-up-my-project",
+      "name": "notion-set-up-my-project",
+      "sha256": "2e40b00ca84e18b26e9a13898cecb07050d902b62ed488ec46bae7521b1771ad"
+    },
+    {
+      "path": "imported/plugin-notion/notion-setup",
+      "name": "notion-setup",
+      "sha256": "263e633e0fbe11a8a9f8d7f6c0afbb3f2e2ead6236c1f8820f218c64054bf312"
+    },
+    {
+      "path": "imported/plugin-notion/notion-spec-to-implementation",
+      "name": "notion-spec-to-implementation",
+      "sha256": "ef93b26862358f2bd058fb68b471813d6f4f01a31e81bfb862d924e978ab7a83"
+    },
+    {
+      "path": "imported/plugin-notion/notion-weekly-project-digest",
+      "name": "notion-weekly-project-digest",
+      "sha256": "f11408fdf9bbd312ac4ebdfcba7d5d32822668c8ecb85c032cf611ac73c9d087"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-access-control",
+      "name": "netlify-access-control",
+      "sha256": "10f4c030449380d5a02f97af33444fed287c3d7a51ef9b43901ffcbb722c0ea8"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-agent-runner",
+      "name": "netlify-agent-runner",
+      "sha256": "b76e52a0251b36493e8ab0729cce9f68cb7adea5d0ae88cb3e6a0c9cbe028588"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-ai-gateway",
+      "name": "netlify-ai-gateway",
+      "sha256": "5bb82e44e594fdd74bb682ad39927139257868ce7115259e17e914ee547b0630"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-blobs",
+      "name": "netlify-blobs",
+      "sha256": "4b2e885e83a19a497f0a238f0a30fdd9deb82d934b879249f5fe5ff0fdfc23a6"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-caching",
+      "name": "netlify-caching",
+      "sha256": "576a6443fabdac489155955382b22b28ccc986f24ab2b1e4fbafbaf3da03e198"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-cli-and-deploy",
+      "name": "netlify-cli-and-deploy",
+      "sha256": "c38e45c7271cccdeb03e7afc5a83c89891ac6ab01128a854a4aad223cd79bd7f"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-config",
+      "name": "netlify-config",
+      "sha256": "6d89b0a14604dd8b7a5a83fb7b67bbe3600253d711c1766ad3cfb62e0639e042"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-database",
+      "name": "netlify-database",
+      "sha256": "c4eb3739c7079fabd513bf2c4b19f763a66edb6f1130214a86e2d83f2cbae4a1"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-deploy",
+      "name": "netlify-deploy",
+      "sha256": "70ee386212e6afe02a240f05f67be97753eec6ab8789dd89d103216bc325faa8"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-edge-functions",
+      "name": "netlify-edge-functions",
+      "sha256": "fbbf95129c20704efa99f4a29b6ca4b642d68d8f4bdf1d6faa505f112cd64787"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-forms",
+      "name": "netlify-forms",
+      "sha256": "2e3d9871df526dd29a0a0f908cf161341d929773ee7fa54bccedd0ff8e67bfa4"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-frameworks",
+      "name": "netlify-frameworks",
+      "sha256": "1e75968abefff35445d97cd5861cbbec3b25019b756403cf60f84f5e2632322e"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-functions",
+      "name": "netlify-functions",
+      "sha256": "a1e6d67d52ba306f35966985792854a1aad08c7caed936c0f7b05e32ef418142"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-identity",
+      "name": "netlify-identity",
+      "sha256": "7266e77ce466f012605d414b6fa0ccf935f7d4fcdf1d4f71a24a8b2c5c10c373"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-image-cdn",
+      "name": "netlify-image-cdn",
+      "sha256": "cc7e05af6c15be54dc81938fe5fa2846a89a31953c7783c7c14e51270cbd8e15"
+    },
+    {
+      "path": "imported/plugin-netlify/netlify-mcp-servers",
+      "name": "netlify-mcp-servers",
+      "sha256": "ecb6f37c2803360dbc7aa776f7da15831055a2971bffe35e79de30285bfb6579"
+    },
+    {
+      "path": "imported/plugin-linear/linear",
+      "name": "linear",
+      "sha256": "a36e9ae9d2ed3f08d3f310454b1832d2f911e47471cdaf0139007ad23c339a28"
+    },
+    {
+      "path": "imported/plugin-life-science-research/alphafold-skill",
+      "name": "alphafold-skill",
+      "sha256": "235f2c593d3bbcaac5870dc9b312d5e98ac4b4cceaf30a227f9d548638629d46"
+    },
+    {
+      "path": "imported/plugin-life-science-research/bgee-skill",
+      "name": "bgee-skill",
+      "sha256": "14f3c56959fe2d67a4816a20d98d69856b34026045af6c8dcc5eb9f61037fb63"
+    },
+    {
+      "path": "imported/plugin-life-science-research/bindingdb-skill",
+      "name": "bindingdb-skill",
+      "sha256": "2970d17910aee62a128f26323af104b9211e38a0f7276436eee427e9ba591bca"
+    },
+    {
+      "path": "imported/plugin-life-science-research/biobankjapan-phewas-skill",
+      "name": "biobankjapan-phewas-skill",
+      "sha256": "c53989f35e9045bb59d4b9eaf3d797bdbad9931d63b80662079cae033c8de6c1"
+    },
+    {
+      "path": "imported/plugin-life-science-research/biorxiv-skill",
+      "name": "biorxiv-skill",
+      "sha256": "48eac49dcb55439a1f9aba028d7e3c7db52c3fe960624b20ed554882221076e0"
+    },
+    {
+      "path": "imported/plugin-life-science-research/biostudies-arrayexpress-skill",
+      "name": "biostudies-arrayexpress-skill",
+      "sha256": "2f380754ca68ed0dda554296b7399a8dabc94f236bfda4e57ed72f2291c233e0"
+    },
+    {
+      "path": "imported/plugin-life-science-research/cbioportal-skill",
+      "name": "cbioportal-skill",
+      "sha256": "0e2bd2934782db8334664499be632df86cafa3d0bc3d44a6ad34835c6bdba054"
+    },
+    {
+      "path": "imported/plugin-life-science-research/cellxgene-skill",
+      "name": "cellxgene-skill",
+      "sha256": "5701df063a3b12590811b3da8b0495a28465e4691f97c85345bbe5f2a9cb3389"
+    },
+    {
+      "path": "imported/plugin-life-science-research/chebi-skill",
+      "name": "chebi-skill",
+      "sha256": "32291dba45a6ea84cf72acffdfdef1de355ee24abaa95c662cd20019b41dbd67"
+    },
+    {
+      "path": "imported/plugin-life-science-research/chembl-skill",
+      "name": "chembl-skill",
+      "sha256": "85365ad57ad4e76fa87273a6069eb3748d9a101c92c048d7a0c34bd38faec792"
+    },
+    {
+      "path": "imported/plugin-life-science-research/civic-skill",
+      "name": "civic-skill",
+      "sha256": "f1bf30d089cba61d5ed632a6cbe0c102d314fa54cf47966b2637392e3284c6c0"
+    },
+    {
+      "path": "imported/plugin-life-science-research/clinicaltrials-skill",
+      "name": "clinicaltrials-skill",
+      "sha256": "5c03a8faa9c550db6f0a3be26fdd8c63c57f5d3f370865a973525c98c633dad4"
+    },
+    {
+      "path": "imported/plugin-life-science-research/clinvar-variation-skill",
+      "name": "clinvar-variation-skill",
+      "sha256": "93a918271491e6ccdf9f41f276afb3bf5ed7215aee433de5cd534244734b2054"
+    },
+    {
+      "path": "imported/plugin-life-science-research/efo-ontology-skill",
+      "name": "efo-ontology-skill",
+      "sha256": "b91c3641396159ab48e436d306c2b18bf94c27d9cf5d447f89fb24f6797c227d"
+    },
+    {
+      "path": "imported/plugin-life-science-research/encode-skill",
+      "name": "encode-skill",
+      "sha256": "e1db9e790253f3b7c49fc3b48c84d894def187156a5834aeff4a53724a574896"
+    },
+    {
+      "path": "imported/plugin-life-science-research/ensembl-skill",
+      "name": "ensembl-skill",
+      "sha256": "827bc7422b77b8be3bd6ad64fe663da0ad4a02e3fbc3683187c3828d9d59d0b2"
+    },
+    {
+      "path": "imported/plugin-life-science-research/epigraphdb-skill",
+      "name": "epigraphdb-skill",
+      "sha256": "bc83bb8ad121e8d84ee34b3cb78e952a4df5f434bb482435f2a59a3afca74154"
+    },
+    {
+      "path": "imported/plugin-life-science-research/eqtl-catalogue-skill",
+      "name": "eqtl-catalogue-skill",
+      "sha256": "ad0e8921f17cfee942ef002a0ccbd2e7b9a375e0e691484f4f5c00720778d0b2"
+    },
+    {
+      "path": "imported/plugin-life-science-research/eva-skill",
+      "name": "eva-skill",
+      "sha256": "f5b3d0f50d7db57a1858ef6793836d51910d16287456a98932ea2a109ffc3ecf"
+    },
+    {
+      "path": "imported/plugin-life-science-research/finngen-phewas-skill",
+      "name": "finngen-phewas-skill",
+      "sha256": "8eb1c7717c26f400785709fa5d1150400557951ff19eb63cdec3e54bf7866047"
+    },
+    {
+      "path": "imported/plugin-life-science-research/genebass-gene-burden-skill",
+      "name": "genebass-gene-burden-skill",
+      "sha256": "08e29bad26cdd03cafb33a5899447d9b2167dbda91c948fcd8f7bb48a081cb7c"
+    },
+    {
+      "path": "imported/plugin-life-science-research/gnomad-graphql-skill",
+      "name": "gnomad-graphql-skill",
+      "sha256": "38c639cae96f95bbc62a913aca32ef7208d22b24e92649a80c0076a99665dc2e"
+    },
+    {
+      "path": "imported/plugin-life-science-research/gtex-eqtl-skill",
+      "name": "gtex-eqtl-skill",
+      "sha256": "648452c7d70b94d1b2d610d16043980c2e18a4cb0aa48f18d333befd05da313f"
+    },
+    {
+      "path": "imported/plugin-life-science-research/gwas-catalog-skill",
+      "name": "gwas-catalog-skill",
+      "sha256": "1dafb3e0724fedd0ab4896c45faf6ca6bdfa4a788349ba8b33c020a5152177dc"
+    },
+    {
+      "path": "imported/plugin-life-science-research/hmdb-skill",
+      "name": "hmdb-skill",
+      "sha256": "ac7c08aff3e1e0644275ffa9d53ef31ff4343530240d72514a84f287e37f69e6"
+    },
+    {
+      "path": "imported/plugin-life-science-research/human-protein-atlas-skill",
+      "name": "human-protein-atlas-skill",
+      "sha256": "8ab46bfeb53c8f24d481c83ee7be0a7c154802dcaa892e481c7ebc64c1f1e0a4"
+    },
+    {
+      "path": "imported/plugin-life-science-research/ipd-skill",
+      "name": "ipd-skill",
+      "sha256": "d4779764af6c179572aa15702a6890bb2b20e43cd5eb289a9b21c49b8014f8fd"
+    },
+    {
+      "path": "imported/plugin-life-science-research/locus-to-gene-mapper-skill",
+      "name": "locus-to-gene-mapper-skill",
+      "sha256": "f5b034165015042c08d246d8ad7ad0ea2107b5e5662cee62b3fc2185cd9e78e3"
+    },
+    {
+      "path": "imported/plugin-life-science-research/metabolights-skill",
+      "name": "metabolights-skill",
+      "sha256": "c225ca1a57df75c98be2b6bb4c528a9e5ddbda37e87eec0e3e2515dbab40a4be"
+    },
+    {
+      "path": "imported/plugin-life-science-research/mgnify-skill",
+      "name": "mgnify-skill",
+      "sha256": "89ee826a06dd25495866f8cfe44f120dc48a2d43fc30cfbc06bad7c2284a6894"
+    },
+    {
+      "path": "imported/plugin-life-science-research/ncbi-blast-skill",
+      "name": "ncbi-blast-skill",
+      "sha256": "d8c8a8d8b4a1c11735b532190e1993f3151f849deeae2e06e5f6e9b63d2f3e54"
+    },
+    {
+      "path": "imported/plugin-life-science-research/ncbi-clinicaltables-skill",
+      "name": "ncbi-clinicaltables-skill",
+      "sha256": "d1d0236ab7dbf86e8ee167b080ecc9ebf74868153d42f9071ef27fc6bb375dfc"
+    },
+    {
+      "path": "imported/plugin-life-science-research/ncbi-datasets-skill",
+      "name": "ncbi-datasets-skill",
+      "sha256": "3c8d35f28d9d514e81fb401e69e3791a8fde00850841e94c98e9543e1f899a60"
+    },
+    {
+      "path": "imported/plugin-life-science-research/ncbi-entrez-skill",
+      "name": "ncbi-entrez-skill",
+      "sha256": "bd0369fd49c1f3fb3358816519c8cb544fc0d479961fda17b410416eb835e386"
+    },
+    {
+      "path": "imported/plugin-life-science-research/ncbi-pmc-skill",
+      "name": "ncbi-pmc-skill",
+      "sha256": "4284ebc946c1fefdc3007a2494459aa6ccfec0ebc06533c5f0b756b6575100e4"
+    },
+    {
+      "path": "imported/plugin-life-science-research/opentargets-skill",
+      "name": "opentargets-skill",
+      "sha256": "d16175cc40caf563a1204193dffe436a25dd0b1dddf3ec317a91646f531fcc37"
+    },
+    {
+      "path": "imported/plugin-life-science-research/pharmgkb-skill",
+      "name": "pharmgkb-skill",
+      "sha256": "36aa3da151d8c1efc00f41b313eaac70ebcbcc5366e5a775ffbfea6f7dd9b1a8"
+    },
+    {
+      "path": "imported/plugin-life-science-research/pride-skill",
+      "name": "pride-skill",
+      "sha256": "31125ba4001962ecaa03d51e52a78d49aee2aea76d6f54a200ddaa986e7b167d"
+    },
+    {
+      "path": "imported/plugin-life-science-research/proteomexchange-skill",
+      "name": "proteomexchange-skill",
+      "sha256": "100563cad63f1d14c2ff1cf94a2c492a055d09522d083285b41ffa0891b80e18"
+    },
+    {
+      "path": "imported/plugin-life-science-research/pubchem-pug-skill",
+      "name": "pubchem-pug-skill",
+      "sha256": "5728f5fe20c3d3e63e10236e806f5d561560b5609ebaf13db1c244cd7e382b83"
+    },
+    {
+      "path": "imported/plugin-life-science-research/quickgo-skill",
+      "name": "quickgo-skill",
+      "sha256": "996c55b8e0d8c9cc83b193af0d6cf35b21569fdd4adf6837470e75f41e288edf"
+    },
+    {
+      "path": "imported/plugin-life-science-research/rcsb-pdb-skill",
+      "name": "rcsb-pdb-skill",
+      "sha256": "9388defc4e738529e9e5e54120cc511d5570597d07e0b7d36346bce113b2f119"
+    },
+    {
+      "path": "imported/plugin-life-science-research/reactome-skill",
+      "name": "reactome-skill",
+      "sha256": "a8c663b889a4d9227caac4b3ae5f1211d79a3075e643d4eb5ba60e7520d9a263"
+    },
+    {
+      "path": "imported/plugin-life-science-research/research-router-skill",
+      "name": "research-router-skill",
+      "sha256": "e04bb09f3f6def4504572b3831b3356bdbec2474a4d8697fd4fa7e6b0fb001ee"
+    },
+    {
+      "path": "imported/plugin-life-science-research/rhea-skill",
+      "name": "rhea-skill",
+      "sha256": "d4819ac9009e7b1683dee20016eb4911a1a19ee4a62919658e4da503a2af4716"
+    },
+    {
+      "path": "imported/plugin-life-science-research/rnacentral-skill",
+      "name": "rnacentral-skill",
+      "sha256": "9915ce705a1a6c6b725c61bd637a63fc3eb1839a4f693e622abafd20dd33a12d"
+    },
+    {
+      "path": "imported/plugin-life-science-research/string-skill",
+      "name": "string-skill",
+      "sha256": "11b00505982569e9f0c1f46a0ceb7e7a5b66c84950420e61340d0de455d37c82"
+    },
+    {
+      "path": "imported/plugin-life-science-research/tpmi-phewas-skill",
+      "name": "tpmi-phewas-skill",
+      "sha256": "ada27e45c7c14eb7f2dc1ea905ed49a5b4c297f02250a1637ea9597b6b79bbc5"
+    },
+    {
+      "path": "imported/plugin-life-science-research/ukb-topmed-phewas-skill",
+      "name": "ukb-topmed-phewas-skill",
+      "sha256": "1949e016863a289307871e18600b403c086a1ebadb500c389906fb26f8b7482c"
+    },
+    {
+      "path": "imported/plugin-life-science-research/uniprot-skill",
+      "name": "uniprot-skill",
+      "sha256": "bd5737336c41e224ce09350413db09c91e0969f12d0eb20cab0e606ddc7294ce"
+    },
+    {
+      "path": "imported/plugin-jam/jam",
+      "name": "jam",
+      "sha256": "0bd366821099578507f83e8b7cd1520686ce17a01974406be3b0c5dfd0dfc2b9"
+    },
+    {
+      "path": "imported/plugin-jam/jam-fix",
+      "name": "jam-fix",
+      "sha256": "06a1b0d0cba397478be95e9b5979ec9d598950a39f9f99071447e15cd1ff21a1"
+    },
+    {
+      "path": "imported/plugin-jam/jam-to-e2e",
+      "name": "jam-to-e2e",
+      "sha256": "3cb4f367294d0efa669cefba5140dfb68f8f6bcf6bdfdcf81384a60ba3835f5f"
+    },
+    {
+      "path": "imported/plugin-jam/jam-to-tasks",
+      "name": "jam-to-tasks",
+      "sha256": "557b2984c7d0e8bed3e30e8a58e251b7fe42eea38adb544a499a61922259bc1a"
+    },
+    {
+      "path": "imported/plugin-jam/jam-to-ticket",
+      "name": "jam-to-ticket",
+      "sha256": "8184d37a0fb8ef960c6ef9a25a46af4318a6f13cf62c8990b95b697e854fbd05"
+    },
+    {
+      "path": "imported/plugin-investment-banking/buyer-investor-list",
+      "name": "buyer-investor-list",
+      "sha256": "b619eb509a1d28914ff37e04fe887c44c63c278f4538dc6f7a6c9fbbee61eb27"
+    },
+    {
+      "path": "imported/plugin-investment-banking/capital-markets-issuance",
+      "name": "capital-markets-issuance",
+      "sha256": "078198db46e50fc1d95532890a7d9f781dfa55e3b29b28669db2ad4806f1e1bd"
+    },
+    {
+      "path": "imported/plugin-investment-banking/cim-builder",
+      "name": "cim-builder",
+      "sha256": "1df8342f912ddb5a116f713abb81819a673a3afcbb57cccb4398a4ec58ab96b0"
+    },
+    {
+      "path": "imported/plugin-investment-banking/cim-teardown",
+      "name": "cim-teardown",
+      "sha256": "9d8079727658311406d7b829456bba244341d49d94324509bf0ed8a478e2a5b1"
+    },
+    {
+      "path": "imported/plugin-investment-banking/covenant-package-analyzer",
+      "name": "covenant-package-analyzer",
+      "sha256": "d35bb76df9951527c20c5878e4576bc50c794658fdaeaa31026d792b32c14da5"
+    },
+    {
+      "path": "imported/plugin-investment-banking/deal-process-tracker",
+      "name": "deal-process-tracker",
+      "sha256": "1478977c68d3409d35b25505f97fb960e99eb16cc27e2d7d28035ca276f41ef4"
+    },
+    {
+      "path": "imported/plugin-investment-banking/distressed-recovery-waterfall",
+      "name": "distressed-recovery-waterfall",
+      "sha256": "d47cbe390ba427fd86d280109dfa1c95f63e005b0bbfd4dc04e5722ce10c0ca5"
+    },
+    {
+      "path": "imported/plugin-investment-banking/ib-deck-qc",
+      "name": "ib-deck-qc",
+      "sha256": "adba8495323f90c3d7188f03a9969528b22fd88c07f4f388f4605b8456e268bb"
+    },
+    {
+      "path": "imported/plugin-investment-banking/investment-banking",
+      "name": "investment-banking",
+      "sha256": "61af92a927494025125dafc5aa41eb49b0677173fe632e37bba5a74ea5cb6cd4"
+    },
+    {
+      "path": "imported/plugin-investment-banking/lbo-model-build",
+      "name": "lbo-model-build",
+      "sha256": "1e26748bf076595b7376f14a639ae08add16d7606cc1677debac9e65d03188fa"
+    },
+    {
+      "path": "imported/plugin-investment-banking/merger-model-builder",
+      "name": "merger-model-builder",
+      "sha256": "520c037ad848b872572f19a5ea33ccd3678145e4bbf4b2afb22bfa53ce63dfc2"
+    },
+    {
+      "path": "imported/plugin-investment-banking/pitch-deck-builder",
+      "name": "pitch-deck-builder",
+      "sha256": "6e66c9c07ff659b8fd5a6c4a101b00bd5c3dd0780d2ca3d685b2441988ff53be"
+    },
+    {
+      "path": "imported/plugin-investment-banking/private-credit-underwriting",
+      "name": "private-credit-underwriting",
+      "sha256": "91a359da1f6e16ae1e6e09b4adf2e71cf29240d806d52c7883229c7dfad95088"
+    },
+    {
+      "path": "imported/plugin-investment-banking/user-context",
+      "name": "investment-banking-user-context",
+      "sha256": "d8dd6b9ade3a86b9cf56144442f736bd1fa2e3f498cdda48ff147d873eb8e5cd"
+    },
+    {
+      "path": "imported/plugin-hugging-face/cli",
+      "name": "hf-cli",
+      "sha256": "89b1dbe4038d89217e747c716a2d568b2ec7eb4fb1d2076f36ea0aaf34bbb729"
+    },
+    {
+      "path": "imported/plugin-hugging-face/community-evals",
+      "name": "huggingface-community-evals",
+      "sha256": "139f2f0736aeb5127dc20e2e43866c9f3da78ccd2ba49cced090022a5cb2627c"
+    },
+    {
+      "path": "imported/plugin-hugging-face/datasets",
+      "name": "huggingface-datasets",
+      "sha256": "5af74f3e042313efadf02e85c316a2576bdc0b0ff92c43c3ba5dcb6e2dae1ded"
+    },
+    {
+      "path": "imported/plugin-hugging-face/gradio",
+      "name": "huggingface-gradio",
+      "sha256": "9443a05fbceae2ee27feba9dc296302ae43c862565a0924d8fc076bd4578fd54"
+    },
+    {
+      "path": "imported/plugin-hugging-face/jobs",
+      "name": "huggingface-jobs",
+      "sha256": "45a08bafb5c7520710baf2851e6310d79e114ae362f6a4541796323ec5403414"
+    },
+    {
+      "path": "imported/plugin-hugging-face/llm-trainer",
+      "name": "huggingface-llm-trainer",
+      "sha256": "b5341743b36c3c0f78c687e9302b8910c400b720faa89e6243aba31bcc953873"
+    },
+    {
+      "path": "imported/plugin-hugging-face/paper-publisher",
+      "name": "huggingface-paper-publisher",
+      "sha256": "7449d07f6c280f05925bda33cb2e41284e7f89b7262265cc2a1875426f0ac69d"
+    },
+    {
+      "path": "imported/plugin-hugging-face/papers",
+      "name": "huggingface-papers",
+      "sha256": "1cb8a2e3b8c88f0208e07bdbd68f9b512f990987e0ba2ce5a962cd6a02d1da0a"
+    },
+    {
+      "path": "imported/plugin-hugging-face/trackio",
+      "name": "huggingface-trackio",
+      "sha256": "d268ff919e667ec9ece1e24ff1340909ff0d33f69de31805d6304e5c445104cf"
+    },
+    {
+      "path": "imported/plugin-hugging-face/transformers.js",
+      "name": "transformers-js",
+      "sha256": "e1795e39d7c8295050074de53a11b6638c5bbc434e39ec269a666ebf8b07188c"
+    },
+    {
+      "path": "imported/plugin-hugging-face/vision-trainer",
+      "name": "huggingface-vision-trainer",
+      "sha256": "1652cc2a2d4f3fcf5626b71a7fc5da7d127d4c6d91d57aef4e6adadfb6b696c3"
+    },
+    {
+      "path": "imported/plugin-heygen/animated-short",
+      "name": "animated-short",
+      "sha256": "e3c2fb34b73719f48d1f3c53606db35679bc29fc09bb755761661a1c8782c731"
+    },
+    {
+      "path": "imported/plugin-heygen/automated-content-creator",
+      "name": "automated-content-creator",
+      "sha256": "33d92c63dfe900bdb94f1ec177d855d9fda23c5b665f4ee71f74523dff255840"
+    },
+    {
+      "path": "imported/plugin-heygen/bedtime-story",
+      "name": "bedtime-story",
+      "sha256": "c776d8a862e38ec9801e642932046222e460d6dbae14ae2de3a9dc3b2423709d"
+    },
+    {
+      "path": "imported/plugin-heygen/captions",
+      "name": "captions",
+      "sha256": "da53867163629b5b02a2510e1f14a75079a06555a1aebe2afdaf2f3215920001"
+    },
+    {
+      "path": "imported/plugin-heygen/carousel",
+      "name": "carousel",
+      "sha256": "858be1e3d9f95df2d33f1058d3fe66940964a85e95d77ef0438cab022cf9c2ca"
+    },
+    {
+      "path": "imported/plugin-heygen/faceless-explainer",
+      "name": "heygen-faceless-explainer",
+      "sha256": "679bd7eb99c58ba22f829699a77b3cc3fe03035cbda8ab9b75e6a5a317255e27"
+    },
+    {
+      "path": "imported/plugin-heygen/general-video",
+      "name": "heygen-general-video",
+      "sha256": "406bf9f3fadb73930b162250871804b3b41ce2c45cebb7518c59f3bae962cd00"
+    },
+    {
+      "path": "imported/plugin-heygen/motion-graphics",
+      "name": "heygen-motion-graphics",
+      "sha256": "b233a88083dfba0385aa98bbf49bb6b93d670d8368ceb66977c04d89ac648f39"
+    },
+    {
+      "path": "imported/plugin-heygen/narrator",
+      "name": "narrator",
+      "sha256": "51b99591e796ce3366833bee3b021b93b36fdb71ba6ac74d9fd18a1506fbe53c"
+    },
+    {
+      "path": "imported/plugin-heygen/occasion-video",
+      "name": "occasion-video",
+      "sha256": "58be085c0a066a0c97baadcfd3e98f57aacd0d8620fa085617611ec61e907789"
+    },
+    {
+      "path": "imported/plugin-heygen/old-photo-revival",
+      "name": "old-photo-revival",
+      "sha256": "399f8bb93e302eaab517e20e611fe9cdc18179b700aceb452a830689411a7c89"
+    },
+    {
+      "path": "imported/plugin-heygen/picture-video",
+      "name": "picture-video",
+      "sha256": "33ee300db08872335460be66992c6022fc6d11c2f2c8756d038e916684b92d09"
+    },
+    {
+      "path": "imported/plugin-heygen/script-writer",
+      "name": "script-writer",
+      "sha256": "e3d29e71aa90d34e2f77017e19fff762030bf8b0ff802195beb740397e3b7144"
+    },
+    {
+      "path": "imported/plugin-heygen/talking-head",
+      "name": "talking-head",
+      "sha256": "b34ec3de557515b89d98672cef970decb71a39cd4ef7093ba644ecf86d33d034"
+    },
+    {
+      "path": "imported/plugin-heygen/ugc-product",
+      "name": "ugc-product",
+      "sha256": "76280cbfb87980045571916249d7be4012e71ec4a49934289e30326de84125c5"
+    },
+    {
+      "path": "imported/plugin-heygen/ugc-review",
+      "name": "ugc-review",
+      "sha256": "b5999d512c82fb7c1e9f44d3945f730d7a41c432ca9229844a870ec10ed20f6e"
+    },
+    {
+      "path": "imported/plugin-heygen/ugc-try-on",
+      "name": "ugc-try-on",
+      "sha256": "cd3d7559db784bfd9613e0515889d671e3a08cc3b89c9fa0265c6f781bf78c9a"
+    },
+    {
+      "path": "imported/plugin-heygen/ugc-tutorial",
+      "name": "ugc-tutorial",
+      "sha256": "067108bd6a7d6ac8060e40faac71de44536e83d825f622828e609805fa76a4c9"
+    },
+    {
+      "path": "imported/plugin-heygen/ugc-unboxing",
+      "name": "ugc-unboxing",
+      "sha256": "61eaea27ab1c65ba9b720d2c2c3ea3d2c817e1a2259918c22c8abddc11f55a92"
+    },
+    {
+      "path": "imported/plugin-heygen/ugc-voiceless",
+      "name": "ugc-voiceless",
+      "sha256": "8276a514e6a1ac4b513c1bc99b6fc7a164666b61f948f486d869cce3254006ab"
+    },
+    {
+      "path": "imported/plugin-heygen/ugc-website",
+      "name": "ugc-website",
+      "sha256": "1c30e0ba072f4e3812df171f4d974c594b38d344cef47e32e0f1ec28be0c3ad9"
+    },
+    {
+      "path": "imported/plugin-heygen/video-editing",
+      "name": "video-editing",
+      "sha256": "6227b94d1c208f88b214f8cf059f42dbe62e802923fea4f33c952c666ba21d0d"
+    },
+    {
+      "path": "imported/plugin-google-drive/google-docs",
+      "name": "google-docs",
+      "sha256": "1c4f8e6477a61d45370731143fd926d2b8917594982f9cb39677909d645625c1"
+    },
+    {
+      "path": "imported/plugin-google-drive/google-drive",
+      "name": "google-drive",
+      "sha256": "4ccaa253d8c698cb2126e1f96b506db2df222a00b88da29ae577c08524df1f86"
+    },
+    {
+      "path": "imported/plugin-google-drive/google-drive-comments",
+      "name": "google-drive-comments",
+      "sha256": "a3077375a8f7558b9e052c98047747b8a4a1a90a9a90b552009c28fcdadfe94a"
+    },
+    {
+      "path": "imported/plugin-google-drive/google-sheets",
+      "name": "google-sheets",
+      "sha256": "1851109d8f2c182236d28db136fb161d30c85287e5bc4fa79cf137673184c58d"
+    },
+    {
+      "path": "imported/plugin-google-drive/google-slides",
+      "name": "google-slides",
+      "sha256": "f85bd1d7080becf8c043a3646b6c3a53fbcd6d2a77c62a15112b8d89e01a4b83"
+    },
+    {
+      "path": "imported/plugin-google-calendar/google-calendar",
+      "name": "google-calendar",
+      "sha256": "e8626b2ddcad251176d96a64971670c1cf172c8067b36c56ccfdacc1bc307143"
+    },
+    {
+      "path": "imported/plugin-google-calendar/google-calendar-daily-brief",
+      "name": "google-calendar-daily-brief",
+      "sha256": "683b87ca5024404fd82db7f0a12574a36708fe24afa046cf8d4466a5846cbcdd"
+    },
+    {
+      "path": "imported/plugin-google-calendar/google-calendar-free-up-time",
+      "name": "google-calendar-free-up-time",
+      "sha256": "a4f42210c8e951d285d7e13c8a98988093e4d3740735941c8cae40f1ace58e13"
+    },
+    {
+      "path": "imported/plugin-google-calendar/google-calendar-group-scheduler",
+      "name": "google-calendar-group-scheduler",
+      "sha256": "70028029dd059cefef0b2c32e82a821e876c543f3fb4bf921db5a21b15fa485d"
+    },
+    {
+      "path": "imported/plugin-google-calendar/google-calendar-meeting-prep",
+      "name": "google-calendar-meeting-prep",
+      "sha256": "4bb79dc0240a565a6a0b08d0f689e2ef06ac1d74a238da6b1bcb9144de8bd26c"
+    },
+    {
+      "path": "imported/plugin-gmail/gmail",
+      "name": "gmail",
+      "sha256": "1ca417440b1204389f9f32246546599eafd2ee3a884f6b59249c5052ac254121"
+    },
+    {
+      "path": "imported/plugin-gmail/gmail-inbox-triage",
+      "name": "gmail-inbox-triage",
+      "sha256": "7784395f9070fb266835560f3bd8c048e7d0ca99eaab17e69c2fd1f114b6a54d"
+    },
+    {
+      "path": "imported/plugin-github/gh-address-comments",
+      "name": "gh-address-comments",
+      "sha256": "b70f8c4a1c1e48c39848ffb8d3e5867bffca84f4f70c297b4221c66b780c24bc"
+    },
+    {
+      "path": "imported/plugin-github/gh-fix-ci",
+      "name": "gh-fix-ci",
+      "sha256": "dabcc2a34dd5f1271e4ffded65b8c65ce53e84b98560b6e9ceaffcf1c50fc120"
+    },
+    {
+      "path": "imported/plugin-github/github",
+      "name": "github",
+      "sha256": "380d663305eb74b44858f58d76bdb21173a4d4c63d5885299ad6005d6ffc80b9"
+    },
+    {
+      "path": "imported/plugin-github/yeet",
+      "name": "yeet",
+      "sha256": "9d70c68282acbc7fbee678f142adbf84b4f1091890d6cb93b3106e5e629fc0cb"
+    },
+    {
+      "path": "imported/plugin-game-studio/game-playtest",
+      "name": "game-playtest",
+      "sha256": "358edd6e387a8e5bfb1c025fc9d98e9d6962864dc5fbad3b737513a7d402bbd8"
+    },
+    {
+      "path": "imported/plugin-game-studio/game-studio",
+      "name": "game-studio",
+      "sha256": "b76eac4342df15cca37ae26fe5908f11929dabe19596f08636a98a66cf9f2be8"
+    },
+    {
+      "path": "imported/plugin-game-studio/game-ui-frontend",
+      "name": "game-ui-frontend",
+      "sha256": "9847c0dead3981ffdd6fee4e50eabacb537da93228044bcc58523b2c6c67b9b6"
+    },
+    {
+      "path": "imported/plugin-game-studio/phaser-2d-game",
+      "name": "phaser-2d-game",
+      "sha256": "a1268f00d6ac270fed74bc246358758e9f0ca6cf5764e628be0d5528cae5cff4"
+    },
+    {
+      "path": "imported/plugin-game-studio/react-three-fiber-game",
+      "name": "react-three-fiber-game",
+      "sha256": "abb828343f265fc82c6fc292a271da61d33d43ff83ea85d912c33c5d4836c773"
+    },
+    {
+      "path": "imported/plugin-game-studio/sprite-pipeline",
+      "name": "sprite-pipeline",
+      "sha256": "61078a68d944f72dd0bb671b37df2c7aa5dd1e9b256039d00edab46b62f3625c"
+    },
+    {
+      "path": "imported/plugin-game-studio/three-webgl-game",
+      "name": "three-webgl-game",
+      "sha256": "3d718eedf5edc6b8da42e9d64f47e71387e5aa1b744453d1d6262f079202388f"
+    },
+    {
+      "path": "imported/plugin-game-studio/web-3d-asset-pipeline",
+      "name": "web-3d-asset-pipeline",
+      "sha256": "a0a383fbdd3dac7f77ff65448fad13b91bd39b01d4a95775946edaef743d6e5f"
+    },
+    {
+      "path": "imported/plugin-game-studio/web-game-foundations",
+      "name": "web-game-foundations",
+      "sha256": "132445594ae48e2a4205e960da7d53c5ef7df3814dfc931f166c7dd3a779b1e3"
+    },
+    {
+      "path": "imported/plugin-figma/figma-code-connect",
+      "name": "figma-code-connect",
+      "sha256": "87af3996edb167d6aa3c044cb1bbb6a0d8e2d631c731bb896b1e1e8669640415"
+    },
+    {
+      "path": "imported/plugin-figma/figma-code-workflows",
+      "name": "figma-code-workflows",
+      "sha256": "ac69b52d96a5d1b1832be9f0be99c221cfd861f8aad2260a0508386229982c7c"
+    },
+    {
+      "path": "imported/plugin-figma/figma-create-new-file",
+      "name": "figma-create-new-file",
+      "sha256": "bb7bc48c487f0ad7e738c23d0685bad5ec0bbbca8f5b5bb6295dc0666cc9ddf1"
+    },
+    {
+      "path": "imported/plugin-figma/figma-design-to-code",
+      "name": "figma-design-to-code",
+      "sha256": "a6e852421e4db72260b2ca641929b1f84684e5b067aead081e35111f5b5feee4"
+    },
+    {
+      "path": "imported/plugin-figma/figma-generate-design",
+      "name": "figma-generate-design",
+      "sha256": "edfc37c1bfb648874a2a6773182ce6629b850e98c04df13a39f475cdcaa9f627"
+    },
+    {
+      "path": "imported/plugin-figma/figma-generate-diagram",
+      "name": "figma-generate-diagram",
+      "sha256": "7297638dbf2130d1b37bfd85df65d290a4dd0b11a11b54abafcf7d07565922b5"
+    },
+    {
+      "path": "imported/plugin-figma/figma-generate-library",
+      "name": "figma-generate-library",
+      "sha256": "65ee2aa9fd565b47bf627b773986f3c121616825d01c9ded78ea314532f5d10c"
+    },
+    {
+      "path": "imported/plugin-figma/figma-generative-plugins",
+      "name": "figma-generative-plugins",
+      "sha256": "b97eb184a1f6b6545f3b8266a4d1a1e29304888904db7daed2864b9fd036b124"
+    },
+    {
+      "path": "imported/plugin-figma/figma-implement-motion",
+      "name": "figma-implement-motion",
+      "sha256": "5995716f9453c86f6cd68831e2a586a3bcce1989e0b86eb41717b5b78d8350e7"
+    },
+    {
+      "path": "imported/plugin-figma/figma-shaders",
+      "name": "figma-shaders",
+      "sha256": "c7e34c5a4eb316cfe84768cb419fe71b3ce840b29561ecd0f90eb402a72e1adf"
+    },
+    {
+      "path": "imported/plugin-figma/figma-spec",
+      "name": "figma-spec",
+      "sha256": "cc2d6fa7a8b14983ba1dd3f537036cf7f266e86cc5d5e847b48b96df6592e746"
+    },
+    {
+      "path": "imported/plugin-figma/figma-swiftui",
+      "name": "figma-swiftui",
+      "sha256": "868c4defe2c0854f5a3e27594d3fa0f20347c86a9b15d103483b7488bfa8affe"
+    },
+    {
+      "path": "imported/plugin-figma/figma-use",
+      "name": "figma-use",
+      "sha256": "abffccc5eddba774690364e274db83a3d4b9b7bf9aa5e73e9c4517e2f352c94a"
+    },
+    {
+      "path": "imported/plugin-figma/figma-use-figjam",
+      "name": "figma-use-figjam",
+      "sha256": "8d566444a1aaf31c122682a5fbe3d6f14c6a844a4e05164cda3de872752cea24"
+    },
+    {
+      "path": "imported/plugin-figma/figma-use-motion",
+      "name": "figma-use-motion",
+      "sha256": "399193f13154f9d515d5265f301aeaf39b9ff14ef6d67b50123b657ef0dfacc0"
+    },
+    {
+      "path": "imported/plugin-figma/figma-use-slides",
+      "name": "figma-use-slides",
+      "sha256": "0a69a65e686dcc223581afb409a4d31cf318716e2c65cc9c926839a8737e71a4"
+    },
+    {
+      "path": "imported/plugin-documents/documents",
+      "name": "documents",
+      "sha256": "e3e5486c9e9f8c59ec89dd9de997bb76a4b65db7960d72437df2f5ed26a4df7f"
+    },
+    {
+      "path": "imported/plugin-data-analytics/analyze-data-quality",
+      "name": "analyze-data-quality",
+      "sha256": "b1d19a9f407ada34b78030300faf3d5b10225d6e4bf51cebb016f4e1268fbf88"
+    },
+    {
+      "path": "imported/plugin-data-analytics/answers-follow-up",
+      "name": "answers-follow-up",
+      "sha256": "662d04f86a347b447eaaa5c3e77be1ed0cef400df01bbaa8e4c6aa0d41ee24b3"
+    },
+    {
+      "path": "imported/plugin-data-analytics/build-dashboard",
+      "name": "build-dashboard",
+      "sha256": "b69da349332bfbea0d3c0a8e8dc114a715afeed12dea2e4bd7b3d1d64473022b"
+    },
+    {
+      "path": "imported/plugin-data-analytics/build-report",
+      "name": "build-report",
+      "sha256": "73b80336d34b73cd97417e8530d62ceac924f92fc3f526730fadee102233b8b5"
+    },
+    {
+      "path": "imported/plugin-data-analytics/convert-to-doc",
+      "name": "convert-to-doc",
+      "sha256": "577bf5f4ffc52aafd13802a74cea68fdf9a2dd01469101a0f9f3d34e66e12655"
+    },
+    {
+      "path": "imported/plugin-data-analytics/convert-to-slides",
+      "name": "convert-to-slides",
+      "sha256": "e9e151547d729ada00082e8d2d4619c7d0d44d2f1bca385cef0ca65900995c90"
+    },
+    {
+      "path": "imported/plugin-data-analytics/customize-data-plugin",
+      "name": "customize-data-plugin",
+      "sha256": "00cb2d19752914f0a72fb1dddc22ee820e781842650e19ba61302c9b1b2f4942"
+    },
+    {
+      "path": "imported/plugin-data-analytics/design-kpis",
+      "name": "design-kpis",
+      "sha256": "0e362176cf5063a33005ba25ef6a7b090dc00b0eea72a0eac5ee006c122915f4"
+    },
+    {
+      "path": "imported/plugin-data-analytics/index",
+      "name": "data-analytics-index",
+      "sha256": "f5852fb364338fc8e4e71436e86340fab62d93ec5a60798fdd1dce6e81acd9b5"
+    },
+    {
+      "path": "imported/plugin-data-analytics/jupyter-notebooks",
+      "name": "jupyter-notebooks",
+      "sha256": "771f8eb2bccb0ca698d57a75e0013105f7b70488109d1652e6a236712d1b3d5e"
+    },
+    {
+      "path": "imported/plugin-data-analytics/kpi-reporting",
+      "name": "kpi-reporting",
+      "sha256": "9b11f5c1ff65ba468da51ed48054dfd579a91e48cbec9b28479589bce2977772"
+    },
+    {
+      "path": "imported/plugin-data-analytics/market-sizing",
+      "name": "market-sizing",
+      "sha256": "b3a1e5ac76688f180bf527606c1f5cb918b8e34df9a1fcea3c22a72876a2c00d"
+    },
+    {
+      "path": "imported/plugin-data-analytics/metric-diagnostics",
+      "name": "metric-diagnostics",
+      "sha256": "4d3f1a43f7765151acf22686bda128814655573059a02d56220260c1c1d6a909"
+    },
+    {
+      "path": "imported/plugin-data-analytics/onboarding",
+      "name": "onboarding",
+      "sha256": "7dc3f42507db52cded8fb1569072de6ceae0662a3aa39ce533d5c570f5a2dd7b"
+    },
+    {
+      "path": "imported/plugin-data-analytics/product-business-analysis",
+      "name": "product-business-analysis",
+      "sha256": "a1533f7788513c727b41146111f350f53e13c87d42e75ea89f3f4bf4eec90a94"
+    },
+    {
+      "path": "imported/plugin-data-analytics/publish-artifact-to-sites",
+      "name": "publish-artifact-to-sites",
+      "sha256": "419d9a22abb14c0b6130f0e395fabae4530dc5372aaa74a7e455b7826a19158c"
+    },
+    {
+      "path": "imported/plugin-data-analytics/report-to-pdf",
+      "name": "report-to-pdf",
+      "sha256": "0698de5f0f47f3ba1548bb0fa5f779c12bb0b1486b1d7385b886ae7fd0083e85"
+    },
+    {
+      "path": "imported/plugin-data-analytics/schedule-refresh-jobs",
+      "name": "schedule-refresh-jobs",
+      "sha256": "b3d145ea631da610f63e6141b9fe365d78551adee9dfb9315d13b8101930f3dc"
+    },
+    {
+      "path": "imported/plugin-data-analytics/share-artifact-summary",
+      "name": "share-artifact-summary",
+      "sha256": "e5431f1d7f9b5725e2e3ff5191cea74df6f59a714acc370fc4c65e5e4a4e0f52"
+    },
+    {
+      "path": "imported/plugin-data-analytics/validate-data",
+      "name": "validate-data",
+      "sha256": "7670f5c0452a4ea2b19d880d5065908ce99742b6d6c2461b6d113a9c869cf742"
+    },
+    {
+      "path": "imported/plugin-data-analytics/visualize-data",
+      "name": "visualize-data",
+      "sha256": "a4f1bd1ae201611979b3c91f581e6913238af5dc82e326f6aa92fffff7741195"
+    },
+    {
+      "path": "imported/plugin-creative-production/intake",
+      "name": "intake",
+      "sha256": "8b5c1b507e48ef90ed1104eee45d4a3f3c780f37683d487ff16dc635e1fe666e"
+    },
+    {
+      "path": "imported/plugin-creative-production/produce",
+      "name": "produce",
+      "sha256": "056d2f32c7d27639c3cf861981d7331cab8e7723ded1ae1966de6efd8ce01b7c"
+    },
+    {
+      "path": "imported/plugin-computer-use/computer-use",
+      "name": "computer-use",
+      "sha256": "8211e4b11a19a0dc4f0ace91096c74c5b36037ca4cb2c8988f0f535bb209e951"
+    },
+    {
+      "path": "imported/plugin-codex-security/assess-patch-risk",
+      "name": "assess-patch-risk",
+      "sha256": "c3b62a8c1d6135945a055134f50329047bb908972fc7b320a592edbc3d38b419"
+    },
+    {
+      "path": "imported/plugin-codex-security/attack-path-analysis",
+      "name": "attack-path-analysis",
+      "sha256": "9465d2750182acbf6dd8f61e60bb47dc1ca502be5cc3f4a71da7ad39935d1eb1"
+    },
+    {
+      "path": "imported/plugin-codex-security/deep-security-scan",
+      "name": "deep-security-scan",
+      "sha256": "d6aed0d9b47065a1384a96d0a45c843b0cda8ba48e3d2cbe96c65357c6e55ee3"
+    },
+    {
+      "path": "imported/plugin-codex-security/define-security-policy",
+      "name": "define-security-policy",
+      "sha256": "2817e1a03980a7ebea478c8d9e6c622e3c6205123e767a1e32f0204c06729cc7"
+    },
+    {
+      "path": "imported/plugin-codex-security/finding-discovery",
+      "name": "finding-discovery",
+      "sha256": "14cc797e750ca4bdd8b060c4cf96d7d32f25b132aa8f80d0a0837683fe010790"
+    },
+    {
+      "path": "imported/plugin-codex-security/fix-finding",
+      "name": "fix-finding",
+      "sha256": "ba7311f43b2c0742da0d5c6bdb2f0b26601c09cc59747cf8c62a09f8d0bb86d2"
+    },
+    {
+      "path": "imported/plugin-codex-security/propose-security-hardening",
+      "name": "propose-security-hardening",
+      "sha256": "ad07d88da7c2bc9e551849cdde686b0daad380ed0aac798e6c06444681d75959"
+    },
+    {
+      "path": "imported/plugin-codex-security/security-diff-scan",
+      "name": "security-diff-scan",
+      "sha256": "f85962d46f141227d794a25253a39232bc4e1ad756509ecd3d8769b85b735136"
+    },
+    {
+      "path": "imported/plugin-codex-security/security-scan",
+      "name": "security-scan",
+      "sha256": "104e2f93fc965c34e91970f517a89e330d5b29dbb243dcea5d95d83f14d135cf"
+    },
+    {
+      "path": "imported/plugin-codex-security/threat-model",
+      "name": "threat-model",
+      "sha256": "42568e50c787c4c0bfb9495ad67e72ab6c1a951bb910ecba2c67cff8961c4d56"
+    },
+    {
+      "path": "imported/plugin-codex-security/track-findings",
+      "name": "track-findings",
+      "sha256": "a6d2f30e6d5ca7bd9d74d83017f2f5481c5829585941208a1673b82c683d292b"
+    },
+    {
+      "path": "imported/plugin-codex-security/triage-finding",
+      "name": "triage-finding",
+      "sha256": "83081950bd4b29ff37cf82d137aec164532ae56b03dbaad3f4dd1d5423e758a7"
+    },
+    {
+      "path": "imported/plugin-codex-security/validation",
+      "name": "validation",
+      "sha256": "3c4660f79b12a92728e6bb25027064c3a911d0960d39aeafc8fda9e42ce517a5"
+    },
+    {
+      "path": "imported/plugin-codex-security/verify-fix",
+      "name": "verify-fix",
+      "sha256": "3d4530484c7e4c18b6afe7c6527247e96517dce1ebd1bda9d349cd367ecb0ae3"
+    },
+    {
+      "path": "imported/plugin-codex-security/vulnerability-writeup",
+      "name": "vulnerability-writeup",
+      "sha256": "d08582d9963ce3bfbc3fe81b6e85a01e6fe306713d7951bfd8dd2fbc3df75de4"
+    },
+    {
+      "path": "imported/plugin-coderabbit/coderabbit-review",
+      "name": "code-review",
+      "sha256": "515ef4f096ff4ee9cd034e6bf110bbb002f15abefcac3da7d9ff9db526d8e40f"
+    },
+    {
+      "path": "imported/plugin-cloudflare/agents-sdk",
+      "name": "agents-sdk",
+      "sha256": "d377772ee7d8a7261a1636634e876a496f885b16b5edcb95d13c2f13320a0192"
+    },
+    {
+      "path": "imported/plugin-cloudflare/building-ai-agent-on-cloudflare",
+      "name": "building-ai-agent-on-cloudflare",
+      "sha256": "f62f556211ff0255f3687233ce280875d73d3215952759fa4f0c5114b73b3b9d"
+    },
+    {
+      "path": "imported/plugin-cloudflare/building-mcp-server-on-cloudflare",
+      "name": "building-mcp-server-on-cloudflare",
+      "sha256": "7ceb8daa9a88eb10be44e7862f55639b9c5a31716942fe9c4442c53dba249780"
+    },
+    {
+      "path": "imported/plugin-cloudflare/cloudflare",
+      "name": "cloudflare",
+      "sha256": "016391794a80d83788053b0aae03fad653d93ae04a4a9a24c6ab346148a245d3"
+    },
+    {
+      "path": "imported/plugin-cloudflare/durable-objects",
+      "name": "durable-objects",
+      "sha256": "8ecddfec282cdc8f964dbe577bdc176a5b5a490b3d7ddd68cb4b34cbafb0b177"
+    },
+    {
+      "path": "imported/plugin-cloudflare/sandbox-sdk",
+      "name": "sandbox-sdk",
+      "sha256": "cbb2d82104e9ba11361ad9f790e56100f884c95bb0738ad028a0647a86fe4691"
+    },
+    {
+      "path": "imported/plugin-cloudflare/web-perf",
+      "name": "web-perf",
+      "sha256": "dc4dcc7dc370014f94056e62608f8fb2068821e4970b75ecf63a221692e3d763"
+    },
+    {
+      "path": "imported/plugin-cloudflare/workers-best-practices",
+      "name": "workers-best-practices",
+      "sha256": "b812711b9ea2e0def66553c46361998473845f319e3189c2c4f52ed3e15d8e85"
+    },
+    {
+      "path": "imported/plugin-cloudflare/wrangler",
+      "name": "wrangler",
+      "sha256": "15d8ea7950775e30448bf0a046b1271e53db3f3db53fede6aafe4d25a4240b50"
+    },
+    {
+      "path": "imported/plugin-circleci/builds",
+      "name": "circleci-builds",
+      "sha256": "51727943726400a0f94898d3a73d5b357979ab696c2352591034fbcb2f5c2e96"
+    },
+    {
+      "path": "imported/plugin-circleci/chunk",
+      "name": "chunk",
+      "sha256": "aae5ea99692fdb12f489277ced967d46a1dec8857fa42905cfeb5cb4e8576c7a"
+    },
+    {
+      "path": "imported/plugin-circleci/cli",
+      "name": "circleci-cli",
+      "sha256": "121eefe595f584a10c24a266e09e433885b6aebb572e34a6569c6ed928f66584"
+    },
+    {
+      "path": "imported/plugin-circleci/config",
+      "name": "circleci-config",
+      "sha256": "83eb08c66b155c8c3020da4b1a830a53386758e174584f793d0e7de6c1e8e5d7"
+    },
+    {
+      "path": "imported/plugin-canva/canva-branded-presentation",
+      "name": "canva-branded-presentation",
+      "sha256": "89acbf11fd6fbbdd69d305b80265a05ab6d5e96623cb28cbdab84ee2b725f827"
+    },
+    {
+      "path": "imported/plugin-canva/canva-resize-for-all-social-media",
+      "name": "canva-resize-for-all-social-media",
+      "sha256": "febb6410d03bbfe551ca18a8f001566e9287aff8eb7472a5456f63721ba90a96"
+    },
+    {
+      "path": "imported/plugin-canva/canva-translate-design",
+      "name": "canva-translate-design",
+      "sha256": "e373c8849e71066034ded5e5df3beec607fcb57ef300d3dc09b521cb1f89fa5b"
+    },
+    {
+      "path": "imported/plugin-build-web-apps/frontend-app-builder",
+      "name": "frontend-app-builder",
+      "sha256": "9273de02827b29534be28fb2b37154c1571ac38b4e20d3ef5482b7e22af67394"
+    },
+    {
+      "path": "imported/plugin-build-web-apps/frontend-testing-debugging",
+      "name": "frontend-testing-debugging",
+      "sha256": "03724620cf7e7de425b607a5492f572d867b1cf5d9c92c74bf50d057d7415e0b"
+    },
+    {
+      "path": "imported/plugin-build-web-apps/shadcn-best-practices",
+      "name": "shadcn",
+      "sha256": "7678f5168d4ee6f3ae3ce4d3d41c654f0aebc7b88cbc392a9504822dec0dff28"
+    },
+    {
+      "path": "imported/plugin-build-web-apps/stripe-best-practices",
+      "name": "stripe-best-practices",
+      "sha256": "5062f0c980030af377a0ac33b77c9d233676e2ecbb57b3d3cd8734fc0da464b2"
+    },
+    {
+      "path": "imported/plugin-build-macos-apps/appkit-interop",
+      "name": "appkit-interop",
+      "sha256": "7c91be82e30340ed9c929270f102965da3d67bcf509eecf8bf207c8a679fd3b6"
+    },
+    {
+      "path": "imported/plugin-build-macos-apps/build-run-debug",
+      "name": "build-run-debug",
+      "sha256": "bd32f3fa611fd731d01113450929aaeab8b40bfdda669b6cad76d877a096b722"
+    },
+    {
+      "path": "imported/plugin-build-macos-apps/liquid-glass",
+      "name": "liquid-glass",
+      "sha256": "b2bbb5ea8a62523931d89d9db47cfecf6745406f17722cbe7a6f1c06026472c3"
+    },
+    {
+      "path": "imported/plugin-build-macos-apps/packaging-notarization",
+      "name": "packaging-notarization",
+      "sha256": "adc0d5e0c48e74ac6c5078b5846d00cbb798a8fd08bd775590f23793c8e69b2b"
+    },
+    {
+      "path": "imported/plugin-build-macos-apps/signing-entitlements",
+      "name": "signing-entitlements",
+      "sha256": "79326e5096325b53c4350db9e1586c9a2ef56976705f01c24d3643a592dc3030"
+    },
+    {
+      "path": "imported/plugin-build-macos-apps/swiftpm-macos",
+      "name": "swiftpm-macos",
+      "sha256": "4bd2a889a2f96569773b8d408710326df715f5cfa7c4b3e942be4f895e2b382a"
+    },
+    {
+      "path": "imported/plugin-build-macos-apps/swiftui-patterns",
+      "name": "swiftui-patterns",
+      "sha256": "ebfc06b1c1e11cadec83e5c204b20f33f01db1c36cb5796639567bd8eac0fe07"
+    },
+    {
+      "path": "imported/plugin-build-macos-apps/telemetry",
+      "name": "telemetry",
+      "sha256": "64fae6fd88c411d108b321462f90b74deb42fb043b815baae04b199a07dfbd25"
+    },
+    {
+      "path": "imported/plugin-build-macos-apps/test-triage",
+      "name": "test-triage",
+      "sha256": "e6ed34d34d2b4f62a262f3ab9076ab02bfb75d7661491383493bee78545b7851"
+    },
+    {
+      "path": "imported/plugin-build-macos-apps/view-refactor",
+      "name": "view-refactor",
+      "sha256": "924b1a3a6f894443d26987346bc21fa8bf0815d463d2f741cb58a3e4321dc854"
+    },
+    {
+      "path": "imported/plugin-build-macos-apps/window-management",
+      "name": "window-management",
+      "sha256": "9fea3f84f6cd96c629bbb45cfe2715e9669a737f088a3453a20bd6083067e64d"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/ios-app-intents",
+      "name": "ios-app-intents",
+      "sha256": "ecfa87ec1070bccfdfa0d21ee997bbfbfd78edfb1f22da5da9c05ff006e9fa52"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/ios-debugger-agent",
+      "name": "ios-debugger-agent",
+      "sha256": "bb8ad932ec473cee097c9c8d106051134e9ab6cf9dc85d6a8e62ce80ad24c385"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/ios-ettrace-performance",
+      "name": "ios-ettrace-performance",
+      "sha256": "1888c0b2fc6b7d9f3d54d06333e9628a2c4660b9d9b5ddf3edc37f126c773935"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/ios-memgraph-leaks",
+      "name": "ios-memgraph-leaks",
+      "sha256": "f09a1e78c00b342196035f6570723f16e40e34a800d353c7c885d1dab4dc8781"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/ios-simulator-browser",
+      "name": "ios-simulator-browser",
+      "sha256": "f3f0216323cd7713a73f1bc4beee1b740a7867f20affef331760dd1932a1ec4b"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/swiftui-liquid-glass",
+      "name": "swiftui-liquid-glass",
+      "sha256": "8e9ec37d9b6ed146672faf12c88be61d367c280ab6159bfbc7726a122030b78b"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/swiftui-performance-audit",
+      "name": "swiftui-performance-audit",
+      "sha256": "6fc6bd4d49b49ccb2089be706c449f195daa7db2c36d8097d883426488eb4b1a"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/swiftui-ui-patterns",
+      "name": "swiftui-ui-patterns",
+      "sha256": "a96f078512c6c679a3504ec20e0eedff4a9be3a06eb9a95107f3556c081bb708"
+    },
+    {
+      "path": "imported/plugin-build-ios-apps/swiftui-view-refactor",
+      "name": "swiftui-view-refactor",
+      "sha256": "129cbb511987985ed7bf9e3f20443632a7becdf0c2824ded6b52241cc339243a"
+    },
+    {
+      "path": "imported/plugin-base44/base44-cli",
+      "name": "base44-cli",
+      "sha256": "fad011d19c65dfc7a841b0e8c4753739dff46922f4725526a9acedfdb336b421"
+    },
+    {
+      "path": "imported/plugin-base44/base44-remote-dev",
+      "name": "base44-remote-dev",
+      "sha256": "633ae3fbc123fd44470342000e5ec0271f111cb57d819749b7e3796e99bcb5f5"
+    },
+    {
+      "path": "imported/plugin-base44/base44-sandbox",
+      "name": "base44-sandbox",
+      "sha256": "6224715e6319e238ab91e6587dd350d2916a124e9058ff26a529ad2b92f7a2f4"
+    },
+    {
+      "path": "imported/plugin-base44/base44-sdk",
+      "name": "base44-sdk",
+      "sha256": "03c02b61e878f5ea4ad9fed2fef5b8196782415e4ea4dc314199070919ccbad6"
+    },
+    {
+      "path": "imported/plugin-base44/base44-troubleshooter",
+      "name": "base44-troubleshooter",
+      "sha256": "2f644ac93fd18a1bbe6322f0d179faeedf0234ffb4e785ff47fc16286c675866"
+    },
+    {
+      "path": "imported/plugin-app-6a83901dde988191b3f3cefdcc19acfa/capture-tasks-from-meeting-notes",
+      "name": "capture-tasks-from-meeting-notes",
+      "sha256": "44940f580f884976f74dd416b2267a7c8dad9718526158596d51fa8781079707"
+    },
+    {
+      "path": "imported/plugin-app-6a83901dde988191b3f3cefdcc19acfa/generate-status-report",
+      "name": "generate-status-report",
+      "sha256": "d5548b058a8454a1545003091e4acbea6b2fb0f3ac222b08550e6daa9aafe443"
+    },
+    {
+      "path": "imported/plugin-app-6a83901dde988191b3f3cefdcc19acfa/jira-sprint-dashboard",
+      "name": "jira-sprint-dashboard",
+      "sha256": "3e78ef20541e0502dca29e2369ed96ef4f95f358ccd128b3df70c2ddc768927f"
+    },
+    {
+      "path": "imported/plugin-app-6a83901dde988191b3f3cefdcc19acfa/search-company-knowledge",
+      "name": "search-company-knowledge",
+      "sha256": "580f5c5f5b66968a394e56b5f92a99cb28a88396f1af6618991ca746cefc591d"
+    },
+    {
+      "path": "imported/plugin-app-6a83901dde988191b3f3cefdcc19acfa/spec-to-backlog",
+      "name": "spec-to-backlog",
+      "sha256": "082876467b45a40e86cc617dbcd1eecf9044c3ff63367cfb62b6dccb51cf440d"
+    },
+    {
+      "path": "imported/plugin-app-6a83901dde988191b3f3cefdcc19acfa/triage-issue",
+      "name": "triage-issue",
+      "sha256": "4ce1808138ea8871e5a113e4f7b7ae28dc8e78a36df4cb7c87f9666c20620e0c"
+    },
+    {
+      "path": "imported/plugin-app-6996e5762c508191846b87c57edbbebe/build-mcp-apps",
+      "name": "build-mcp-apps",
+      "sha256": "d32170e03c56fac5363c6fa037024afccf4930ac237d4b95862b49abc8d7a46a"
+    },
+    {
+      "path": "imported/plugin-app-6996e5762c508191846b87c57edbbebe/use-alpic",
+      "name": "use-alpic",
+      "sha256": "1695ea4c80baba3ccab52dbba04e36c42337d5fd1ab599545bdb608d8d75b3b5"
+    },
+    {
+      "path": "imported/plugin-app-698a098735908191989f5788d7ee317e/revise-deck",
+      "name": "revise-deck",
+      "sha256": "71a56d8e858b797fb8a41edb10d7311ce3c15d18f594a0c5ff7b706b783c6c6d"
+    },
+    {
+      "path": "imported/plugin-app-698a098735908191989f5788d7ee317e/setup",
+      "name": "gamma-setup",
+      "sha256": "1f82c586f265e9844342384fc92d411d3353f6ef5b51bf3aa7dd370f9852cf46"
+    },
+    {
+      "path": "imported/plugin-app-69312da8e4dc81919370cb86fd172b6c/adobe-batch-edit-photos",
+      "name": "adobe-batch-edit-photos",
+      "sha256": "062112a424340bef585f0c3aed9a484721ff4b200044883dd0bdb1dd7599642c"
+    },
+    {
+      "path": "imported/plugin-app-69312da8e4dc81919370cb86fd172b6c/adobe-create-mockups",
+      "name": "adobe-create-mockups",
+      "sha256": "65a8fd58c8495210296eb1da51d0846d1ad9a7cf80a286ea4220874c0f4e56f2"
+    },
+    {
+      "path": "imported/plugin-app-69312da8e4dc81919370cb86fd172b6c/adobe-create-social-variations",
+      "name": "adobe-create-social-variations",
+      "sha256": "f2404147b9a05f7d759d8a7c0c51af06f9841ad55025395a887d27429be6d63d"
+    },
+    {
+      "path": "imported/plugin-app-69312da8e4dc81919370cb86fd172b6c/adobe-design-from-template",
+      "name": "adobe-design-from-template",
+      "sha256": "11d9eaed34c526b350185c298d8dd3c764d3cebeb111905f59230d3b3c291207"
+    },
+    {
+      "path": "imported/plugin-app-69312da8e4dc81919370cb86fd172b6c/adobe-edit-quick-cut",
+      "name": "adobe-edit-quick-cut",
+      "sha256": "252f8490412e5710163a050e25d30105fbcf6ea37f3e80854f6889bf99732fc2"
+    },
+    {
+      "path": "imported/plugin-app-69312da8e4dc81919370cb86fd172b6c/adobe-fonts",
+      "name": "adobe-fonts",
+      "sha256": "09c39f6b0ac8d496cc913f41200057d2be2e1d0026c501a230b69d0e741c074a"
+    },
+    {
+      "path": "imported/plugin-app-69312da8e4dc81919370cb86fd172b6c/adobe-retouch-portraits",
+      "name": "adobe-retouch-portraits",
+      "sha256": "3b3d098547f0e8c6b885dda0d32acaf1a9450660c6c803c2950b02a2acd30a5a"
+    },
+    {
+      "path": "imported/plugin-airtable/airtable-cli",
+      "name": "airtable-cli",
+      "sha256": "8c7aa197e1f14866cba1ff25e8365b46e08b6ec8f828ebee14e18bd9468da788"
+    },
+    {
+      "path": "imported/plugin-airtable/airtable-filters",
+      "name": "airtable-filters",
+      "sha256": "a73cf412d5f806483eb90f0d4b0b820bdebddca999311d6c7798f888b6e70a73"
+    },
+    {
+      "path": "imported/plugin-airtable/airtable-overview",
+      "name": "airtable-overview",
+      "sha256": "07111021f00157d505e088d054f10a1c4af95d28bba031ff6502201b6e2abec9"
+    },
+    {
+      "path": "imported/codex/address-sanitizer",
+      "name": "address-sanitizer",
+      "sha256": "5404e73526105c064eb051abe726097a9699ba39a2aaa23fb1b195d2835bd9c4"
+    },
+    {
+      "path": "imported/codex/aflpp",
+      "name": "aflpp",
+      "sha256": "cb4aa4b4f64b66339918266d576d25e1deceb631b4e51de96a902a56bcc2a669"
+    },
+    {
+      "path": "imported/codex/agent-introspection-debugging",
+      "name": "agent-introspection-debugging",
+      "sha256": "aff0d52785d3013d9f98de95ca778bfcab7c566db20352ead42852a1659292d2"
+    },
+    {
+      "path": "imported/codex/agent-sort",
+      "name": "agent-sort",
+      "sha256": "51d5b461ebd92f5c6f26eca1bb07c46ad4978dfae876b4d122ce802871a66326"
+    },
+    {
+      "path": "imported/codex/ai-regression-testing",
+      "name": "ai-regression-testing",
+      "sha256": "e29260b01cad5684547130558d5a15b07b4a77f781e73fcabfde7902aaa5d085"
+    },
+    {
+      "path": "imported/codex/algorand-vulnerability-scanner",
+      "name": "algorand-vulnerability-scanner",
+      "sha256": "0ad3e96d8d58ce6c1678c114e884a5f84d21571160d424843747a5dcc8448957"
+    },
+    {
+      "path": "imported/codex/ask-questions-if-underspecified",
+      "name": "ask-questions-if-underspecified",
+      "sha256": "fef9189249c46d08d5172f7010e0d83ae8dc104cc3d07714a909dd12f9e92e79"
+    },
+    {
+      "path": "imported/codex/aspnet-core",
+      "name": "aspnet-core",
+      "sha256": "803979c258908f2e575196295c119001817673e3bbf9babf54f5c24a41ac3328"
+    },
+    {
+      "path": "imported/codex/atheris",
+      "name": "atheris",
+      "sha256": "54ffc20eacc05ef263085a5d17a49c93a8e6eb3499ad2f9ccbdcf86dae7baffe"
+    },
+    {
+      "path": "imported/codex/audit-context-building",
+      "name": "audit-context-building",
+      "sha256": "99bcf8092522f73b983054d925cf6f3202178ad83c853ed0a3cd4debe19f5d0c"
+    },
+    {
+      "path": "imported/codex/audit-prep-assistant",
+      "name": "audit-prep-assistant",
+      "sha256": "ea7db549ff26a57ebd101140dd8ed44434d5c91f3d91efc8927541bea8dd23e8"
+    },
+    {
+      "path": "imported/codex/aws-agentic-ai",
+      "name": "aws-agentic-ai",
+      "sha256": "2ab9bb0da68e21683d3b5547d3c015c680092d8dc923fa30eec15a3e9272e0cb"
+    },
+    {
+      "path": "imported/codex/aws-cdk-development",
+      "name": "aws-cdk-development",
+      "sha256": "9064f0fa50ca3ebf9ee8db974a591903d0370cbb315177410054fffebaec68fe"
+    },
+    {
+      "path": "imported/codex/aws-cost-operations",
+      "name": "aws-cost-operations",
+      "sha256": "0df831407198fd9504fb6c1125d4e81aba4e82da7ca41a3ff6323fc78a19429e"
+    },
+    {
+      "path": "imported/codex/aws-mcp-setup",
+      "name": "aws-mcp-setup",
+      "sha256": "2e7273ce47dc2882f07687eae69e2540f3e2927858fec8e78d0582909a9c4cf0"
+    },
+    {
+      "path": "imported/codex/aws-serverless-eda",
+      "name": "aws-serverless-eda",
+      "sha256": "3c063487fc3b670cd3cee1f00f2e480d28b6e0c4d5ce86746a44910fa3a93817"
+    },
+    {
+      "path": "imported/codex/azure-verified-modules",
+      "name": "azure-verified-modules",
+      "sha256": "f17d1e7d909797042d71ae1ccfee04a2f5a3d96f4972db8ca005f1173cd40564"
+    },
+    {
+      "path": "imported/codex/burpsuite-project-parser",
+      "name": "burpsuite-project-parser",
+      "sha256": "597dada31b78c713b79780f78cae3f594866f37caa0394b7e031964b853053cc"
+    },
+    {
+      "path": "imported/codex/cairo-vulnerability-scanner",
+      "name": "cairo-vulnerability-scanner",
+      "sha256": "e2e64b00cfcfe04eb915aee7bb00ddd0e74e9b4d0275bc0185b409965b05d60c"
+    },
+    {
+      "path": "imported/codex/cargo-fuzz",
+      "name": "cargo-fuzz",
+      "sha256": "9474ddcfb3cae6aa65306fc9809523798f128dd68c5d4a327aacb82dfe385189"
+    },
+    {
+      "path": "imported/codex/chatgpt-apps",
+      "name": "chatgpt-apps",
+      "sha256": "928530dd05490d9cd38a8935c824049c5f562422a1bcaa2516ff3032d524ee44"
+    },
+    {
+      "path": "imported/codex/claude-in-chrome-troubleshooting",
+      "name": "claude-in-chrome-troubleshooting",
+      "sha256": "7ead464089964766aa2c9d58f4d84b63fc628f9a20f094f4d1a84134fb224985"
+    },
+    {
+      "path": "imported/codex/cli-creator",
+      "name": "cli-creator",
+      "sha256": "24058eabf0aafce6def3fb937ac93cbe3fa341c653c658dc589edb77f73d6152"
+    },
+    {
+      "path": "imported/codex/cloudflare-deploy",
+      "name": "cloudflare-deploy",
+      "sha256": "30d345ed3affdc61fcfc51cc5dbab977659bb4839f79363bc5f4869b674d4be4"
+    },
+    {
+      "path": "imported/codex/code-maturity-assessor",
+      "name": "code-maturity-assessor",
+      "sha256": "10e55d278593a362a12451416f54bba7afb35a4a62001e35fe13a500f143e53f"
+    },
+    {
+      "path": "imported/codex/code-tour",
+      "name": "code-tour",
+      "sha256": "94253ce76b0aa5064e859b6393d0c80cbaa002fa349598b8e43d3e27e747dcdb"
+    },
+    {
+      "path": "imported/codex/codeql",
+      "name": "codeql",
+      "sha256": "6323eac586086b1e08a789f30b26c376913955c639544e41e689434a93acd8ca"
+    },
+    {
+      "path": "imported/codex/configure-ecc",
+      "name": "configure-ecc",
+      "sha256": "746c5749ac369ec56eb3ee4688c5e9b85130629980e1aa8dd506ef3d94570a45"
+    },
+    {
+      "path": "imported/codex/constant-time-analysis",
+      "name": "constant-time-analysis",
+      "sha256": "0ffc2357999f0fe4a8a11b347c99adf6db8310e199243c2f6b4398ce00d45346"
+    },
+    {
+      "path": "imported/codex/constant-time-testing",
+      "name": "constant-time-testing",
+      "sha256": "ddf883f5659af688370e82b0d58d1c7554d322d6566ce29aa493cc5735678061"
+    },
+    {
+      "path": "imported/codex/continuous-learning",
+      "name": "continuous-learning",
+      "sha256": "e84e7e5dd87b219c2b99055a3cd16023da30eab64a009d52713af90aa86227b8"
+    },
+    {
+      "path": "imported/codex/continuous-learning-v2",
+      "name": "continuous-learning-v2",
+      "sha256": "d57eb915b0891bc3e38d9eceb074120595673f0a0825b91bfdee697ba105d3c9"
+    },
+    {
+      "path": "imported/codex/cosmos-vulnerability-scanner",
+      "name": "cosmos-vulnerability-scanner",
+      "sha256": "0af2e52a6fe73ebd7e7b9032e45941d6cd67853a736bda0c9bc3180333126533"
+    },
+    {
+      "path": "imported/codex/council",
+      "name": "council",
+      "sha256": "fd578d63aace6efb41f311a8692cb0f75e866ff9b774cadcdd4bec2dc9992053"
+    },
+    {
+      "path": "imported/codex/coverage-analysis",
+      "name": "coverage-analysis",
+      "sha256": "9c98ce71f20970424a26ee28095f942d406b7c68135319e30eb47baac420ea00"
+    },
+    {
+      "path": "imported/codex/define-goal",
+      "name": "define-goal",
+      "sha256": "708df89ff19cbae82a762efae036735d1914b5c7e44df1832e0b723f6cd9ee30"
+    },
+    {
+      "path": "imported/codex/develop-web-game",
+      "name": "develop-web-game",
+      "sha256": "96c0fe10f6db8c8fc468b6f367d60c9cf34564193c566df783ca31e5472e9e50"
+    },
+    {
+      "path": "imported/codex/differential-review",
+      "name": "differential-review",
+      "sha256": "72a1e8dc98d52f6185bcf031c4648b0951928d2e1ac2ce2659f9396c5960e672"
+    },
+    {
+      "path": "imported/codex/dwarf-expert",
+      "name": "dwarf-expert",
+      "sha256": "69e6fda36f5a239aed1fa8b5bfce515f4298a5700aa12c5278b30b399798db23"
+    },
+    {
+      "path": "imported/codex/e2e-testing",
+      "name": "e2e-testing",
+      "sha256": "f84ae93c159bf6ecef5a60c9735dc82d96bc5f977ef52eb71678b66722acf684"
+    },
+    {
+      "path": "imported/codex/entry-point-analyzer",
+      "name": "entry-point-analyzer",
+      "sha256": "85aeeb1f275d2c033f97b51ba1cb2e30116390a65d7ae2be12b2e29f43c3608a"
+    },
+    {
+      "path": "imported/codex/error-handling",
+      "name": "error-handling",
+      "sha256": "0ec0993c0441d0b035da6b9bf246feb41a3fe6825158ee41af4931b5bce17347"
+    },
+    {
+      "path": "imported/codex/eval-harness",
+      "name": "eval-harness",
+      "sha256": "0b1933f5532df4bcc750d8799b7b33037e66c5d41f87d2953065868d08981926"
+    },
+    {
+      "path": "imported/codex/figma-code-connect-components",
+      "name": "figma-code-connect-components",
+      "sha256": "0f19edad8aed28063a3517c419fbcbef5421d024f189fd02a17fae25093ec69d"
+    },
+    {
+      "path": "imported/codex/figma-create-design-system-rules",
+      "name": "figma-create-design-system-rules",
+      "sha256": "1f4d7e16ba5325a80da32e2e6bde0ea850ba9287f35f4675d51d55d2f0dc6e2a"
+    },
+    {
+      "path": "imported/codex/figma-implement-design",
+      "name": "figma-implement-design",
+      "sha256": "1ce5435ee39244159a9aa1c7831a94e855227b19d7960eb63c09fd088014311f"
+    },
+    {
+      "path": "imported/codex/firebase-apk-scanner",
+      "name": "firebase-apk-scanner",
+      "sha256": "a1bc78a5e7e7c7fc70db18dade432373b683081e43863e0db297110dd392e55b"
+    },
+    {
+      "path": "imported/codex/fix-review",
+      "name": "fix-review",
+      "sha256": "fdebd22bb34e4f5a00aa420cf3f3a5795cae0a11ac6ce7fc526860c01c11611c"
+    },
+    {
+      "path": "imported/codex/fuzzing-dictionary",
+      "name": "fuzzing-dictionary",
+      "sha256": "3247064b931fdc5b259e9d7786a7e50858cde27cedbf6bef873a5d77827efed8"
+    },
+    {
+      "path": "imported/codex/fuzzing-obstacles",
+      "name": "fuzzing-obstacles",
+      "sha256": "07b132241c8bd45c8b44d4cb5745f20a71ef6628fb5eecbf620217b1fe920c8a"
+    },
+    {
+      "path": "imported/codex/guidelines-advisor",
+      "name": "guidelines-advisor",
+      "sha256": "15b4864cd905a1ed1eea5f04b025b8326229c1c61e975338af77d794c0e84df7"
+    },
+    {
+      "path": "imported/codex/harness-writing",
+      "name": "harness-writing",
+      "sha256": "6fb9ecf9cf3d8d7ed3246c50bac72181e2e7747794a2a121ccdf47a409d9f5ec"
+    },
+    {
+      "path": "imported/codex/hatch-pet",
+      "name": "hatch-pet",
+      "sha256": "7ab0f01e8561085d1b494a6ca74abed766c655da8ec98284fb38a362c19d6871"
+    },
+    {
+      "path": "imported/codex/hookify-rules",
+      "name": "hookify-rules",
+      "sha256": "b604608e30ac2b8f4f62dea3023efe2d3247b41a38c4156a6b6297173f2405a8"
+    },
+    {
+      "path": "imported/codex/insecure-defaults",
+      "name": "insecure-defaults",
+      "sha256": "6c6c54ab48dc13f2c4c514953808155433b7fa02752c5364d36a7720b758c6e9"
+    },
+    {
+      "path": "imported/codex/interpreting-culture-index",
+      "name": "interpreting-culture-index",
+      "sha256": "1e63148ccd54139305e30191c6e47d54260648a6b5c7977bccf00e0ef426b9c9"
+    },
+    {
+      "path": "imported/codex/iterative-retrieval",
+      "name": "iterative-retrieval",
+      "sha256": "1f8f1498c023961760ded33db22964645d23b100eeba531e3318a6072765997f"
+    },
+    {
+      "path": "imported/codex/jupyter-notebook",
+      "name": "jupyter-notebook",
+      "sha256": "a2ed923c4af32d850eff94df5297a358654e966c8bcd526c6718d26921a87931"
+    },
+    {
+      "path": "imported/codex/libafl",
+      "name": "libafl",
+      "sha256": "398d1a8313b479bd3d71229ac8f5da8447613f7adc28a9d596f22559074ed08b"
+    },
+    {
+      "path": "imported/codex/libfuzzer",
+      "name": "libfuzzer",
+      "sha256": "dc67b83f276991f6f7d3050119389af5a2bec70a1e8ceaa56ee875ddc0d233b4"
+    },
+    {
+      "path": "imported/codex/migrate-to-codex",
+      "name": "migrate-to-codex",
+      "sha256": "b41905a5b7f0bee55ac4fcd372fdd9c5f0641378e56731b34ad283e4d1bbf872"
+    },
+    {
+      "path": "imported/codex/modern-python",
+      "name": "modern-python",
+      "sha256": "ef774b925eb1d1fc12e4f5ddc3f5ad925ecd795315827447228c70cc44c6170c"
+    },
+    {
+      "path": "imported/codex/new-terraform-provider",
+      "name": "new-terraform-provider",
+      "sha256": "94e0205c2af3f5aaa357fb68c2fc6baba6b5642d955e2ae46830aaa3da6ac9cd"
+    },
+    {
+      "path": "imported/codex/ossfuzz",
+      "name": "ossfuzz",
+      "sha256": "5ba74748ddc70989b9e61b471718791ddd5d39de5d72b3b5d60b0fee1b1fd3f2"
+    },
+    {
+      "path": "imported/codex/plankton-code-quality",
+      "name": "plankton-code-quality",
+      "sha256": "e8dbe35029c890d9ec01cde3b499deec2e8c2a43c2821ad239b0a386838e4ecf"
+    },
+    {
+      "path": "imported/codex/playwright",
+      "name": "playwright",
+      "sha256": "c52cc95125b720cdc3c9829b0294c2752d4ae9b85a5282aa153da8bba929af87"
+    },
+    {
+      "path": "imported/codex/playwright-interactive",
+      "name": "playwright-interactive",
+      "sha256": "33c4539ad34784bb83632d4f9340a8c50247e3ce500b329b0e8909c01a39e4b6"
+    },
+    {
+      "path": "imported/codex/production-audit",
+      "name": "production-audit",
+      "sha256": "54f769ac5ad4a15e47e42d34d4715b9f9cf1061d2f6e94f3c1ba976cbea4b77b"
+    },
+    {
+      "path": "imported/codex/property-based-testing",
+      "name": "property-based-testing",
+      "sha256": "a027f88bb17a470012d99af00aff859c7cfa5699c4d0f9c7cf145db206047d14"
+    },
+    {
+      "path": "imported/codex/provider-actions",
+      "name": "provider-actions",
+      "sha256": "791dedaa460a715ee6bae5740c58a1ce6afa7adb3e1b2aa8735140d0125c239b"
+    },
+    {
+      "path": "imported/codex/provider-resources",
+      "name": "provider-resources",
+      "sha256": "c4dc7858787079f808a5f98458c8659a514ea95af5d254cb0bae207f5073b4a2"
+    },
+    {
+      "path": "imported/codex/refactor-module",
+      "name": "refactor-module",
+      "sha256": "51357bb86eb46cb8f9afbe1cb04fdfb2355a66d7db4189a7d013c4c6d1bcba4c"
+    },
+    {
+      "path": "imported/codex/render-deploy",
+      "name": "render-deploy",
+      "sha256": "e785be3b5ab4b418a1d51c19d8d9208830fa62d0dc19555e7a0b36248b345db4"
+    },
+    {
+      "path": "imported/codex/run-acceptance-tests",
+      "name": "run-acceptance-tests",
+      "sha256": "b10013c9ac8e20fb3642b0c10c56c0c149db10ba4596554962b95a29ced4252f"
+    },
+    {
+      "path": "imported/codex/ruzzy",
+      "name": "ruzzy",
+      "sha256": "603cde0d4592b4d4b81de645c05c7429969923dff290b4be2dd0b8614e2a6876"
+    },
+    {
+      "path": "imported/codex/sarif-parsing",
+      "name": "sarif-parsing",
+      "sha256": "cd105f0d449839fd6349476e3ae492dda60081e58ebf6858a64c8752f462c9aa"
+    },
+    {
+      "path": "imported/codex/screenshot",
+      "name": "screenshot",
+      "sha256": "2fb7b2d8010517699b1a44f1d587d028b9dad2e2770366d2052238d46c9a9e36"
+    },
+    {
+      "path": "imported/codex/secure-workflow-guide",
+      "name": "secure-workflow-guide",
+      "sha256": "d4f765622ae684b7359427524f4db5eef184678dbfc8104026d248f5f0ebebe7"
+    },
+    {
+      "path": "imported/codex/security-best-practices",
+      "name": "security-best-practices",
+      "sha256": "7a889544c0ae67982a918a4b28569cc93f7426ae39306a0cb786603445714162"
+    },
+    {
+      "path": "imported/codex/security-ownership-map",
+      "name": "security-ownership-map",
+      "sha256": "f855af8ef91e173adf931c82b0fe21931d5e32b661eeb3d95fed18df46c0ef6e"
+    },
+    {
+      "path": "imported/codex/security-threat-model",
+      "name": "security-threat-model",
+      "sha256": "7718bb4d7d9855cdf2e90e920e0cbc489cb24ea55e2f9734fd041c53f1e04f68"
+    },
+    {
+      "path": "imported/codex/semgrep",
+      "name": "semgrep",
+      "sha256": "1efc39bd4f4d5090cf62fd97d62a81e7eb54b36ee3cc5ee73216289cdc3e242f"
+    },
+    {
+      "path": "imported/codex/semgrep-rule-creator",
+      "name": "semgrep-rule-creator",
+      "sha256": "1ae1e8d030f531dac54e1a02ff886f341a3a59e77366f4c50d304581ed7358da"
+    },
+    {
+      "path": "imported/codex/semgrep-rule-variant-creator",
+      "name": "semgrep-rule-variant-creator",
+      "sha256": "66f2ad2ca1f61469ea0021f524c35d62b507341986db98fcacffdf67399795d2"
+    },
+    {
+      "path": "imported/codex/sentry",
+      "name": "sentry",
+      "sha256": "a032a72760b958ab9aa96e3481dcbe2e677f93697b152c85fc84a1d421b214e2"
+    },
+    {
+      "path": "imported/codex/sharp-edges",
+      "name": "sharp-edges",
+      "sha256": "38e1aca2a4188c3b8b3a7b452b6a83280dc06bcbb41309113be83e732ff25b22"
+    },
+    {
+      "path": "imported/codex/skill-scout",
+      "name": "skill-scout",
+      "sha256": "66f84ec5f124cafa45d5357017d8905219b0639d9e811610e780c2a11ac45643"
+    },
+    {
+      "path": "imported/codex/skill-stocktake",
+      "name": "skill-stocktake",
+      "sha256": "b48b54c68e5d41d4a722afb267d5b02d4a356c4ee5b24cf4e8cc356fc65c11ee"
+    },
+    {
+      "path": "imported/codex/solana-vulnerability-scanner",
+      "name": "solana-vulnerability-scanner",
+      "sha256": "5e9040940ac0621233a32f2b14f84fd427999c76bc8cde8cdd664156cd5afa0d"
+    },
+    {
+      "path": "imported/codex/sora",
+      "name": "sora",
+      "sha256": "df4aa069c00dd3c810b6f89cbefba76fd44938ee5f9a89610e590e90e6c3d140"
+    },
+    {
+      "path": "imported/codex/spec-to-code-compliance",
+      "name": "spec-to-code-compliance",
+      "sha256": "3488420217ef9f8ce56cee91db31e6d92d8f0f947efb4b8d9dc2331f1a24e7af"
+    },
+    {
+      "path": "imported/codex/speech",
+      "name": "speech",
+      "sha256": "e71cd464d98745e8d51a6cc3b59630a34dbd2553e9db9cdf8dc59247abc754f4"
+    },
+    {
+      "path": "imported/codex/strategic-compact",
+      "name": "strategic-compact",
+      "sha256": "ed1fbd6d3d51a294f77ead06f272d491cc7d623166dd47ae5e7991dcd23c3ed7"
+    },
+    {
+      "path": "imported/codex/substrate-vulnerability-scanner",
+      "name": "substrate-vulnerability-scanner",
+      "sha256": "611f69b419740b8f972eabc03b5cd88a38f0b07aeed755eae413629cabebb178"
+    },
+    {
+      "path": "imported/codex/tdd-workflow",
+      "name": "tdd-workflow",
+      "sha256": "934c453594ce68330888c70497f40f1454f7c1e7e5a07501a637ecb3c66d87b6"
+    },
+    {
+      "path": "imported/codex/terraform-stacks",
+      "name": "terraform-stacks",
+      "sha256": "4bbab9d3a3de02b083c0f354b681cdb8d7c916bad4d3cd12de6e5763715af8da"
+    },
+    {
+      "path": "imported/codex/terraform-style-guide",
+      "name": "terraform-style-guide",
+      "sha256": "013b0a81999aa173ce6982c1a376b8fe67c8021cf838e083cbe3e5dc217fca4e"
+    },
+    {
+      "path": "imported/codex/terraform-test",
+      "name": "terraform-test",
+      "sha256": "20383ae8ba3e9277c50ab46fa2a895f8167b9f5baf449aa02b078bc1ab8016cb"
+    },
+    {
+      "path": "imported/codex/testing-handbook-generator",
+      "name": "testing-handbook-generator",
+      "sha256": "bb49c9516f4d714e0cc6b018ba01d9ec511a8b3ccb67ebd8a7a635a659f37911"
+    },
+    {
+      "path": "imported/codex/token-integration-analyzer",
+      "name": "token-integration-analyzer",
+      "sha256": "f700683abe74bdd6d4107236c9a1a1ca625352412771131543b2a88af1a1ce94"
+    },
+    {
+      "path": "imported/codex/ton-vulnerability-scanner",
+      "name": "ton-vulnerability-scanner",
+      "sha256": "3a0fbdedb1553bfaa41a81cf1d5ac4fb069aebd53483e3311122b8b2f8d288a2"
+    },
+    {
+      "path": "imported/codex/transcribe",
+      "name": "transcribe",
+      "sha256": "2eaae81b9a63f877e4028e640b0066288c4b7c05c75f6b8e380570a81432ef47"
+    },
+    {
+      "path": "imported/codex/variant-analysis",
+      "name": "variant-analysis",
+      "sha256": "5578470dbbcfdbeca524aa6e8e24b4284ea75900d5d7aaa8e368695665961745"
+    },
+    {
+      "path": "imported/codex/vercel-deploy",
+      "name": "vercel-deploy",
+      "sha256": "922f73ca1ff8c18d3dd79f6cc3aa390fc79ef3b8cd470be14f673850d463c8af"
+    },
+    {
+      "path": "imported/codex/verification-loop",
+      "name": "verification-loop",
+      "sha256": "01a9ae310ad4426bb05660dda6cefdeaac9513417585c09c8bb1b94738649a78"
+    },
+    {
+      "path": "imported/codex/windows-desktop-e2e",
+      "name": "windows-desktop-e2e",
+      "sha256": "b866824b79beeeb171d467d13026218ecc90c2ef6c825334b995a24873769aec"
+    },
+    {
+      "path": "imported/codex/winui-app",
+      "name": "winui-app",
+      "sha256": "69e4e697a60403b587b4eb36c8fa2d3699f4943ed66747bce268828a5ef9de4c"
+    },
+    {
+      "path": "imported/codex/wycheproof",
+      "name": "wycheproof",
+      "sha256": "f545b71bd68a8575c750af2cbe667703e9a40ae122bf298bbbe330e17b2d1271"
+    },
+    {
+      "path": "imported/codex/system/imagegen",
+      "name": "imagegen",
+      "sha256": "706d4d96e1d5c9e6023fe3ccabba1bb34b364024d344fd25b8515ec7d28fe3c4"
+    },
+    {
+      "path": "imported/codex/system/openai-docs",
+      "name": "openai-docs",
+      "sha256": "8ce8021101bcea594ff92ee6cfd8ca7641a49ee66d7bc6070555f1a33fc239d9"
+    },
+    {
+      "path": "imported/codex/system/review-agent",
+      "name": "review-agent",
+      "sha256": "bb46315f6bc4b7051c05f807d19b1689b20418ac6c42590406d805c10fa2fd1a"
+    },
+    {
+      "path": "imported/codex/system/skill-creator",
+      "name": "skill-creator",
+      "sha256": "cccd291077ec57c6f50ca6529f0f3fb93212da09473effb2fcec808e81b21288"
+    },
+    {
+      "path": "imported/codex/system/skill-installer",
+      "name": "skill-installer",
+      "sha256": "2892d8b2fb11631132118f340aed80ae17e59d5a571fc2c4f4a4a7e73f139d52"
+    },
+    {
+      "path": "github/codebase-inspection",
+      "name": "codebase-inspection",
+      "sha256": "6757a9541e03f4c3fb191f7c680fb3f7d603687422bd77602203003acba4546f"
+    },
+    {
+      "path": "github/github-auth",
+      "name": "github-auth",
+      "sha256": "6e2644fcf01ad9d4a3fc986f2ace720fa7bff59bb06bbd9ccacee2bd432cccd1"
+    },
+    {
+      "path": "github/github-code-review",
+      "name": "github-code-review",
+      "sha256": "6cd52992740c60fd9cda68b76edd1795ed225f82a23e8f603c580af715a89d14"
+    },
+    {
+      "path": "github/github-issues",
+      "name": "github-issues",
+      "sha256": "134a8396e503ed57af3476fbc9478deb0d8c004d74e34fc9937418e6627a094f"
+    },
+    {
+      "path": "github/github-pr-workflow",
+      "name": "github-pr-workflow",
+      "sha256": "4b5a3e0af0fad2e0fd235d40facb67944f94b45e6bc84518dcbc4e6e240d4e1c"
+    },
+    {
+      "path": "github/github-repo-management",
+      "name": "github-repo-management",
+      "sha256": "1daed9f5eac9628d316769474c66ad151585544bebd3cc3561317ec94fa76445"
+    },
+    {
+      "path": "gaming/minecraft-modpack-server",
+      "name": "minecraft-modpack-server",
+      "sha256": "58303d792f2df5b79c92f1eeb54edf130d87188329bd541eab73069b9707fde4"
+    },
+    {
+      "path": "gaming/pokemon-player",
+      "name": "pokemon-player",
+      "sha256": "73af09bbb1be84c69c293bd9a46ed97e4d0e800be346877c40f76c772a68ca53"
+    },
+    {
+      "path": "email/himalaya",
+      "name": "himalaya",
+      "sha256": "e77fed4447b58ce621972adf2067d0cb905264d404242f7d1234a6970ace2858"
+    },
+    {
+      "path": "devops/kanban-orchestrator",
+      "name": "kanban-orchestrator",
+      "sha256": "732a18f8fa28a9727ed1664a69950ee51db0a85f31870c717263bcf021cab7f5"
+    },
+    {
+      "path": "devops/kanban-worker",
+      "name": "kanban-worker",
+      "sha256": "0be6d04d6e3b1b30b2ccd571ec40a50eab24b0b3f4bb228a62322fa203133e1d"
+    },
+    {
+      "path": "devops/webhook-subscriptions",
+      "name": "webhook-subscriptions",
+      "sha256": "41c3419af241b39971a0e201ccf83b77f1fe2f09b3796672135051dcb7cb5566"
+    },
+    {
+      "path": "data-science/jupyter-live-kernel",
+      "name": "jupyter-live-kernel",
+      "sha256": "c3c49948aa3e9628816307ce7d27d4a980c53cb004f1798bd9bb0329e2e3e561"
+    },
+    {
+      "path": "creative/architecture-diagram",
+      "name": "architecture-diagram",
+      "sha256": "fd7d22231baefc80e30d3c3409e79952cac3a5e1171642d4d0d36e69b3dfbbad"
+    },
+    {
+      "path": "creative/ascii-art",
+      "name": "ascii-art",
+      "sha256": "2d0b7edcfb32b5152bd7b2e0144bfbc7b961e97166948f465142f4d9f7b65602"
+    },
+    {
+      "path": "creative/ascii-video",
+      "name": "ascii-video",
+      "sha256": "096f52e71c6fbdde95822eeb9df8442ae4d0e43c356a4db1b7ea9a491c41123f"
+    },
+    {
+      "path": "creative/baoyu-article-illustrator",
+      "name": "baoyu-article-illustrator",
+      "sha256": "5fb861433540b6c08196149fba7906104c5510b0737c5b5f3e332c1e98ceff4b"
+    },
+    {
+      "path": "creative/baoyu-comic",
+      "name": "baoyu-comic",
+      "sha256": "bf53197be71633ce682ef9bf1d76ed7b231e001d6e93b81f0231629b46265b3f"
+    },
+    {
+      "path": "creative/baoyu-infographic",
+      "name": "baoyu-infographic",
+      "sha256": "75d4fd8b2b58b007d46f1b2a706771e38410eb4c719a4a66c51b47f81e1e3b40"
+    },
+    {
+      "path": "creative/claude-design",
+      "name": "claude-design",
+      "sha256": "0767db13b5c6fee6798f4c53e81c7518206423ef780c6042811d7a81588701a3"
+    },
+    {
+      "path": "creative/comfyui",
+      "name": "comfyui",
+      "sha256": "14280593ef4535291195b2db1b1e31b55e1da4bc40bec7543a151f867bc786fb"
+    },
+    {
+      "path": "creative/creative-ideation",
+      "name": "ideation",
+      "sha256": "ce585a85452d6c59ac51010375b8de67301281570d3ba6a7130999ce2df1145b"
+    },
+    {
+      "path": "creative/design-md",
+      "name": "design-md",
+      "sha256": "ec27322c4dbc074c6b82954487000d572ae4ad9724432dc2062edd0394882b06"
+    },
+    {
+      "path": "creative/excalidraw",
+      "name": "excalidraw",
+      "sha256": "1035d010aa941234ea7c9d3f6b942dd68c834c229b673f9a9ba6a06d50d85eb3"
+    },
+    {
+      "path": "creative/humanizer",
+      "name": "humanizer",
+      "sha256": "4204741c02b27d552f3ffaf035544ea78afbcee4d061e159922cf2dc74b2d63a"
+    },
+    {
+      "path": "creative/manim-video",
+      "name": "manim-video",
+      "sha256": "8a250eea36139e5d647a1c048019eb409c65044abf4118e65cb3ed83e3610008"
+    },
+    {
+      "path": "creative/p5js",
+      "name": "p5js",
+      "sha256": "58c0e29d14ab630f78579e0728a7f413240344673d3ad38cef52749d0f378262"
+    },
+    {
+      "path": "creative/pixel-art",
+      "name": "pixel-art",
+      "sha256": "851ade2cb7a3592c15e761d76a5e29394c700e7c0b68224a64036f8dfd158b8e"
+    },
+    {
+      "path": "creative/popular-web-designs",
+      "name": "popular-web-designs",
+      "sha256": "03c1f6bb0be5efcae3879e7200dc9e1efc075a85be314089fd673c251fed696f"
+    },
+    {
+      "path": "creative/pretext",
+      "name": "pretext",
+      "sha256": "76210dc7eb255058ef9d857fa981be30e1d3845186f86d2bfda7af73c6aadd7f"
+    },
+    {
+      "path": "creative/sketch",
+      "name": "sketch",
+      "sha256": "69dd33c3f0ddf28a3b7e6cb145b30f46a553fe8ba2f57a53ac741bf4c77cb9fe"
+    },
+    {
+      "path": "creative/songwriting-and-ai-music",
+      "name": "songwriting-and-ai-music",
+      "sha256": "673d5de3d3b0253d6f04bb23d0b42a0ba41dd0b4f5efebadee5ecc1bd7bdc298"
+    },
+    {
+      "path": "creative/touchdesigner-mcp",
+      "name": "touchdesigner-mcp",
+      "sha256": "d74a480b1e59b4a73359e5a3926bca7fa6297f483dcc03f65dcfbb92071e4fc2"
+    },
+    {
+      "path": "autonomous-ai-agents/claude-code",
+      "name": "claude-code",
+      "sha256": "c348779de373b0fa665a4d24625f8c215f59e3ccffa12d31845f2c26b24b1ca4"
+    },
+    {
+      "path": "autonomous-ai-agents/codex",
+      "name": "codex",
+      "sha256": "c41c81a37453479a7e834e6f91991d95ec3bc993d1693f780fc028c279240c15"
+    },
+    {
+      "path": "autonomous-ai-agents/hermes-agent",
+      "name": "hermes-agent",
+      "sha256": "e1cd023fa4371dfc02ee61977adefbcddeffb4b3d024f5ee54d3eb374fb9acbd"
+    },
+    {
+      "path": "autonomous-ai-agents/kanban-codex-lane",
+      "name": "kanban-codex-lane",
+      "sha256": "a3bde0e9226df581056ed0a609e3fc1c0142e2fb8b78b000e2c6f8da5852c9b6"
+    },
+    {
+      "path": "autonomous-ai-agents/opencode",
+      "name": "opencode",
+      "sha256": "10f2b62b3c3a94b1d55b15f90734c0efb6ba0975d7e7959f26047e195ab64774"
+    },
+    {
+      "path": "apple/apple-notes",
+      "name": "apple-notes",
+      "sha256": "a3b5dfbfc26e3ae79f4d1e45ccb00375da083c6ffabf2ca86bf5fec816db6f8e"
+    },
+    {
+      "path": "apple/apple-reminders",
+      "name": "apple-reminders",
+      "sha256": "8b5a66a6f65b5c393cafa9c1c742b3549bcc6b56a8da70d0e332abea24b6ff31"
+    },
+    {
+      "path": "apple/findmy",
+      "name": "findmy",
+      "sha256": "b1bd7f046e42cc1287ad5d413e414d81e2ff001a84e9b42bd69ee50abfaf70fb"
+    },
+    {
+      "path": "apple/imessage",
+      "name": "imessage",
+      "sha256": "501a6c3859a4726b1fbcb7c721ed06ff2e37aa8912195e34c4ad475af1eb0fe3"
+    },
+    {
+      "path": "apple/macos-computer-use",
+      "name": "macos-computer-use",
+      "sha256": "67d4e69388c47ca50354eb560721c2abc4340a5580223732edc1c8119c559445"
+    }
+  ]
+}

@@ -290,8 +290,8 @@ Use [quality-gates.md](references/quality-gates.md). The plan validator catches
 structural defects but cannot certify taste, motion, or the audio listening pass:
 
 ```powershell
-node .claude/skills/short-form-edit/scripts/validate-plan.mjs video-projects/<slug>
-node .claude/skills/short-form-edit/scripts/validate-footage.mjs video-projects/<slug>
+node .agents/skills/short-form-edit/scripts/validate-plan.mjs video-projects/<slug>
+node .agents/skills/short-form-edit/scripts/validate-footage.mjs video-projects/<slug>
 ```
 
 It reads `assets/plan.json`, `assets/transcript.json`, and

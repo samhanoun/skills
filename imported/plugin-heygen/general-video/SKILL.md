@@ -1,5 +1,5 @@
 ---
-name: general-video
+name: heygen-general-video
 description: Catch-all for video requests only when no specialized HeyGen video skill matches. All UGC, explainer, picture-story, talking-head, animated-short, occasion or greeting, bedtime-story, and old-photo revival videos use their matching skills first. Otherwise prefer direct text-to-video, image-to-video, or reference-to-video; coordinate local composition up to 90 seconds only for videos explicitly requested over 30 seconds or requirements one model generation cannot meet, such as consistent captions or precise diagrams.
 ---
 

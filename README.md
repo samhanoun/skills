@@ -2,7 +2,7 @@
 
 Sauvegarde de ma configuration existante, importée le 13 novembre 2026.
 
-- **906 skills** découverts par Skillshare, provenant des outils et plugins déjà installés. Les copies identiques sont regroupées ; les variantes différentes restent disponibles sous `imported/`.
+- **764 skills** découverts par Skillshare, provenant des outils et plugins déjà installés. Une version active est conservée par skill et par outil distinct ; les autres versions restent dans la sauvegarde chiffrée.
 - **66 agents** dans `agents/`. Les fichiers natifs d'origine sont aussi conservés dans `native/agents/`.
 - **45 définitions MCP distinctes**, représentant 58 entrées configurées, dans `mcp-config/servers.yaml`. Leur provenance et leur état d'origine sont dans `inventory/mcp.json`.
 - Le layout [Herdr + skillshare de runkids](https://herdr.dev/layouts/runkids/skillshare--herdr--skillshare/) et son panneau adapté à Windows sont dans `herdr/`.
@@ -52,3 +52,14 @@ herdr-app do layout.switch --name herdr-skillshare
 ```
 
 Les fichiers du layout et du panneau sont fournis à titre de sauvegarde ; préserver les personnalisations locales avant toute réinstallation.
+
+## Vérification des doublons
+
+Le catalogue actif est passé de 906 à **764 skills distincts**, sans nom en double. Après reprise des versions locales, 150 anciennes copies, variantes et éléments de corbeille ont été retirés avec la corbeille Skillshare. Toutes les versions précédentes et les dossiers locaux sont conservés dans la sauvegarde chiffrée `backup/before-dedup-2026-11-13/`. Le choix de chaque version et les noms clarifiés sont documentés dans `inventory/deduplication.json`.
+
+Pour restaurer cette sauvegarde de contrôle, utiliser la même clé et préciser son dossier :
+
+```powershell
+node scripts/decrypt-backup.mjs "$env:USERPROFILE\.config\skills-backup\recovery-2026-11-13.key" "$env:TEMP\skills-before-dedup.zip" backup/before-dedup-2026-11-13
+python scripts/restore-originals.py "$env:TEMP\skills-before-dedup.zip" "$env:TEMP\skills-before-dedup-restored"
+```

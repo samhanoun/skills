@@ -19,7 +19,7 @@ Deciding what counts as a mistake is **judgment, not a formula** — emphatic re
 ### 1. Find candidates (mechanical)
 
 ```bash
-node .claude/skills/cut-mistakes/scripts/find-cut-candidates.mjs \
+node .agents/skills/cut-mistakes/scripts/find-cut-candidates.mjs \
   <silence-transcript.json> --out-dir video-projects/<slug>/assets
 ```
 
@@ -45,7 +45,7 @@ Present the candidates to the user with a recommendation per item; collect appro
 ### 3. Apply approved cuts
 
 ```bash
-node .claude/skills/cut-mistakes/scripts/apply-cuts.mjs \
+node .agents/skills/cut-mistakes/scripts/apply-cuts.mjs \
   <silence-transcript.json> --cuts approved-cuts.json \
   --video video-projects/<slug>/assets/edited-silenced.mp4 \
   --output video-projects/<slug>/assets/edited-clean.mp4 --apply
