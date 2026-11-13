@@ -1,0 +1,18 @@
+{
+  "format": "HSBKUP01",
+  "cipher": "AES-256-GCM",
+  "source_sha256": "3c4ed887d145471f14d1227949b78b6527acac8ade1e9cde6b92b0f188976467",
+  "bytes": 86508689,
+  "parts": [
+    {
+      "file": "originals-2026-11-13.aes256gcm.part001",
+      "bytes": 52428800,
+      "sha256": "bd9799fc0c67e19b3f8759a6cd7120197e1d44e2845b0d8f67b744dbafdf57ab"
+    },
+    {
+      "file": "originals-2026-11-13.aes256gcm.part002",
+      "bytes": 34079889,
+      "sha256": "879071be6549b0662fe614a04b212185d051a0a5322e962a40e8e1bacc0a5b6f"
+    }
+  ]
+}

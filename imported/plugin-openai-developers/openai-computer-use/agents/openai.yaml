@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenAI Computer Use"
+  short_description: "Build browser and desktop automation with OpenAI SDKs"
+  default_prompt: "Use $openai-computer-use to build and verify a computer-use workflow in this project."

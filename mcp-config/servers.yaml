@@ -1,0 +1,613 @@
+{
+  "servers": {
+    "magic": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@21st-dev/magic@latest"
+      ],
+      "env": {
+        "API_KEY": {
+          "fromEnv": "API_KEY"
+        }
+      },
+      "targets": []
+    },
+    "pencil": {
+      "command": "C:\\Users\\harry\\.pencil\\mcp\\antigravity\\out\\mcp-server-windows-x64.exe",
+      "args": [
+        "--app",
+        "antigravity"
+      ],
+      "targets": []
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "targets": []
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ],
+      "targets": []
+    },
+    "exa": {
+      "url": "https://mcp.exa.ai/mcp",
+      "targets": []
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "targets": []
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--extension"
+      ],
+      "targets": []
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "targets": []
+    },
+    "node-repl": {
+      "command": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1106.6628.0_x64__2p2nqsd0c76g0\\app\\resources\\cua_node\\bin\\node_repl.exe",
+      "args": [],
+      "env": {
+        "NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS": "1000",
+        "NODE_REPL_NODE_MODULE_DIRS": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1106.6628.0_x64__2p2nqsd0c76g0\\app\\resources\\cua_node\\bin\\node_modules",
+        "NODE_REPL_NODE_PATH": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1106.6628.0_x64__2p2nqsd0c76g0\\app\\resources\\cua_node\\bin\\node.exe",
+        "NODE_REPL_TRUSTED_CODE_PATHS": "C:\\Users\\harry\\.codex;C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1106.6628.0_x64__2p2nqsd0c76g0\\app\\resources\\cua_node\\bin\\node_modules",
+        "CODEX_HOME": "C:\\Users\\harry\\.codex",
+        "BROWSER_USE_AVAILABLE_BACKENDS": "chrome,iab,mcpapps",
+        "BROWSER_USE_TINYSKY_ENABLED": "1",
+        "NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER": "",
+        "NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME": "",
+        "BROWSER_USE_CODEX_APP_BUILD_FLAVOR": "prod",
+        "BROWSER_USE_CODEX_APP_VERSION": "26.1106.51428",
+        "NODE_REPL_TRUSTED_SERVICES": "{\"browser\":\"C:/Users/harry/.codex/plugins/cache/openai-bundled/browser/26.1106.51428/scripts/browser-service.mjs\",\"sky\":\"@oai/sky/service\"}",
+        "SKY_CUA_NATIVE_PIPE": "1",
+        "SKY_CUA_NATIVE_PIPE_DIRECTORY": "\\\\.\\pipe\\codex-computer-use-1deddc7a-39f8-477a-a782-fc2abe8bf737",
+        "CODEX_CLI_PATH": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1106.6628.0_x64__2p2nqsd0c76g0\\app\\resources\\codex.exe",
+        "NODE_REPL_UNTRUSTED_ENV_ALLOWLIST": "CODEX_WINDOWS_REGISTERED_CORE",
+        "NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE": "",
+        "BROWSER_USE_ACCESS_EXECUTOR_ID": {
+          "fromEnv": "BROWSER_USE_ACCESS_EXECUTOR_ID"
+        },
+        "BROWSER_USE_ACCESS_PIPE_PATH": {
+          "fromEnv": "BROWSER_USE_ACCESS_PIPE_PATH"
+        },
+        "BROWSER_USE_ACCESS_VERIFYING_IDENTITY": {
+          "fromEnv": "BROWSER_USE_ACCESS_VERIFYING_IDENTITY"
+        },
+        "CODEX_WINDOWS_REGISTERED_CORE": {
+          "fromEnv": "CODEX_WINDOWS_REGISTERED_CORE"
+        }
+      },
+      "targets": []
+    },
+    "kali": {
+      "command": "wsl.exe",
+      "args": [
+        "--distribution",
+        "kali-linux",
+        "--user",
+        "ISSH",
+        "--exec",
+        "/home/ISSH/KaliMCP/.venv/bin/kalimcp"
+      ],
+      "env": {
+        "KALIMCP_AUTORECORD": "0",
+        "KALIMCP_LOG_FILE": "/home/ISSH/.kalimcp/kalimcp.log",
+        "KALIMCP_MAX_CONCURRENCY": "2",
+        "KALIMCP_MODEL_OUTPUT_LIMIT": "32768"
+      },
+      "targets": []
+    },
+    "rea": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\harry\\AppData\\Roaming\\npm\\node_modules\\rea-agents\\scripts\\rea.mjs",
+        "mcp"
+      ],
+      "targets": []
+    },
+    "rea-c1c429a1": {
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "npx",
+        "-y",
+        "rea-agents@6.7.0",
+        "mcp"
+      ],
+      "targets": []
+    },
+    "prisma-local": {
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "npx",
+        "-y",
+        "prisma@7",
+        "mcp"
+      ],
+      "targets": []
+    },
+    "notebooks": {
+      "command": "node",
+      "args": [
+        "c:\\Users\\harry\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.2.0-universal\\mcp_servers\\cli\\mcp_proxy_bundle.js",
+        "notebooks-antigravityide"
+      ],
+      "targets": []
+    },
+    "visualization": {
+      "command": "node",
+      "args": [
+        "c:\\Users\\harry\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.2.0-universal\\mcp_servers\\cli\\mcp_proxy_bundle.js",
+        "visualization-antigravityide"
+      ],
+      "targets": []
+    },
+    "datacloud-cloud-sql-remote": {
+      "url": "https://sqladmin.googleapis.com/mcp",
+      "headers": {
+        "User-Agent": "datacloud.antigravity ide"
+      },
+      "targets": []
+    },
+    "datacloud-knowledge-catalog-remote": {
+      "url": "https://dataplex.googleapis.com/mcp",
+      "headers": {
+        "User-Agent": "datacloud.antigravity ide"
+      },
+      "targets": []
+    },
+    "github-90700690": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": {
+          "fromEnv": "GITHUB_PERSONAL_ACCESS_TOKEN"
+        }
+      },
+      "targets": []
+    },
+    "playwright-d0cdc18f": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--browser",
+        "chrome"
+      ],
+      "targets": []
+    },
+    "kali-9ced8456": {
+      "command": "wsl.exe",
+      "args": [
+        "--distribution",
+        "kali-linux",
+        "--user",
+        "ISSH",
+        "--exec",
+        "/home/ISSH/KaliMCP/.venv/bin/kalimcp"
+      ],
+      "env": {
+        "KALIMCP_AUTORECORD": "0",
+        "KALIMCP_ENFORCE_SCOPE": "1",
+        "KALIMCP_LOG_FILE": "/home/ISSH/.kalimcp/kalimcp.log",
+        "KALIMCP_MAX_CONCURRENCY": "4",
+        "KALIMCP_MODEL_OUTPUT_LIMIT": "131072",
+        "WSLENV": "KALIMCP_AUTORECORD/u:KALIMCP_ENFORCE_SCOPE/u:KALIMCP_LOG_FILE/u:KALIMCP_MAX_CONCURRENCY/u:KALIMCP_MODEL_OUTPUT_LIMIT/u"
+      },
+      "targets": []
+    },
+    "playwright-6810ca83": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "targets": []
+    },
+    "figma": {
+      "url": "http://127.0.0.1:3845/sse",
+      "targets": []
+    },
+    "desktop-commander": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wonderwhy-er/desktop-commander@latest"
+      ],
+      "targets": []
+    },
+    "postman": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@postman/postman-mcp-server@2.12.0"
+      ],
+      "env": {
+        "POSTMAN_API_KEY": {
+          "fromEnv": "POSTMAN_API_KEY"
+        }
+      },
+      "targets": []
+    },
+    "vercel": {
+      "url": "https://mcp.vercel.com",
+      "targets": []
+    },
+    "openai-api-credit-promo": {
+      "url": "https://chatgpt.com/backend-api/product-account-links/mcp",
+      "targets": []
+    },
+    "openai-api-key-local-confirmation": {
+      "command": "node",
+      "args": [
+        "./mcp/server.mjs"
+      ],
+      "targets": []
+    },
+    "notion": {
+      "url": "https://mcp.notion.com/mcp",
+      "targets": []
+    },
+    "linear": {
+      "url": "https://mcp.linear.app/mcp",
+      "targets": []
+    },
+    "jam": {
+      "url": "https://mcp.jam.dev/mcp",
+      "targets": []
+    },
+    "heygen": {
+      "url": "https://mcp.heygen.com/mcp",
+      "targets": []
+    },
+    "figma-33025f40": {
+      "url": "https://mcp.figma.com/mcp",
+      "targets": []
+    },
+    "data": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "./mcp/launch.mjs"
+      ],
+      "env": {
+        "CODEX_HOME": {
+          "fromEnv": "CODEX_HOME"
+        },
+        "CODEX_MCP_NODE_PATH": {
+          "fromEnv": "CODEX_MCP_NODE_PATH"
+        },
+        "CODEX_BROWSER_USE_NODE_PATH": {
+          "fromEnv": "CODEX_BROWSER_USE_NODE_PATH"
+        },
+        "CODEX_ELECTRON_RESOURCES_PATH": {
+          "fromEnv": "CODEX_ELECTRON_RESOURCES_PATH"
+        },
+        "XDG_CACHE_HOME": {
+          "fromEnv": "XDG_CACHE_HOME"
+        },
+        "DATA_FORMS_TIMEOUT_MS": {
+          "fromEnv": "DATA_FORMS_TIMEOUT_MS"
+        }
+      },
+      "targets": []
+    },
+    "creative-production-mcp": {
+      "command": "node",
+      "args": [
+        "./mcp/server.bundle.mjs"
+      ],
+      "targets": []
+    },
+    "codex-security": {
+      "command": "./scripts/launch_codex_security_mcp",
+      "args": [
+        "--stdio"
+      ],
+      "env": {
+        "CODEX_HOME": {
+          "fromEnv": "CODEX_HOME"
+        },
+        "CODEX_SQLITE_HOME": {
+          "fromEnv": "CODEX_SQLITE_HOME"
+        },
+        "CODEX_API_KEY": {
+          "fromEnv": "CODEX_API_KEY"
+        },
+        "CODEX_SAFETY_IDENTIFIER": {
+          "fromEnv": "CODEX_SAFETY_IDENTIFIER"
+        },
+        "CODEX_BROWSER_USE_NODE_PATH": {
+          "fromEnv": "CODEX_BROWSER_USE_NODE_PATH"
+        },
+        "CODEX_CLI_PATH": {
+          "fromEnv": "CODEX_CLI_PATH"
+        },
+        "CODEX_ELECTRON_RESOURCES_PATH": {
+          "fromEnv": "CODEX_ELECTRON_RESOURCES_PATH"
+        },
+        "CODEX_MANAGED_PACKAGE_ROOT": {
+          "fromEnv": "CODEX_MANAGED_PACKAGE_ROOT"
+        },
+        "CODEX_MCP_NODE_PATH": {
+          "fromEnv": "CODEX_MCP_NODE_PATH"
+        },
+        "OPENAI_API_KEY": {
+          "fromEnv": "OPENAI_API_KEY"
+        },
+        "OPENROUTER_API_KEY": {
+          "fromEnv": "OPENROUTER_API_KEY"
+        },
+        "FIREWORKS_API_KEY": {
+          "fromEnv": "FIREWORKS_API_KEY"
+        },
+        "AWS_BEARER_TOKEN_BEDROCK": {
+          "fromEnv": "AWS_BEARER_TOKEN_BEDROCK"
+        },
+        "AWS_ACCESS_KEY_ID": {
+          "fromEnv": "AWS_ACCESS_KEY_ID"
+        },
+        "AWS_SECRET_ACCESS_KEY": {
+          "fromEnv": "AWS_SECRET_ACCESS_KEY"
+        },
+        "AWS_SESSION_TOKEN": {
+          "fromEnv": "AWS_SESSION_TOKEN"
+        },
+        "AWS_PROFILE": {
+          "fromEnv": "AWS_PROFILE"
+        },
+        "AWS_REGION": {
+          "fromEnv": "AWS_REGION"
+        },
+        "AWS_DEFAULT_REGION": {
+          "fromEnv": "AWS_DEFAULT_REGION"
+        },
+        "AWS_CONFIG_FILE": {
+          "fromEnv": "AWS_CONFIG_FILE"
+        },
+        "AWS_SHARED_CREDENTIALS_FILE": {
+          "fromEnv": "AWS_SHARED_CREDENTIALS_FILE"
+        },
+        "AWS_ROLE_ARN": {
+          "fromEnv": "AWS_ROLE_ARN"
+        },
+        "AWS_ROLE_SESSION_NAME": {
+          "fromEnv": "AWS_ROLE_SESSION_NAME"
+        },
+        "AWS_WEB_IDENTITY_TOKEN_FILE": {
+          "fromEnv": "AWS_WEB_IDENTITY_TOKEN_FILE"
+        },
+        "AWS_CONTAINER_CREDENTIALS_RELATIVE_URI": {
+          "fromEnv": "AWS_CONTAINER_CREDENTIALS_RELATIVE_URI"
+        },
+        "AWS_CONTAINER_CREDENTIALS_FULL_URI": {
+          "fromEnv": "AWS_CONTAINER_CREDENTIALS_FULL_URI"
+        },
+        "AWS_CONTAINER_AUTHORIZATION_TOKEN": {
+          "fromEnv": "AWS_CONTAINER_AUTHORIZATION_TOKEN"
+        },
+        "AWS_CONTAINER_AUTHORIZATION_TOKEN_FILE": {
+          "fromEnv": "AWS_CONTAINER_AUTHORIZATION_TOKEN_FILE"
+        },
+        "PYTHON": {
+          "fromEnv": "PYTHON"
+        },
+        "PYTHONUTF8": {
+          "fromEnv": "PYTHONUTF8"
+        },
+        "CODEX_SECURITY_GIT": {
+          "fromEnv": "CODEX_SECURITY_GIT"
+        },
+        "CODEX_SECURITY_KNOWLEDGE_BASE": {
+          "fromEnv": "CODEX_SECURITY_KNOWLEDGE_BASE"
+        },
+        "CODEX_SECURITY_CONFIG_PATH": {
+          "fromEnv": "CODEX_SECURITY_CONFIG_PATH"
+        },
+        "CODEX_SECURITY_DEEP_SCAN_CONFIG_PATH": {
+          "fromEnv": "CODEX_SECURITY_DEEP_SCAN_CONFIG_PATH"
+        },
+        "CODEX_SECURITY_SCAN_ROOT": {
+          "fromEnv": "CODEX_SECURITY_SCAN_ROOT"
+        },
+        "CODEX_SECURITY_STATE_DIR": {
+          "fromEnv": "CODEX_SECURITY_STATE_DIR"
+        },
+        "CODEX_SECURITY_SURFACE": {
+          "fromEnv": "CODEX_SECURITY_SURFACE"
+        },
+        "HTTP_PROXY": {
+          "fromEnv": "HTTP_PROXY"
+        },
+        "HTTPS_PROXY": {
+          "fromEnv": "HTTPS_PROXY"
+        },
+        "ALL_PROXY": {
+          "fromEnv": "ALL_PROXY"
+        },
+        "NO_PROXY": {
+          "fromEnv": "NO_PROXY"
+        },
+        "SSL_CERT_FILE": {
+          "fromEnv": "SSL_CERT_FILE"
+        },
+        "REQUESTS_CA_BUNDLE": {
+          "fromEnv": "REQUESTS_CA_BUNDLE"
+        },
+        "NODE_EXTRA_CA_CERTS": {
+          "fromEnv": "NODE_EXTRA_CA_CERTS"
+        },
+        "XDG_CACHE_HOME": {
+          "fromEnv": "XDG_CACHE_HOME"
+        }
+      },
+      "targets": []
+    },
+    "xcodebuildmcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "xcodebuildmcp@latest",
+        "mcp"
+      ],
+      "env": {
+        "XCODEBUILDMCP_ENABLED_WORKFLOWS": "simulator,ui-automation,debugging,logging"
+      },
+      "targets": []
+    },
+    "app-696609ce0304819185fafa6a660e0f1e": {
+      "url": "https://chatgpt.mermaid.ai/openai/v2/mcp",
+      "targets": []
+    },
+    "github-1aa003dc": {
+      "url": "https://api.githubcopilot.com/mcp/",
+      "bearerToken": {
+        "fromEnv": "GITHUB_PAT_TOKEN"
+      },
+      "targets": []
+    },
+    "codex-security-ff732ec4": {
+      "command": "node",
+      "args": [
+        "./mcp/server.mjs",
+        "--stdio"
+      ],
+      "env": {
+        "CODEX_HOME": {
+          "fromEnv": "CODEX_HOME"
+        }
+      },
+      "targets": []
+    },
+    "cloudflare-api": {
+      "url": "https://mcp.cloudflare.com/mcp",
+      "targets": []
+    },
+    "cua-repl": {
+      "command": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1106.6628.0_x64__2p2nqsd0c76g0\\app\\resources\\cua_node\\bin\\node.exe",
+      "args": [
+        "--import",
+        "file:///C:/Users/harry/.codex/plugins/cache/openai-bundled/unified-computer-use/26.1106.51428/require-browser-access.mjs",
+        "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1106.6628.0_x64__2p2nqsd0c76g0\\app\\resources\\cua_node\\bin\\node_modules\\@oai\\cua-repl\\bin\\cua-repl.mjs"
+      ],
+      "env": {
+        "NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS": "1000",
+        "NODE_REPL_NODE_MODULE_DIRS": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1106.6628.0_x64__2p2nqsd0c76g0\\app\\resources\\cua_node\\bin\\node_modules",
+        "NODE_REPL_NODE_PATH": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1106.6628.0_x64__2p2nqsd0c76g0\\app\\resources\\cua_node\\bin\\node.exe",
+        "NODE_REPL_TRUSTED_CODE_PATHS": "C:\\Users\\harry\\.codex;C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1106.6628.0_x64__2p2nqsd0c76g0\\app\\resources\\cua_node\\bin\\node_modules",
+        "CODEX_HOME": "C:\\Users\\harry\\.codex",
+        "BROWSER_USE_AVAILABLE_BACKENDS": "chrome,iab,mcpapps",
+        "BROWSER_USE_TINYSKY_ENABLED": "1",
+        "NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER": "Control the in-app browser in conjunction with the Browser Plugin.",
+        "NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME": "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative.",
+        "BROWSER_USE_CODEX_APP_BUILD_FLAVOR": "prod",
+        "BROWSER_USE_CODEX_APP_VERSION": "26.1106.51428",
+        "NODE_REPL_TRUSTED_SERVICES": "{\"browser\":\"@oai/browser-desktop/service\",\"sky\":\"@oai/sky/service\"}",
+        "SKY_CUA_NATIVE_PIPE": "1",
+        "SKY_CUA_NATIVE_PIPE_DIRECTORY": "\\\\.\\pipe\\codex-computer-use-1deddc7a-39f8-477a-a782-fc2abe8bf737",
+        "CODEX_CLI_PATH": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1106.6628.0_x64__2p2nqsd0c76g0\\app\\resources\\codex.exe",
+        "NODE_REPL_UNTRUSTED_ENV_ALLOWLIST": "CODEX_WINDOWS_REGISTERED_CORE",
+        "CUA_REPL_ENABLED_SURFACES": "browser,computer",
+        "CUA_REPL_NODE_REPL_PATH": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1106.6628.0_x64__2p2nqsd0c76g0\\app\\resources\\cua_node\\bin\\node_repl.exe",
+        "BROWSER_USE_ACCESS_EXECUTOR_ID": {
+          "fromEnv": "BROWSER_USE_ACCESS_EXECUTOR_ID"
+        },
+        "BROWSER_USE_ACCESS_PIPE_PATH": {
+          "fromEnv": "BROWSER_USE_ACCESS_PIPE_PATH"
+        },
+        "BROWSER_USE_ACCESS_VERIFYING_IDENTITY": {
+          "fromEnv": "BROWSER_USE_ACCESS_VERIFYING_IDENTITY"
+        },
+        "CODEX_WINDOWS_REGISTERED_CORE": {
+          "fromEnv": "CODEX_WINDOWS_REGISTERED_CORE"
+        }
+      },
+      "targets": []
+    },
+    "codex-app": {
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/s",
+        "/c",
+        "call",
+        "./scripts/launch_codex_app_tools_mcp.cmd",
+        "./server.mjs"
+      ],
+      "env": {
+        "CODEX_APP_TOOLS_DEFERRED": "1",
+        "CODEX_APP_TOOLS_PIPE_PATH": {
+          "fromEnv": "CODEX_APP_TOOLS_PIPE_PATH"
+        },
+        "CODEX_MCP_NODE_PATH": {
+          "fromEnv": "CODEX_MCP_NODE_PATH"
+        },
+        "CODEX_BROWSER_USE_NODE_PATH": {
+          "fromEnv": "CODEX_BROWSER_USE_NODE_PATH"
+        },
+        "CODEX_ELECTRON_RESOURCES_PATH": {
+          "fromEnv": "CODEX_ELECTRON_RESOURCES_PATH"
+        },
+        "CODEX_CLI_PATH": {
+          "fromEnv": "CODEX_CLI_PATH"
+        },
+        "XDG_CACHE_HOME": {
+          "fromEnv": "XDG_CACHE_HOME"
+        },
+        "HOME": {
+          "fromEnv": "HOME"
+        },
+        "USERPROFILE": {
+          "fromEnv": "USERPROFILE"
+        },
+        "LOCALAPPDATA": {
+          "fromEnv": "LOCALAPPDATA"
+        },
+        "PATH": {
+          "fromEnv": "PATH"
+        }
+      },
+      "targets": []
+    },
+    "netlify": {
+      "url": "https://netlify-mcp.netlify.app/mcp",
+      "targets": []
+    },
+    "gamma": {
+      "url": "https://mcp.gamma.app/mcp",
+      "targets": []
+    },
+    "datacamp": {
+      "url": "https://datacamp-mcp.datacamp.com/v1/mcp",
+      "targets": []
+    }
+  }
+}

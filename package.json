@@ -1,0 +1,11 @@
+{
+  "name": "samhanoun-skills-backup",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Dependency-free restoration tools for an encrypted skills configuration backup",
+  "scripts": {
+    "check": "node --check scripts/decrypt-backup.mjs",
+    "test": "node --test scripts/panel-counts.test.mjs"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "skill_occurrences": 5512,
+  "distinct_skill_directories": 905,
+  "imported_skill_directories": 696,
+  "agents": 66,
+  "mcp_occurrences": 58,
+  "mcp_definitions": 45,
+  "encrypted_original_files": 60154,
+  "encrypted_original_objects": 9959,
+  "redacted_files": [
+    "imported\\codex\\firebase-apk-scanner\\references\\vulnerabilities.md",
+    "imported\\plugin-investment-banking\\cim-builder\\references\\output_templates.md"
+  ],
+  "empty_native_config_files": [
+    ".cursor\\mcp.json"
+  ]
+}

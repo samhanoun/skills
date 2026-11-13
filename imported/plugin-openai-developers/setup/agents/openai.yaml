@@ -1,0 +1,3 @@
+interface:
+  display_name: "Get Started with OpenAI Developers"
+  short_description: "Set up API access, check credits, and try a request"
