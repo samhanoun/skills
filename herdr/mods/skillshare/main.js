@@ -11,7 +11,7 @@ import { v_flex, h_flex, InputState, Input, TextView, HoverCard } from "gpui-bas
 import { exec, hc, run, spaces, agents, focused, machines, shared, setShared, theme, settings, layout, window, openOverlay, closeOverlay, nextCommand, readTextFile, knownAgents, props as blockProps } from "herdr";
 import {
   KINDS, SCOPES, DISCOVER, AUDIT,
-  parseJSON, lastLine, failure, flag, sourceLine, buildItems, shownRows, endedRequests, afterRead, afterChecks, hookArgs, toggleArgs, rowState, previewTargets, eligibleTargets, targetList, waitsForSync, syncScopes, overviewAnswer, resourceProgress, remoteLine, waitingNames, mapLanes, needsBothWays, filterItems, groupItems, sourceGroups, counts,
+  parseJSON, lastLine, failure, flag, sourceLine, buildItems, shownRows, endedRequests, afterRead, afterChecks, hookArgs, toggleArgs, rowState, previewTargets, eligibleTargets, targetList, waitsForSync, syncScopes, overviewAnswer, resourceProgress, inventoryCount, pluginSnapshot, remoteLine, waitingNames, mapLanes, needsBothWays, filterItems, groupItems, sourceGroups, counts,
   cloneUrl, installResult, newerVersion, panelUpdate, updateState, ago, auditMessage, parseDiscover, parseAudit,
 } from "./model.js";
 import { createRunner } from "./jobs.js";
@@ -23,6 +23,7 @@ import { VERSION } from "./version.js";
 const PANEL = "skillshare-panel"; // the layout node the toggle shows and hides; hidden state is the layout's, so it survives space switches
 const RECENT = "skillshare.recent.v1"; // install sources, newest first
 const IN_SYNC_VIEW = "skillshare.inSyncView.v1"; // "list", or unset for In sync skills/agents grouped by source
+const PLUGINS_CACHE = "skillshare.plugins.inventory.v1";
 const UPDATING = "skillshare.panelUpdate.v1"; // { to, at } while the panel replaces its own files, for the build that loads after
 const POLL = 20000, CHECK_EVERY = 10 * 60 * 1000, RELEASE_EVERY = 60 * 60 * 1000, MACHINES_POLL = 60000, NOTICE_MS = 4000, PROBLEM_MS = 8000;
 // Every notice leaves by itself; a problem stays twice as long so it can be read.
@@ -316,7 +317,12 @@ export default class Skillshare extends View {
       if (n && expired(n) && this.shownNotice !== n.at) { this.shownNotice = n.at; cx.notify(); }
     });
     cx.timer.every(MACHINES_POLL, (cx) => { if (this.view === "machines" && !hidden()) this.loadMachines(cx); });
-    cx.spawn(async (cx) => { for (;;) { if ((await nextCommand()) === "focus") this.handle.focus(); cx.notify(); } });
+    cx.spawn(async (cx) => { for (;;) {
+      const command = await nextCommand();
+      if (command === "focus") this.handle.focus();
+      else if (command === "plugins") { this.view = "library"; this.kind = "plugins"; this.query = ""; this.filter.set_value(""); }
+      cx.notify();
+    } });
   }
 
   // ---- Where the panel looks: the shown space's machine and the focused terminal's folder ----
@@ -341,12 +347,25 @@ export default class Skillshare extends View {
         const project = await findProject(io, on, [folder, spaceFolder]);
         if (token !== this.token) return;
         this.project = project; this.projectKnown = true; cx.notify();
+        const pluginKey = scope => `${PLUGINS_CACHE}:${JSON.stringify([on ?? null, scope === "project" ? project : null])}`;
+        const previous = { ...this.raw };
+        for (const scope of project ? ["project", "global"] : ["global"]) {
+          if (!previous[scope]?.plugins) {
+            const cached = pluginSnapshot(shared(pluginKey(scope)));
+            if (cached) previous[scope] = { ...previous[scope], plugins: cached };
+          }
+          if (ended.some(req => req.plugins)) previous[scope] = { ...previous[scope], pluginsReadAt: 0 };
+        }
         const wantCheck = network || Date.now() - this.checkedAt > CHECK_EVERY || this.checkKey !== `${on}:${project}`;
         const res = await loadResources(io, on, project, network, (partial) => {
           if (token !== this.token) return;
+          for (const [scope, one] of Object.entries(partial.raw)) {
+            if (one.plugins && !one.plugins.cached && !one.pending.includes("plugins") && !one.errors.plugins && one.plugins !== this.raw[scope]?.plugins)
+              setShared(pluginKey(scope), pluginSnapshot(one.plugins));
+          }
           this.raw = partial.raw; this.git = partial.git; this.version = partial.version ?? this.version; this.error = null;
           this.rebuild(); cx.notify();
-        }, this.raw);
+        }, previous);
         if (token !== this.token) return;
         this.raw = res.raw; this.git = res.git; this.version = res.version ?? this.version; this.error = null;
         const { pending, late } = afterRead(this.pending, ended, wantCheck);
@@ -569,7 +588,7 @@ export default class Skillshare extends View {
 
     const progress = resourceProgress(this.raw, scope);
     const kinds = h_flex().flex_none().px(14).pt(6).border_b(1).border_color(t.border)
-      .children(KINDS.map(([k, label]) => tab(t, `kind-${k}`, `${label} ${progress.unknown.has(k) ? "…" : kc[k]}`, this.kind === k, (_e, cx) => { this.kind = k; cx.notify(); }, { h: 30, gap: 14, size: S().secondary })));
+      .children(KINDS.map(([k, label]) => tab(t, `kind-${k}`, `${label} ${inventoryCount(k, kc[k], progress)}`, this.kind === k, (_e, cx) => { this.kind = k; cx.notify(); }, { h: 30, gap: 14, size: S().secondary })));
     // Sync is always here: it syncs the scopes with something waiting in the shown scope, or the shown scope itself.
     const waits = filterItems(all, { scope, kind: null, query: "" }).filter(waitsForSync), due = waits.length || targetList(this.raw, scope).scopes.length;
     const sync = () => request({ op: "sync", on: ctx.on, project: this.project, scopes: syncScopes(all, this.raw, scope), plugins: waits.some((i) => i.kind === "plugins") });
@@ -648,7 +667,7 @@ export default class Skillshare extends View {
         .children(r.rest.map((x) => h_flex().h(28).px(12).gap(9).items_center().children(cells(say({ ...x, wait: Boolean(x.n) })))))));
     return frame(KINDS.map(([k, label], i) => cell(i, v_flex().id(`have-${k}`)).cursor_pointer().hover((s) => s.bg(t.hover)).active((s) => s.bg(t.selected))
       .on_mouse_down("left", stop).on_click((_e, cx) => { this.view = "library"; this.kind = k; cx.notify(); })
-      .child(div().text_size(S().dialog + 2).font_semibold().text_color(hot.has(k) ? t.blocked : kc[k] ? t.foreground : t.muted).child(progress.unknown.has(k) ? "…" : String(kc[k])))
+      .child(div().text_size(S().dialog + 2).font_semibold().text_color(hot.has(k) ? t.blocked : kc[k] ? t.foreground : t.muted).child(inventoryCount(k, kc[k], progress)))
       .child(div().text_size(S().label).text_color(hot.has(k) ? t.blocked : t.muted).child(label))),
     rows.map((r, i) => {
       const el = lane(i === rows.length - 1, syncLine(t, !progress.incomplete && r.wait ? state : "ok"), cells(r));

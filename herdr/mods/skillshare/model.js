@@ -283,20 +283,35 @@ export function overviewAnswer({ loading, failed, error, moving, reading = [], i
   return { kind: "ok", headline: "Everything is in sync", sub: `${plural(total, "resource")} · ${plural(targets, "target")}` };
 }
 
-// Loading/error state for the shown scopes. A kind's count is unknown until all its
-// inventories answer; diff/status affect sync confidence but not inventory counts.
+// Loading/error state for the shown scopes. Known inventories retain their counts
+// while verification is pending; diff/status affect sync confidence, not counts.
 export function resourceProgress(raw, scope = "all") {
-  const pending = new Set(), errors = [], unknown = new Set();
+  const pending = new Set(), errors = [], unknown = new Set(), known = new Set();
   let available = false;
   const kinds = { list: ["skills", "agents"], mcp: ["mcp"], plugins: ["plugins"], hooks: ["hooks"] };
   for (const [s, one] of Object.entries(raw)) {
     if (scope !== "all" && scope !== s) continue;
     available ||= Object.keys(kinds).some((key) => one[key] != null);
+    for (const [key, names] of Object.entries(kinds)) if (one[key] != null) for (const name of names) known.add(name);
     for (const key of one.pending ?? []) pending.add(key);
     for (const [key, message] of Object.entries(one.errors ?? {})) errors.push(`${s} ${key}: ${message}`);
     for (const [key, names] of Object.entries(kinds)) if ((one.pending ?? []).includes(key) || one.errors?.[key]) for (const name of names) unknown.add(name);
   }
-  return { pending: [...pending], errors, unknown, available, incomplete: Boolean(pending.size || errors.length) };
+  return { pending: [...pending], errors, unknown, known, available, incomplete: Boolean(pending.size || errors.length) };
+}
+
+// A pending verification changes freshness, not the last inventory's membership.
+export const inventoryCount = (kind, n, progress) => progress.unknown.has(kind) && !progress.known?.has(kind) ? "…" : String(n);
+
+// Persist only display metadata, never native settings, credentials or source URLs.
+export function pluginSnapshot(value) {
+  if (!value?.packages || typeof value.packages !== "object" || Array.isArray(value.packages)) return null;
+  const packages = Object.fromEntries(Object.entries(value.packages).map(([name, p]) => [name, {
+    ...(typeof p?.version === "string" ? { version: p.version } : {}),
+    bindings: Object.fromEntries(Object.entries(p?.bindings ?? {}).map(([target, b]) => [target,
+      typeof b?.version === "string" ? { version: b.version } : {}])),
+  }]));
+  return { packages, cached: true };
 }
 
 // A machine card's remote line, and the targets that wait on it by name (max at most).

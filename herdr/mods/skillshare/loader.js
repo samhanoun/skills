@@ -7,6 +7,7 @@ import { GIT_STATUS, PROJECT, READ_SKILL, READ_FILE, LATEST_RELEASE, releaseTag,
 
 const scopesOf = (project) => (project ? ["project", "global"] : ["global"]);
 const at = (on, project, scope) => ({ on, cwd: scope === "project" ? project : null });
+const PLUGIN_REFRESH_MS = 2 * 60 * 1000;
 
 // The project skillshare uses for the first of folders that is one, or null.
 export async function findProject({ sh }, on, folders) {
@@ -18,15 +19,19 @@ export async function findProject({ sh }, on, folders) {
 // pending and failed sections separately so a stale value never claims a fresh sync verdict.
 export async function loadResources(io, on, project, network, progress = () => {}, previous = {}) {
   const commands = { list: ["list", "--all"], diff: ["diff"], mcp: ["mcp", "list"], plugins: ["plugin", "list"], hooks: ["hooks", "list"], status: ["status"] };
+  // Native clients can take tens of seconds. Ordinary resource polls reuse a
+  // recent successful inventory; explicit refreshes and startup still verify it.
+  const shouldRead = (scope, name) => name !== "plugins" || network || !previous[scope]?.plugins || previous[scope].plugins.cached
+    || !previous[scope].pluginsReadAt || Date.now() - previous[scope].pluginsReadAt >= PLUGIN_REFRESH_MS;
   const raw = {};
-  for (const scope of scopesOf(project)) raw[scope] = { ...previous[scope], pending: Object.keys(commands), errors: {}, took: {}, error: null };
+  for (const scope of scopesOf(project)) raw[scope] = { ...previous[scope], pending: Object.keys(commands).filter(name => shouldRead(scope, name)), errors: {}, took: {}, error: null };
   let git = null, version = null;
   const snapshot = () => ({ raw: Object.fromEntries(Object.entries(raw).map(([scope, one]) => [scope, { ...one, pending: [...one.pending], errors: { ...one.errors }, took: { ...one.took } }])), git, version,
     error: Object.entries(raw).flatMap(([scope, one]) => Object.entries(one.errors).map(([name, message]) => `${scope} ${name}: ${message}`)).join("\n") || null });
   const publish = () => progress(snapshot());
   const names = (list) => (list ?? []).map((x) => x.name).filter(Boolean);
   publish();
-  await Promise.all(scopesOf(project).flatMap((scope) => Object.entries(commands).map(async ([name, args]) => {
+  await Promise.all(scopesOf(project).flatMap((scope) => Object.entries(commands).filter(([name]) => shouldRead(scope, name)).map(async ([name, args]) => {
     const one = raw[scope], start = Date.now(), opt = at(on, project, scope);
     let status;
     try {
@@ -43,7 +48,10 @@ export async function loadResources(io, on, project, network, progress = () => {
         status = value;
         Object.assign(one, { targets: names(value.targets), skillTargets: names((value.targets ?? []).filter((x) => x.skills_enabled !== false)), agentTargets: names(value.agents?.targets) });
         if (scope === "global") version = value.version ?? null;
-      } else one[name] = value;
+      } else {
+        one[name] = value;
+        if (name === "plugins") one.pluginsReadAt = Date.now();
+      }
     } catch (e) {
       one.errors[name] = String(e?.message ?? e);
       if (name === "list") one.error = one.errors[name];

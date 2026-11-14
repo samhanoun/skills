@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { buildItems, counts, mcpNames, mcpServer, rowState } from '../herdr/mods/skillshare/model.js';
+import { buildItems, counts, inventoryCount, pluginSnapshot, resourceProgress, mcpNames, mcpServer, rowState } from '../herdr/mods/skillshare/model.js';
 import { loadResources } from '../herdr/mods/skillshare/loader.js';
 
 test('source-only MCP connections are counted without scheduling synchronization', () => {
@@ -46,4 +46,75 @@ test('the complete imported MCP catalogue is visible', () => {
   assert.equal(original.length, 45);
   assert.deepEqual(mcpNames(text), original);
   assert.equal(counts(buildItems('global', { list: [], mcp: { serverNames: original, changes: [] } })).mcp, 45);
+});
+
+const plugins = { packages: { first: { bindings: { codex: { id: 'first@market', version: '1' } } }, second: { bindings: { claude: { id: 'second@market', version: '2' } } } } };
+
+test('known plugin counts stay visible while native verification is pending', () => {
+  const raw = { global: { plugins, pending: ['plugins'] } };
+  const progress = resourceProgress(raw);
+  const items = buildItems('global', raw.global);
+  assert.equal(inventoryCount('plugins', counts(items).plugins, progress), '2');
+  assert.ok(items.every(item => item.state === 'unknown'));
+  assert.equal(inventoryCount('plugins', 0, resourceProgress({ global: { pending: ['plugins'] } })), '…');
+});
+
+test('persisted plugin snapshots contain display metadata without native configuration or credentials', () => {
+  const snapshot = pluginSnapshot({ packages: { first: { source: 'private-source-value', env: { KEY: 'private-env-value' }, bindings: { codex: { id: 'private-native-id', version: '1', token: 'private-token-value' } } } }, hosts: [{ secret: 'private-host-value' }] });
+  assert.equal(counts(buildItems('global', { plugins: snapshot, pending: ['plugins'] })).plugins, 1);
+  assert.doesNotMatch(JSON.stringify(snapshot), /private-/);
+  assert.equal(snapshot.cached, true);
+});
+
+test('cold-start cached plugins are available before a slow native inventory resolves', async () => {
+  let release, firstReady;
+  const native = new Promise(resolve => { release = resolve; });
+  const available = new Promise(resolve => { firstReady = resolve; });
+  const replies = { list: [], diff: {}, mcp: {}, hooks: {} };
+  const io = {
+    run: async () => ({ code: 0, stdout: '{"targets":[]}', stderr: '' }),
+    sh: async () => ({ code: 0, stdout: 'norepo', stderr: '' }),
+    job: async args => args[0] === 'plugin' ? native : { code: 0, stdout: JSON.stringify(replies[args[0]]), stderr: '' },
+  };
+  const work = loadResources(io, null, null, false, state => {
+    if (state.raw.global.list && state.raw.global.pending.includes('plugins')) firstReady(state);
+  }, { global: { plugins: pluginSnapshot(plugins) } });
+  const partial = await available;
+  assert.equal(counts(buildItems('global', partial.raw.global)).plugins, 2);
+  assert.ok(buildItems('global', partial.raw.global).every(item => item.state === 'unknown'));
+  release({ code: 0, stdout: JSON.stringify({ packages: { first: plugins.packages.first } }), stderr: '' });
+  const final = await work;
+  assert.equal(counts(buildItems('global', final.raw.global)).plugins, 1);
+  assert.ok(buildItems('global', final.raw.global).every(item => item.state === 'ok'));
+});
+
+test('frequent resource refreshes reuse recent plugin verification and an explicit refresh checks again', async () => {
+  let pluginReads = 0;
+  const replies = { list: [], diff: {}, mcp: {}, hooks: {} };
+  const io = {
+    run: async () => ({ code: 0, stdout: '{"targets":[]}', stderr: '' }),
+    sh: async () => ({ code: 0, stdout: 'norepo', stderr: '' }),
+    job: async args => { if (args[0] === 'plugin') pluginReads++; return { code: 0, stdout: JSON.stringify(args[0] === 'plugin' ? plugins : replies[args[0]]), stderr: '' }; },
+  };
+  const previous = { global: { plugins, pluginsReadAt: Date.now() } };
+  const warm = await loadResources(io, null, null, false, () => {}, previous);
+  assert.equal(pluginReads, 0);
+  assert.equal(counts(buildItems('global', warm.raw.global)).plugins, 2);
+  assert.ok(!warm.raw.global.pending.includes('plugins'));
+  await loadResources(io, null, null, true, () => {}, warm.raw);
+  assert.equal(pluginReads, 1);
+});
+
+test('a failed native inventory keeps recorded plugins visible with unconfirmed status', async () => {
+  const replies = { list: [], diff: {}, mcp: {}, hooks: {} };
+  const io = {
+    run: async () => ({ code: 0, stdout: '{"targets":[]}', stderr: '' }),
+    sh: async () => ({ code: 0, stdout: 'norepo', stderr: '' }),
+    job: async args => args[0] === 'plugin' ? { code: 1, stdout: '', stderr: 'native inventory unavailable' } : { code: 0, stdout: JSON.stringify(replies[args[0]]), stderr: '' },
+  };
+  const state = await loadResources(io, null, null, false, () => {}, { global: { plugins: pluginSnapshot(plugins) } });
+  const progress = resourceProgress(state.raw);
+  assert.equal(inventoryCount('plugins', counts(buildItems('global', state.raw.global)).plugins, progress), '2');
+  assert.ok(buildItems('global', state.raw.global).every(item => item.state === 'unknown'));
+  assert.equal(progress.incomplete, true);
 });

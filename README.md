@@ -33,6 +33,8 @@ Les reçus d'import des plugins sont locaux à ce PC. Le catalogue public conser
 
 Skillshare lisait auparavant un ancien CLI Codex intégré à une application et renvoyait une liste vide. La variable utilisateur locale `SKILLSHARE_CODEX_CLI` sélectionne maintenant le CLI npm 0.169.0. Le panneau Windows retrouve également cet exécutable de façon dynamique ; une variable déjà définie reste prioritaire.
 
+Le panneau conserve la liste et le compteur des plugins pendant les vérifications natives lentes. Un cache local ne contient que les noms, les outils et les versions ; son statut reste non confirmé jusqu'au résultat du contrôle. Les contrôles natifs réussis sont réutilisés pendant deux minutes entre les rafraîchissements ordinaires. La commande `herdr-app do skillshare.plugins` ouvre directement cette liste.
+
 Les hooks importés restent dans leurs fichiers natifs. Le fichier `native/hooks/entries.json` est une copie des définitions, à adapter au chemin personnel avant une migration vers un autre PC ; il n'est pas exécuté par ce dépôt. Les sept fichiers de réglages et de scripts natifs contrôlés sont identiques avant et après adoption. L'exécution et la confiance des hooks restent gérées par leurs clients ; aucun hook n'est déclenché pendant l'import.
 
 Les réglages, registres et scripts avant et après l'import, ainsi que les reçus locaux après import, sont conservés dans `backup/plugins-hooks-2026-11-14/before/` et `after/`, chiffrés avec la même clé privée. Pour préparer leur restauration :
